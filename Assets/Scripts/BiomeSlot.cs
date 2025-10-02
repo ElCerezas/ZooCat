@@ -1,11 +1,11 @@
 using UnityEngine;
 enum Temperatura {Fred, Templat, Calent}
 enum Bioma {Platja, Panta, Muntanya}
-[CreateAssetMenu(fileName = "Biome", menuName = "Scriptable Objects/Biome")]
-public class Biome : ScriptableObject
+public class BiomeSlot : MonoBehaviour
 {
     [SerializeField] Bioma biome;
     [SerializeField] Temperatura temp;
     int id;
-    bool slotPle = false;
+    [SerializeField] bool slotPle = false;
+    [SerializeField] Animal animalInSlot;
 }
