@@ -22,14 +22,21 @@ public class Animal : MonoBehaviour
     [ShowIf("condition", TypeOfConditions.CompanionTaxon)][SerializeField] Taxon taxonCon;
     [ShowIf("condition", TypeOfConditions.CompanionTransport)][SerializeField] Medi transportCon;
 
-    Transform SlotFather;
+    BiomeSlot slot;
+    bool isOnQueue = true;
     private void Start()
     {
         
     }
     private void OnMouseDrag()
     {
-        
+        Vector3 worldPosition;
+        Vector3 mousePos = Input.mousePosition;
+        mousePos.z = Camera.main.nearClipPlane;
+        worldPosition = Camera.main.ScreenToWorldPoint(mousePos);
+
+        gameObject.transform.position = new Vector2(worldPosition.x, worldPosition.y);
+
     }
     private void OnMouseUp()
     {
@@ -37,7 +44,7 @@ public class Animal : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        SlotFather = collision.gameObject.transform;
+        slot = collision.gameObject.GetComponent<BiomeSlot>();
     }
 
 }
