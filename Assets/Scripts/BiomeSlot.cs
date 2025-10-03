@@ -8,4 +8,6 @@ public class BiomeSlot : MonoBehaviour
     int id;
     [SerializeField] bool slotPle = false;
     [SerializeField] Animal animalInSlot;
+
+    public bool SlotPle { get => slotPle; set => slotPle = value; }
 }

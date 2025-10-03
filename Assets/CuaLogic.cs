@@ -21,14 +21,18 @@ public class CuaLogic : MonoBehaviour
             if (i == 0)
             {
                 animalCua[i].position = slot1.position;
+                animalCua[i].GetComponent<Animal>().selectable = true;
+                animalCua[i].parent = slot1;
             }
             else if (i == 1)
             {
-                animalCua[i].position = slot1.position;
+                animalCua[i].position = slot2.position;
+                animalCua[i].parent = slot2;
             }
             else
             {
-                animalCua[i].position = slot1.position;
+                animalCua[i].position = storage.position;
+                animalCua[i].parent = storage;
             }
         }
     }
