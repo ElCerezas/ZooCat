@@ -1,3 +1,5 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 public enum Temperatura {Fred, Templat, Calent}
 public enum Bioma {Platja, Panta, Muntanya}
@@ -10,7 +12,8 @@ public class BiomeSlot : MonoBehaviour
     [SerializeField] Animal animalInSlot;
 
     Color[] colors = { Color.white, Color.cyan, Color.yellow };
-    [SerializeField] BiomeSlot[] ConditionRadius;
+    [SerializeField] float radius = 1f;
+    [SerializeField] List<BiomeSlot> NearSlots = new List<BiomeSlot>();
     SpriteRenderer SpriteRenderer;
     public bool SlotPle { get => slotPle; set => slotPle = value; }
 
@@ -18,6 +21,14 @@ public class BiomeSlot : MonoBehaviour
     {
         SpriteRenderer = GetComponent<SpriteRenderer>();
         SetColorProximity(0);
+        Collider2D[] t = Physics2D.OverlapCircleAll(new Vector2(transform.position.x, transform.position.y), radius);
+        for (int i = 0; i < t.Length; i++)
+        {
+            if (t[i].gameObject.tag == "Slot")
+            {
+                NearSlots.Add(t[i].gameObject.GetComponent<BiomeSlot>());
+            }
+        }
     }
     void SetColorProximity(int proximityLvl)
     {
@@ -26,23 +37,23 @@ public class BiomeSlot : MonoBehaviour
     private void OnMouseOver()
     {
         SetColorProximity(2);
-        for (int i = 0; i < ConditionRadius.Length; i++)
+        for (int i = 0; i < NearSlots.Count; i++)
         {
-            ConditionRadius[i].SetColorProximity(1);
+            NearSlots[i].SetColorProximity(1);
         }
     }
     private void OnMouseExit()
     {
         SetColorProximity(0);
-        for (int i = 0; i < ConditionRadius.Length; i++)
+        for (int i = 0; i < NearSlots.Count; i++)
         {
-            ConditionRadius[i].SetColorProximity(0);
+            NearSlots[i].SetColorProximity(0);
         }
     }
     
-    public BiomeSlot[] GetCloseSlots()
+    public List<BiomeSlot> GetCloseSlots()
     {
-        return ConditionRadius;
+        return NearSlots;
     }
     public Bioma GetBioma()
     {
@@ -51,5 +62,10 @@ public class BiomeSlot : MonoBehaviour
     public Temperatura GetTemperatura()
     {
         return temp;
+    }
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.magenta;
+        Gizmos.DrawWireSphere(new Vector2(transform.position.x, transform.position.y), radius);
     }
 }

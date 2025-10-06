@@ -1,6 +1,8 @@
 using UnityEngine;
 using NaughtyAttributes;
 using System.Runtime.InteropServices.WindowsRuntime;
+using NUnit.Framework;
+using System.Collections.Generic;
 public enum Taxon {Mamifer, Reptil, Ocell, Anfibi, Insecte, Peix}
 public enum Dieta {Carnivor, Herbivor, Omnivor}
 public enum Medi { Volador, Mari, Terrestre}
@@ -26,8 +28,10 @@ public class Animal : MonoBehaviour
     public bool isOnQueue = true;
     public bool selectable = false;
     object workingVar = null;
+    SpriteRenderer spriteRenderer;
     private void Start()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
         SetWorkingVariable();
     }
     private void OnMouseDrag()
@@ -79,7 +83,8 @@ public class Animal : MonoBehaviour
     }
     bool CheckIfHappy ()
     {
-        BiomeSlot[] nearSlots = slot.GetCloseSlots();
+        List <BiomeSlot> nearSlots = slot.GetCloseSlots();
+        Debug.Log($"{name}: {workingVar.GetType()}");
         if (workingVar == null) { return true; }
         else if (workingVar.GetType() == typeof(Bioma))
         {
@@ -91,23 +96,26 @@ public class Animal : MonoBehaviour
         }
         else if (workingVar.GetType() == typeof(Dieta))
         {
-            for (int i = 0; i < nearSlots.Length; i++)
+            for (int i = 0; i < nearSlots.Count; i++)
             {
-                if (!(nearSlots[i].GetComponentInChildren<Animal>().dieta == dietaCon && isNegative)) { return false;}
+                if (!nearSlots[i].SlotPle) { }
+                else if (!(nearSlots[i].GetComponentInChildren<Animal>().dieta == dietaCon && isNegative)) { return false;}
             }
         }
         else if (workingVar.GetType() == typeof(Taxon))
         {
-            for (int i = 0; i < nearSlots.Length; i++)
+            for (int i = 0; i < nearSlots.Count; i++)
             {
-                if (!(nearSlots[i].GetComponentInChildren<Animal>().taxon == taxonCon && isNegative)) { return false; }
+                if (!nearSlots[i].SlotPle) { }
+                else if (!(nearSlots[i].GetComponentInChildren<Animal>().taxon == taxonCon && isNegative)) { return false; }
             }
         }
         else if (workingVar.GetType() == typeof(Medi))
         {
-            for (int i = 0; i < nearSlots.Length; i++)
+            for (int i = 0; i < nearSlots.Count; i++)
             {
-                if (!(nearSlots[i].GetComponentInChildren<Animal>().medi == transportCon && isNegative)) { return false; }
+                if (!nearSlots[i].SlotPle) { }
+                else if(!(nearSlots[i].GetComponentInChildren<Animal>().medi == transportCon && isNegative)) { return false; }
             }
         }
         return true;
@@ -140,7 +148,8 @@ public class Animal : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
-            Debug.Log(CheckIfHappy());
+            spriteRenderer.color = CheckIfHappy() ? Color.green : Color.red;
+            Debug.Log($"{name}: {CheckIfHappy()}");
         }
     }
 }
