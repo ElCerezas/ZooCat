@@ -24,6 +24,7 @@ public class Animal : MonoBehaviour
     [ShowIf("condition", TypeOfConditions.CompanionTaxon)][SerializeField] Taxon taxonCon;
     [ShowIf("condition", TypeOfConditions.CompanionTransport)][SerializeField] Medi transportCon;
 
+    BiomeSlot parentSlot;
     BiomeSlot slot;
     public bool isOnQueue = true;
     public bool selectable = false;
@@ -32,6 +33,7 @@ public class Animal : MonoBehaviour
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        gameObject.name = name;
         SetWorkingVariable();
     }
     private void OnMouseDrag()
@@ -49,12 +51,12 @@ public class Animal : MonoBehaviour
         if (!selectable) { return; }
         if (slot != null && !slot.SlotPle)
         {
-            if (!isOnQueue)
-            {
+            if (parentSlot != null) { parentSlot.SlotPle = false; }
+            parentSlot = slot;
+            parentSlot.SlotPle = true;
+            
 
-            }
             transform.parent = slot.gameObject.transform;
-            slot.SlotPle = false;
             if (isOnQueue)
             {
                 isOnQueue = false;
@@ -84,30 +86,29 @@ public class Animal : MonoBehaviour
     bool CheckIfHappy ()
     {
         List <BiomeSlot> nearSlots = slot.GetCloseSlots();
-        Debug.Log($"{name}: {workingVar.GetType()}");
         if (workingVar == null) { return true; }
         else if (workingVar.GetType() == typeof(Bioma))
         {
-            return (slot.GetBioma() == biomeCon && isNegative);
+            return (slot.GetBioma() == biomeCon && !isNegative);
         }
         else if (workingVar.GetType() == typeof(Temperatura))
         {
-            return (slot.GetTemperatura() == temperaturaCon && isNegative);
+            return (slot.GetTemperatura() == temperaturaCon && !isNegative);
         }
         else if (workingVar.GetType() == typeof(Dieta))
         {
             for (int i = 0; i < nearSlots.Count; i++)
             {
                 if (!nearSlots[i].SlotPle) { }
-                else if (!(nearSlots[i].GetComponentInChildren<Animal>().dieta == dietaCon && isNegative)) { return false;}
+                else if (!(nearSlots[i].GetComponentInChildren<Animal>().dieta == dietaCon && !isNegative)) { return false;}
             }
         }
         else if (workingVar.GetType() == typeof(Taxon))
         {
             for (int i = 0; i < nearSlots.Count; i++)
             {
-                if (!nearSlots[i].SlotPle) { }
-                else if (!(nearSlots[i].GetComponentInChildren<Animal>().taxon == taxonCon && isNegative)) { return false; }
+                if (!nearSlots[i].SlotPle) { Debug.Log("Slot buit al costat"); }
+                else if (!(nearSlots[i].GetComponentInChildren<Animal>().taxon == taxonCon && !isNegative)) { Debug.Log("Condició no cumplida"); return false; }
             }
         }
         else if (workingVar.GetType() == typeof(Medi))
@@ -115,7 +116,7 @@ public class Animal : MonoBehaviour
             for (int i = 0; i < nearSlots.Count; i++)
             {
                 if (!nearSlots[i].SlotPle) { }
-                else if(!(nearSlots[i].GetComponentInChildren<Animal>().medi == transportCon && isNegative)) { return false; }
+                else if(!(nearSlots[i].GetComponentInChildren<Animal>().medi == transportCon && !isNegative)) { return false; }
             }
         }
         return true;
@@ -149,7 +150,6 @@ public class Animal : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I))
         {
             spriteRenderer.color = CheckIfHappy() ? Color.green : Color.red;
-            Debug.Log($"{name}: {CheckIfHappy()}");
         }
     }
 }

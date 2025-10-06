@@ -24,7 +24,7 @@ public class BiomeSlot : MonoBehaviour
         Collider2D[] t = Physics2D.OverlapCircleAll(new Vector2(transform.position.x, transform.position.y), radius);
         for (int i = 0; i < t.Length; i++)
         {
-            if (t[i].gameObject.tag == "Slot")
+            if (t[i].gameObject.tag == "Slot" && t[i].gameObject != this.gameObject)
             {
                 NearSlots.Add(t[i].gameObject.GetComponent<BiomeSlot>());
             }
