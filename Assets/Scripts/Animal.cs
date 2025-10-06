@@ -1,8 +1,9 @@
 using UnityEngine;
 using NaughtyAttributes;
-enum Taxon {Mamifer, Reptil, Ocell, Anfibi, Insecte, Peix}
-enum Dieta {Carnivor, Herbivor, Omnivor}
-enum Medi { Volador, Mari, Terrestre}
+using System.Runtime.InteropServices.WindowsRuntime;
+public enum Taxon {Mamifer, Reptil, Ocell, Anfibi, Insecte, Peix}
+public enum Dieta {Carnivor, Herbivor, Omnivor}
+public enum Medi { Volador, Mari, Terrestre}
 enum TypeOfConditions { Biome, Temperature, CompanionFood, CompanionTaxon, CompanionTransport, Null }
 public class Animal : MonoBehaviour
 {
@@ -11,8 +12,7 @@ public class Animal : MonoBehaviour
     [SerializeField] Taxon taxon;
     [SerializeField] Medi medi;
     [SerializeField] Dieta dieta;
-
-
+    
     //Condition Vars
     [SerializeField] bool isNegative;
     [SerializeField] TypeOfConditions condition;
@@ -25,9 +25,10 @@ public class Animal : MonoBehaviour
     BiomeSlot slot;
     public bool isOnQueue = true;
     public bool selectable = false;
+    object workingVar = null;
     private void Start()
     {
-        
+        SetWorkingVariable();
     }
     private void OnMouseDrag()
     {
@@ -38,7 +39,6 @@ public class Animal : MonoBehaviour
         worldPosition = Camera.main.ScreenToWorldPoint(mousePos);
 
         gameObject.transform.position = new Vector2(worldPosition.x, worldPosition.y);
-
     }
     private void OnMouseUp()
     {
@@ -77,5 +77,70 @@ public class Animal : MonoBehaviour
             Debug.Log("Exit All Slots");
         }
     }
-
+    bool CheckIfHappy ()
+    {
+        BiomeSlot[] nearSlots = slot.GetCloseSlots();
+        if (workingVar == null) { return true; }
+        else if (workingVar.GetType() == typeof(Bioma))
+        {
+            return (slot.GetBioma() == biomeCon && isNegative);
+        }
+        else if (workingVar.GetType() == typeof(Temperatura))
+        {
+            return (slot.GetTemperatura() == temperaturaCon && isNegative);
+        }
+        else if (workingVar.GetType() == typeof(Dieta))
+        {
+            for (int i = 0; i < nearSlots.Length; i++)
+            {
+                if (!(nearSlots[i].GetComponentInChildren<Animal>().dieta == dietaCon && isNegative)) { return false;}
+            }
+        }
+        else if (workingVar.GetType() == typeof(Taxon))
+        {
+            for (int i = 0; i < nearSlots.Length; i++)
+            {
+                if (!(nearSlots[i].GetComponentInChildren<Animal>().taxon == taxonCon && isNegative)) { return false; }
+            }
+        }
+        else if (workingVar.GetType() == typeof(Medi))
+        {
+            for (int i = 0; i < nearSlots.Length; i++)
+            {
+                if (!(nearSlots[i].GetComponentInChildren<Animal>().medi == transportCon && isNegative)) { return false; }
+            }
+        }
+        return true;
+    }
+    void SetWorkingVariable()
+    {
+        switch (condition)
+        {
+            case TypeOfConditions.Biome:
+                workingVar = biomeCon;
+                break;
+            case TypeOfConditions.CompanionFood:
+                workingVar = dietaCon;
+                break;
+            case TypeOfConditions.Temperature:
+                workingVar = temperaturaCon;
+                break;
+            case TypeOfConditions.CompanionTaxon:
+                workingVar = taxonCon;
+                break;
+            case TypeOfConditions.CompanionTransport:
+                workingVar = transportCon;
+                break;
+            default:
+                workingVar = null;
+                break;
+        }
+    }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            Debug.Log(CheckIfHappy());
+        }
+    }
 }
