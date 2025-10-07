@@ -149,8 +149,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animalCua:
-  - {fileID: 1882307460}
   - {fileID: 449076471}
+  - {fileID: 1882307460}
   slot1: {fileID: 98660787}
   slot2: {fileID: 1314786575}
   storage: {fileID: 1087554914}
@@ -232,12 +232,16 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2402565664728313798, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: dietaCon
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2402565664728313798, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: condition
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2402565664728313798, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: isNegative
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2402565664728313798, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: temperaturaCon
@@ -282,6 +286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animals: []
+  placedAnimals: []
 --- !u!4 &279599390
 Transform:
   m_ObjectHideFlags: 0

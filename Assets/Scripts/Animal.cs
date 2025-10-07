@@ -6,7 +6,7 @@ using System.Collections.Generic;
 public enum Taxon {Mamifer, Reptil, Ocell, Anfibi, Insecte, Peix}
 public enum Dieta {Carnivor, Herbivor, Omnivor}
 public enum Medi { Volador, Mari, Terrestre}
-enum TypeOfConditions { Biome, Temperature, CompanionFood, CompanionTaxon, CompanionTransport, Null }
+public enum TypeOfConditions { Biome, Temperature, CompanionFood, CompanionTaxon, CompanionTransport, Null }
 public class Animal : MonoBehaviour
 {
     //AnimalStats
@@ -30,14 +30,23 @@ public class Animal : MonoBehaviour
     public bool selectable = false;
     object workingVar = null;
     SpriteRenderer spriteRenderer;
+
+    ConditionBubbleManager bubbleIcon;
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        bubbleIcon = GetComponent<ConditionBubbleManager>();
         gameObject.name = name;
         SetWorkingVariable();
+        bubbleIcon.ReciveCondition(isNegative, condition, workingVar.GetHashCode());
+    }
+    private void OnMouseEnter()
+    {
+        bubbleIcon.ToggleOnBubble();
     }
     private void OnMouseDrag()
     {
+        bubbleIcon.ToggleOffBubble();
         if (!selectable) { return; }
         Vector3 worldPosition;
         Vector3 mousePos = Input.mousePosition;
