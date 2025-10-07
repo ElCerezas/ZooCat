@@ -6,6 +6,7 @@ public class LevelManager : MonoBehaviour
 {
     public static LevelManager instance;
     public List<Animal> animals = new List<Animal>();
+    public List<Animal> placedAnimals = new List<Animal>();
     void Awake()
     {
         instance = this;
@@ -13,6 +14,25 @@ public class LevelManager : MonoBehaviour
         for (int i = 0; i < gmObj.Length; i++)
         {
             animals.Add(gmObj[i].GetComponent<Animal>());
+        }
+    }
+    public void  OverallHappiness()
+    {
+        bool allHappy = true;
+        for (int i = 0; i < placedAnimals.Count;i++)
+        {
+            if (placedAnimals[i].CheckIfHappy() == false)
+            {
+                placedAnimals[i].SetMood(false);
+                allHappy = false;
+            }else
+            {
+                placedAnimals[i].SetMood(true);
+            }
+        }
+        if (allHappy)
+        {
+            CuaLogic.instance.UpdateCua();
         }
     }
 }

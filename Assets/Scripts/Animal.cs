@@ -59,11 +59,12 @@ public class Animal : MonoBehaviour
             transform.parent = slot.gameObject.transform;
             if (isOnQueue)
             {
+                LevelManager.instance.placedAnimals.Add(this);
                 isOnQueue = false;
                 CuaLogic.instance.animalCua.Remove(gameObject.transform);
-                CuaLogic.instance.UpdateCua();
             }
             transform.position = transform.parent.transform.position;
+            LevelManager.instance.OverallHappiness();
         }
         else
         {
@@ -83,7 +84,7 @@ public class Animal : MonoBehaviour
             Debug.Log("Exit All Slots");
         }
     }
-    bool CheckIfHappy ()
+    public bool CheckIfHappy ()
     {
         List <BiomeSlot> nearSlots = slot.GetCloseSlots();
         if (workingVar == null) { return true; }
@@ -145,11 +146,8 @@ public class Animal : MonoBehaviour
                 break;
         }
     }
-    private void Update()
+    public void SetMood(bool isHappy)
     {
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            spriteRenderer.color = CheckIfHappy() ? Color.green : Color.red;
-        }
+        spriteRenderer.color = isHappy ? Color.green : Color.red;
     }
 }
