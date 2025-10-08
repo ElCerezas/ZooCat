@@ -39,7 +39,7 @@ public class Animal : MonoBehaviour
     }
     private void OnMouseEnter()
     {
-        //bubbleIcon.ToggleOnBubble();
+        UIIconShow.instance.NewInfo(this, parentSlot, isNegative, condition, workingVar.GetHashCode());
     }
     private void OnMouseExit()
     {

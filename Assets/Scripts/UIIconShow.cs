@@ -21,7 +21,8 @@ public class UIIconShow : MonoBehaviour
     [SerializeField] Sprite[] iconsBiome; //
 
     [Header("Animation")]
-    [SerializeField]Vector3 DisplayedT, HideT;
+    [SerializeField]Vector3 DisplayedT;
+    [SerializeField]Vector3 HideT;
     Vector3 currentPos;
 
     [Header("Local Saves")]
@@ -144,6 +145,9 @@ public class UIIconShow : MonoBehaviour
         }
         if (sBiome != null)
         {
+            biomeIcons[0].sprite = iconsTemperature[sBiome.temp.GetHashCode()]; //Temperature
+            //biomeIcons[0].sprite = iconsBiome[sBiome.biome.GetHashCode()]; //Biome
+
             biomeUI.SetActive(true);
         }
         else
