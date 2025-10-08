@@ -370,14 +370,17 @@ MonoBehaviour:
   conditionBubble: {fileID: 5717556339671798014}
   icon: {fileID: 7313325258258691899}
   icons:
-  - {fileID: 994102452802339338, guid: b60773c91b0acf144a8a8fd47828711f, type: 3}
-  - {fileID: 1954382029115968498, guid: b60773c91b0acf144a8a8fd47828711f, type: 3}
-  - {fileID: 6490508064278951497, guid: b60773c91b0acf144a8a8fd47828711f, type: 3}
-  - {fileID: -3973433769584922778, guid: b60773c91b0acf144a8a8fd47828711f, type: 3}
-  - {fileID: 9045856091392712822, guid: b60773c91b0acf144a8a8fd47828711f, type: 3}
-  - {fileID: 6759083829238457156, guid: b60773c91b0acf144a8a8fd47828711f, type: 3}
-  - {fileID: 6225050677602297043, guid: b60773c91b0acf144a8a8fd47828711f, type: 3}
-  - {fileID: -3963598872453516905, guid: b60773c91b0acf144a8a8fd47828711f, type: 3}
-  - {fileID: -3109833407678109653, guid: b60773c91b0acf144a8a8fd47828711f, type: 3}
-  - {fileID: 7202120014733030855, guid: b60773c91b0acf144a8a8fd47828711f, type: 3}
-  - {fileID: 3882287177385340704, guid: b60773c91b0acf144a8a8fd47828711f, type: 3}
+  - {fileID: 21300000, guid: fa167ef744edd984b9b5452243163500, type: 3}
+  - {fileID: 21300000, guid: 4e735a8c994a6bf47a6a61540770b719, type: 3}
+  - {fileID: 21300000, guid: 78f26de77ea090a409e03214f6137cda, type: 3}
+  - {fileID: 21300000, guid: 609bc0e722a69b647be779f2b94e633e, type: 3}
+  - {fileID: 21300000, guid: 79b4edef07243a346b0ca96f8628a5fa, type: 3}
+  - {fileID: 21300000, guid: 62afa7c726228d44b9567c16d236a468, type: 3}
+  - {fileID: 21300000, guid: 4ac9f16aef4f12741aad71bdd4305ae7, type: 3}
+  - {fileID: 21300000, guid: 987a96dfc17a47541ade7d9c1d7173dc, type: 3}
+  - {fileID: 21300000, guid: e893e8c9223c81340a85bfd15522aff2, type: 3}
+  - {fileID: 21300000, guid: c17a814000c8d094fbf75d35caa6fa43, type: 3}
+  - {fileID: 21300000, guid: 93eddb5678f122e499778533cbd7a003, type: 3}
+  - {fileID: 21300000, guid: e460772575c215146bd8b8f2d9f9a2ce, type: 3}
+  - {fileID: 21300000, guid: 156f1b0a7d7cd5a4ebb01a2127a3861f, type: 3}
+  - {fileID: 21300000, guid: f9995e3d6732f2346918aadcfbcc1a75, type: 3}

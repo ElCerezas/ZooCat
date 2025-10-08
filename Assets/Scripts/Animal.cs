@@ -3,7 +3,7 @@ using NaughtyAttributes;
 using System.Runtime.InteropServices.WindowsRuntime;
 using NUnit.Framework;
 using System.Collections.Generic;
-public enum Taxon {Mamifer, Reptil, Ocell, Anfibi, Insecte, Peix}
+public enum Taxon {Mamifer, Reptil, Ocell, Anfibi, Peix}
 public enum Dieta {Carnivor, Herbivor, Omnivor}
 public enum Medi { Volador, Mari, Terrestre}
 public enum TypeOfConditions { Biome, Temperature, CompanionFood, CompanionTaxon, CompanionTransport, Null }
@@ -44,9 +44,12 @@ public class Animal : MonoBehaviour
     {
         bubbleIcon.ToggleOnBubble();
     }
-    private void OnMouseDrag()
+    private void OnMouseExit()
     {
         bubbleIcon.ToggleOffBubble();
+    }
+    private void OnMouseDrag()
+    {
         if (!selectable) { return; }
         Vector3 worldPosition;
         Vector3 mousePos = Input.mousePosition;
