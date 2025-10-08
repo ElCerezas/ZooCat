@@ -106,7 +106,37 @@ public class UIIconShow : MonoBehaviour
         {
             animalUI.SetActive(true);
             animalName.GetComponent<TMP_Text>().text = sAnimal.name;
-            animalIcons[0] = iconsTaxon[sAnimal.]
+            animalIcons[0].sprite = iconsTaxon[sAnimal.taxon.GetHashCode()]; //Taxon
+            animalIcons[1].sprite = iconsFood[sAnimal.dieta.GetHashCode()]; //Food
+            animalIcons[2].sprite = iconsTransport[sAnimal.medi.GetHashCode()];//Terrain
+
+            if(sCondition != TypeOfConditions.Null)
+            {
+                conditionIcon.gameObject.SetActive(true);
+                switch (sCondition)
+                {
+                    case TypeOfConditions.CompanionTaxon:
+                        conditionIcon.sprite = iconsTaxon[sIndexSprite];
+                        break;
+                    case TypeOfConditions.CompanionTransport:
+                        conditionIcon.sprite = iconsTransport[sIndexSprite];
+                        break;
+                    case TypeOfConditions.CompanionFood:
+                        conditionIcon.sprite = iconsFood[sIndexSprite];
+                        break;
+                    case TypeOfConditions.Temperature:
+                        conditionIcon.sprite = iconsTemperature[sIndexSprite];
+                        break;
+                    case TypeOfConditions.Biome:
+                        conditionIcon.sprite = iconsBiome[sIndexSprite];
+                        break;
+                }
+                conditionIcon.color = sNegative ? Color.red : Color.green;
+            }
+            else
+            {
+                conditionIcon.gameObject.SetActive(false);
+            }
         }
         else
         {
@@ -120,18 +150,6 @@ public class UIIconShow : MonoBehaviour
         {
             biomeUI.SetActive(false);
         }
-
-            icon.color = isNegative ? Color.red : Color.green;
-            switch (type)
-            {
-                case TypeOfConditions.CompanionTaxon: conditionGrupMod = 0; break;
-                case TypeOfConditions.CompanionTransport: conditionGrupMod = 5; break;
-                case TypeOfConditions.CompanionFood: conditionGrupMod = 8; break;
-                case TypeOfConditions.Temperature: conditionGrupMod = 11; break;
-                case TypeOfConditions.Biome: conditionGrupMod = 14; break;
-            }
-            numCon = Index;
-            icon.sprite = icons[conditionGrupMod + numCon];
     }
 
 }
