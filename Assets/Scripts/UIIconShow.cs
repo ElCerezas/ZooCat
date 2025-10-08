@@ -23,6 +23,7 @@ public class UIIconShow : MonoBehaviour
     [Header("Animation")]
     [SerializeField]Vector3 DisplayedT;
     [SerializeField]Vector3 HideT;
+    [SerializeField]float upTime, downTime;
     Vector3 currentPos;
 
     [Header("Local Saves")]
@@ -70,7 +71,7 @@ public class UIIconShow : MonoBehaviour
     IEnumerator StartUIAnimation()
     {
         float elapsedTime = 0;
-        float waitTime = 1f;
+        float waitTime = upTime;
         currentPos = transform.position;
         //Hide
         while (elapsedTime < waitTime)
@@ -88,7 +89,7 @@ public class UIIconShow : MonoBehaviour
         UpdateInfo();
 
         elapsedTime = 0;
-        waitTime = 1f;
+        waitTime = downTime;
         currentPos = transform.position;
         //Show
         while (elapsedTime < waitTime)

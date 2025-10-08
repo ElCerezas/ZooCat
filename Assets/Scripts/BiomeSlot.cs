@@ -53,7 +53,10 @@ public class BiomeSlot : MonoBehaviour
             NearSlots[i].SetColorProximity(0);
         }
     }
-    
+    private void OnMouseEnter()
+    {
+        UIIconShow.instance.NewInfo(animalInSlot, this);
+    }
     public List<BiomeSlot> GetCloseSlots()
     {
         return NearSlots;

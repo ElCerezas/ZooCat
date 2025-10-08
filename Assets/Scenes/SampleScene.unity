@@ -1169,6 +1169,8 @@ MonoBehaviour:
   iconsBiome: []
   DisplayedT: {x: 0, y: 0, z: 0}
   HideT: {x: 0, y: 2.5, z: 0}
+  upTime: 0.2
+  downTime: 0.2
 --- !u!1 &1229720052
 GameObject:
   m_ObjectHideFlags: 0
