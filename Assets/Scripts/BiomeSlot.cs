@@ -5,12 +5,15 @@ public enum Temperatura {Fred, Templat, Calent}
 public enum Bioma {Platja, Panta, Muntanya}
 public class BiomeSlot : MonoBehaviour
 {
-    [SerializeField] Bioma biome;
-    [SerializeField] Temperatura temp;
-    int id;
+    [Header("Biome Stats")]
+    public Bioma biome;
+    public Temperatura temp;
+
+    [Header("Animal in")]
     [SerializeField] bool slotPle = false;
     [SerializeField] Animal animalInSlot;
 
+    [Header("Near Slots")]
     Color[] colors = { Color.white, Color.cyan, Color.yellow };
     [SerializeField] float radius = 1f;
     [SerializeField] List<BiomeSlot> NearSlots = new List<BiomeSlot>();

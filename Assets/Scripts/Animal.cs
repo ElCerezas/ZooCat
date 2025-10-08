@@ -9,13 +9,13 @@ public enum Medi { Volador, Mari, Terrestre}
 public enum TypeOfConditions { Biome, Temperature, CompanionFood, CompanionTaxon, CompanionTransport, Null }
 public class Animal : MonoBehaviour
 {
-    //AnimalStats
+    [Header("Animal Stats")]
     public string name;
-    [SerializeField] Taxon taxon;
-    [SerializeField] Medi medi;
-    [SerializeField] Dieta dieta;
-    
-    //Condition Vars
+    public Taxon taxon;
+    public Medi medi;
+    public Dieta dieta;
+
+    [Header("Condition")]
     [SerializeField] bool isNegative;
     [SerializeField] TypeOfConditions condition;
     [ShowIf("condition", TypeOfConditions.Biome)][SerializeField] Bioma biomeCon;
@@ -24,29 +24,26 @@ public class Animal : MonoBehaviour
     [ShowIf("condition", TypeOfConditions.CompanionTaxon)][SerializeField] Taxon taxonCon;
     [ShowIf("condition", TypeOfConditions.CompanionTransport)][SerializeField] Medi transportCon;
 
+    [Header("Test Tools")]
     BiomeSlot parentSlot;
     BiomeSlot slot;
     public bool isOnQueue = true;
     public bool selectable = false;
     object workingVar = null;
     SpriteRenderer spriteRenderer;
-
-    ConditionBubbleManager bubbleIcon;
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        bubbleIcon = GetComponent<ConditionBubbleManager>();
         gameObject.name = name;
         SetWorkingVariable();
-        bubbleIcon.ReciveCondition(isNegative, condition, workingVar.GetHashCode());
     }
     private void OnMouseEnter()
     {
-        bubbleIcon.ToggleOnBubble();
+        //bubbleIcon.ToggleOnBubble();
     }
     private void OnMouseExit()
     {
-        bubbleIcon.ToggleOffBubble();
+        //bubbleIcon.ToggleOffBubble();
     }
     private void OnMouseDrag()
     {

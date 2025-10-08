@@ -52,5 +52,8 @@ TagManager:
   - name: Animal
     uniqueID: 3452347085
     locked: 0
+  - name: UI
+    uniqueID: 257883503
+    locked: 0
   m_RenderingLayers:
   - Default
