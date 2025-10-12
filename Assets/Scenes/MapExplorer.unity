@@ -150,6 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelSelectManager
   levelsToLoad:
   - {fileID: 3444660434992346064}
+  - {fileID: 599028547}
 --- !u!4 &111668442
 Transform:
   m_ObjectHideFlags: 0
