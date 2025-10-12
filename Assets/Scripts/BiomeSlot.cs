@@ -2,7 +2,7 @@ using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
 public enum Temperatura {Fred, Templat, Calent}
-public enum Bioma {Platja, Panta, Muntanya}
+public enum Bioma {Aigua, Terra, Arbre, Aire}
 public class BiomeSlot : MonoBehaviour
 {
     [Header("Biome Stats")]

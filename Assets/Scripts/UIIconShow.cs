@@ -64,8 +64,9 @@ public class UIIconShow : MonoBehaviour
         }
         if (newInfo)
         {
-            StopCoroutine(StartUIAnimation());
-            StartCoroutine(StartUIAnimation());
+            //StopCoroutine(StartUIAnimation());
+            //StartCoroutine(StartUIAnimation());
+            UpdateInfo();
         }
     }
     IEnumerator StartUIAnimation()
