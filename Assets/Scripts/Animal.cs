@@ -10,7 +10,7 @@ public enum TypeOfConditions { Biome, Temperature, CompanionFood, CompanionTaxon
 public class Animal : MonoBehaviour
 {
     [Header("Animal Stats")]
-    public string name;
+    public string animalName;
     public Taxon taxon;
     public Medi medi;
     public Dieta dieta;
@@ -34,7 +34,7 @@ public class Animal : MonoBehaviour
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        gameObject.name = name;
+        gameObject.name = animalName;
         SetWorkingVariable();
     }
     private void OnMouseEnter()

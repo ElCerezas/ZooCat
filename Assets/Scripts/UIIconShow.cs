@@ -107,7 +107,7 @@ public class UIIconShow : MonoBehaviour
         if (sAnimal != null)
         {
             animalUI.SetActive(true);
-            animalName.GetComponent<TMP_Text>().text = sAnimal.name;
+            animalName.GetComponent<TMP_Text>().text = sAnimal.animalName;
             animalIcons[0].sprite = iconsTaxon[sAnimal.taxon.GetHashCode()]; //Taxon
             animalIcons[1].sprite = iconsFood[sAnimal.dieta.GetHashCode()]; //Food
             animalIcons[2].sprite = iconsTransport[sAnimal.medi.GetHashCode()];//Terrain
