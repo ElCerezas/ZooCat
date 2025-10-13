@@ -35,7 +35,7 @@ public class BiomeSlot : MonoBehaviour
     }
     void SetColorProximity(int proximityLvl)
     {
-        SpriteRenderer.color = colors[proximityLvl];
+        //SpriteRenderer.color = colors[proximityLvl];
     }
     private void OnMouseOver()
     {

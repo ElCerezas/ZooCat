@@ -64,9 +64,9 @@ public class UIIconShow : MonoBehaviour
         }
         if (newInfo)
         {
-            //StopCoroutine(StartUIAnimation());
-            //StartCoroutine(StartUIAnimation());
-            UpdateInfo();
+            StopCoroutine(StartUIAnimation());
+            StartCoroutine(StartUIAnimation());
+            //UpdateInfo();
         }
     }
     IEnumerator StartUIAnimation()
@@ -131,6 +131,7 @@ public class UIIconShow : MonoBehaviour
                         conditionIcon.sprite = iconsTemperature[sIndexSprite];
                         break;
                     case TypeOfConditions.Biome:
+                        break; //TO DELETE
                         conditionIcon.sprite = iconsBiome[sIndexSprite];
                         break;
                 }
