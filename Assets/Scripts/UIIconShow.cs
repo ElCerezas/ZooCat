@@ -37,7 +37,7 @@ public class UIIconShow : MonoBehaviour
     {
         instance = this;
     }
-    public void NewInfo(Animal animal = null, BiomeSlot biomeSlot = null, bool isNegative = false, TypeOfConditions condition = TypeOfConditions.Null, int Index = 0)
+    public void NewInfo(Animal animal = null, BiomeSlot biomeSlot = null, bool isNegative = false, TypeOfConditions condition = TypeOfConditions.Null, int Index = 0, TypeOfConditions condition2 = TypeOfConditions.Null, int Index2 = 0)
     {
         bool newInfo = (animal != sAnimal || biomeSlot != sBiome);
         if(animal != null)

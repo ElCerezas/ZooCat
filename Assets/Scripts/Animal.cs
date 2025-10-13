@@ -15,14 +15,23 @@ public class Animal : MonoBehaviour
     public Medi medi;
     public Dieta dieta;
 
-    [Header("Condition")]
+    [Header("Condition 1")]
     [SerializeField] bool isNegative;
-    [SerializeField] TypeOfConditions condition;
+    [SerializeField] TypeOfConditions condition = TypeOfConditions.Null;
     [ShowIf("condition", TypeOfConditions.Biome)][SerializeField] Bioma biomeCon;
     [ShowIf("condition", TypeOfConditions.CompanionFood)][SerializeField] Dieta dietaCon;
     [ShowIf("condition", TypeOfConditions.Temperature)][SerializeField] Temperatura temperaturaCon;
     [ShowIf("condition", TypeOfConditions.CompanionTaxon)][SerializeField] Taxon taxonCon;
     [ShowIf("condition", TypeOfConditions.CompanionTransport)][SerializeField] Medi transportCon;
+
+    [Header("Condition 2")]
+    [SerializeField] bool isNegative2;
+    [SerializeField] TypeOfConditions condition2 = TypeOfConditions.Null;
+    [ShowIf("condition2", TypeOfConditions.Biome)][SerializeField] Bioma biomeCon2;
+    [ShowIf("condition2", TypeOfConditions.CompanionFood)][SerializeField] Dieta dietaCon2;
+    [ShowIf("condition2", TypeOfConditions.Temperature)][SerializeField] Temperatura temperaturaCon2;
+    [ShowIf("condition2", TypeOfConditions.CompanionTaxon)][SerializeField] Taxon taxonCon2;
+    [ShowIf("condition2", TypeOfConditions.CompanionTransport)][SerializeField] Medi transportCon2;
 
     [Header("Test Tools")]
     BiomeSlot parentSlot;
@@ -30,16 +39,17 @@ public class Animal : MonoBehaviour
     public bool isOnQueue = true;
     public bool selectable = false;
     object workingVar = null;
+    object workingVar2 = null;
     SpriteRenderer spriteRenderer;
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         gameObject.name = animalName;
-        SetWorkingVariable();
+        SetWorkingVariables();
     }
     private void OnMouseEnter()
     {
-        UIIconShow.instance.NewInfo(this, parentSlot, isNegative, condition, workingVar.GetHashCode());
+        UIIconShow.instance.NewInfo(this, parentSlot, isNegative, condition, workingVar.GetHashCode(), condition2, workingVar2.GetHashCode());
     }
     private void OnMouseExit()
     {
@@ -96,7 +106,9 @@ public class Animal : MonoBehaviour
     public bool CheckIfHappy ()
     {
         List <BiomeSlot> nearSlots = slot.GetCloseSlots();
-        if (workingVar == null) { return true; }
+
+        //Condicio 1
+        if (workingVar == null) {}
         else if (workingVar.GetType() == typeof(Bioma))
         {
             return (slot.GetBioma() == biomeCon && !isNegative);
@@ -129,9 +141,44 @@ public class Animal : MonoBehaviour
                 else if(!(nearSlots[i].GetComponentInChildren<Animal>().medi == transportCon && !isNegative)) { return false; }
             }
         }
+
+        //Condicio 2
+        if (workingVar2 == null) {}
+        else if (workingVar2.GetType() == typeof(Bioma))
+        {
+            return (slot.GetBioma() == biomeCon2 && !isNegative2);
+        }
+        else if (workingVar2.GetType() == typeof(Temperatura))
+        {
+            return (slot.GetTemperatura() == temperaturaCon2 && !isNegative2);
+        }
+        else if (workingVar2.GetType() == typeof(Dieta))
+        {
+            for (int i = 0; i < nearSlots.Count; i++)
+            {
+                if (!nearSlots[i].SlotPle) { }
+                else if (!(nearSlots[i].GetComponentInChildren<Animal>().dieta == dietaCon2 && !isNegative2)) { return false; }
+            }
+        }
+        else if (workingVar2.GetType() == typeof(Taxon))
+        {
+            for (int i = 0; i < nearSlots.Count; i++)
+            {
+                if (!nearSlots[i].SlotPle) {}
+                else if (!(nearSlots[i].GetComponentInChildren<Animal>().taxon == taxonCon2 && !isNegative2)) { Debug.Log("Condició no cumplida"); return false; }
+            }
+        }
+        else if (workingVar2.GetType() == typeof(Medi))
+        {
+            for (int i = 0; i < nearSlots.Count; i++)
+            {
+                if (!nearSlots[i].SlotPle) { }
+                else if (!(nearSlots[i].GetComponentInChildren<Animal>().medi == transportCon2 && !isNegative2)) { return false; }
+            }
+        }
         return true;
     }
-    void SetWorkingVariable()
+    void SetWorkingVariables()
     {
         switch (condition)
         {
@@ -152,6 +199,27 @@ public class Animal : MonoBehaviour
                 break;
             default:
                 workingVar = null;
+                break;
+        }
+        switch (condition2)
+        {
+            case TypeOfConditions.Biome:
+                workingVar2 = biomeCon2;
+                break;
+            case TypeOfConditions.CompanionFood:
+                workingVar2 = dietaCon2;
+                break;
+            case TypeOfConditions.Temperature:
+                workingVar2 = temperaturaCon2;
+                break;
+            case TypeOfConditions.CompanionTaxon:
+                workingVar2 = taxonCon2;
+                break;
+            case TypeOfConditions.CompanionTransport:
+                workingVar2 = transportCon2;
+                break;
+            default:
+                workingVar2 = null;
                 break;
         }
     }
