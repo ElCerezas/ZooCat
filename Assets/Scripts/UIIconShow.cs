@@ -11,14 +11,14 @@ public class UIIconShow : MonoBehaviour
     [SerializeField] Image[] animalIcons; //Taxon - Food - Transport
     [SerializeField] Image[] biomeIcons; //Temperature - Biome
     [SerializeField] GameObject animalUI, biomeUI, animalName;
-    [SerializeField] Image conditionIcon;
+    [SerializeField] Image conditionIcon1, conditionIcon2;
 
     [Header("Sprites")]
     [SerializeField] Sprite[] iconsTaxon; //Mamifer, Reptil, Ocell, Anfibi, Peix
     [SerializeField] Sprite[] iconsFood; //Carnivor, Herbivor, Omnivor
     [SerializeField] Sprite[] iconsTransport; //Volador, Mari, Terrestre
     [SerializeField] Sprite[] iconsTemperature; //Fred, Templat, Calent
-    [SerializeField] Sprite[] iconsBiome; //
+    [SerializeField] Sprite[] iconsBiome; //Aigua, Terra, Arbre, Aire
 
     [Header("Animation")]
     [SerializeField]Vector3 DisplayedT;
@@ -29,15 +29,21 @@ public class UIIconShow : MonoBehaviour
     [Header("Local Saves")]
     Animal sAnimal = null;
     BiomeSlot sBiome = null;
-    bool sNegative = false;
-    TypeOfConditions sCondition = TypeOfConditions.Null;
-    int sIndexSprite = 0;
-    
+
+    bool sNegative1 = false;
+    TypeOfConditions sCondition1 = TypeOfConditions.Null;
+    int sIndexSprite1 = 0;
+
+    bool sNegative2 = false;
+    TypeOfConditions sCondition2 = TypeOfConditions.Null;
+    int sIndexSprite2 = 0;
+
+
     void Awake()
     {
         instance = this;
     }
-    public void NewInfo(Animal animal = null, BiomeSlot biomeSlot = null, bool isNegative = false, TypeOfConditions condition = TypeOfConditions.Null, int Index = 0, TypeOfConditions condition2 = TypeOfConditions.Null, int Index2 = 0)
+    public void NewInfo(Animal animal = null, BiomeSlot biomeSlot = null, bool isNegative = false, TypeOfConditions condition = TypeOfConditions.Null, int Index = 0, bool isNegative2 = false, TypeOfConditions condition2 = TypeOfConditions.Null, int Index2 = 0)
     {
         bool newInfo = (animal != sAnimal || biomeSlot != sBiome);
         if(animal != null)
@@ -45,9 +51,15 @@ public class UIIconShow : MonoBehaviour
             sAnimal = animal;
             if (condition != TypeOfConditions.Null)
             {
-                sCondition = condition;
-                sNegative = isNegative;
-                sIndexSprite = Index;
+                sCondition1 = condition;
+                sNegative1 = isNegative;
+                sIndexSprite1 = Index;
+            }
+            if (condition2 != TypeOfConditions.Null)
+            {
+                sCondition2 = condition2;
+                sNegative2 = isNegative2;
+                sIndexSprite2 = Index2;
             }
         }
         else
@@ -113,33 +125,62 @@ public class UIIconShow : MonoBehaviour
             animalIcons[1].sprite = iconsFood[sAnimal.dieta.GetHashCode()]; //Food
             animalIcons[2].sprite = iconsTransport[sAnimal.medi.GetHashCode()];//Terrain
 
-            if(sCondition != TypeOfConditions.Null)
+            if(sCondition1 != TypeOfConditions.Null)
             {
-                conditionIcon.gameObject.SetActive(true);
-                switch (sCondition)
+                conditionIcon1.gameObject.SetActive(true);
+                switch (sCondition1)
                 {
                     case TypeOfConditions.CompanionTaxon:
-                        conditionIcon.sprite = iconsTaxon[sIndexSprite];
+                        conditionIcon1.sprite = iconsTaxon[sIndexSprite1];
                         break;
                     case TypeOfConditions.CompanionTransport:
-                        conditionIcon.sprite = iconsTransport[sIndexSprite];
+                        conditionIcon1.sprite = iconsTransport[sIndexSprite1];
                         break;
                     case TypeOfConditions.CompanionFood:
-                        conditionIcon.sprite = iconsFood[sIndexSprite];
+                        conditionIcon1.sprite = iconsFood[sIndexSprite1];
                         break;
                     case TypeOfConditions.Temperature:
-                        conditionIcon.sprite = iconsTemperature[sIndexSprite];
+                        conditionIcon1.sprite = iconsTemperature[sIndexSprite1];
                         break;
                     case TypeOfConditions.Biome:
                         break; //TO DELETE
-                        conditionIcon.sprite = iconsBiome[sIndexSprite];
+                        conditionIcon1.sprite = iconsBiome[sIndexSprite1];
                         break;
                 }
-                conditionIcon.color = sNegative ? Color.red : Color.green;
+                conditionIcon1.color = sNegative1 ? Color.red : Color.green;
             }
             else
             {
-                conditionIcon.gameObject.SetActive(false);
+                conditionIcon1.gameObject.SetActive(false);
+            }
+
+            if (sCondition2 != TypeOfConditions.Null)
+            {
+                conditionIcon2.gameObject.SetActive(true);
+                switch (sCondition2)
+                {
+                    case TypeOfConditions.CompanionTaxon:
+                        conditionIcon2.sprite = iconsTaxon[sIndexSprite2];
+                        break;
+                    case TypeOfConditions.CompanionTransport:
+                        conditionIcon2.sprite = iconsTransport[sIndexSprite2];
+                        break;
+                    case TypeOfConditions.CompanionFood:
+                        conditionIcon2.sprite = iconsFood[sIndexSprite2];
+                        break;
+                    case TypeOfConditions.Temperature:
+                        conditionIcon2.sprite = iconsTemperature[sIndexSprite2];
+                        break;
+                    case TypeOfConditions.Biome:
+                        break; //TO DELETE
+                        conditionIcon2.sprite = iconsBiome[sIndexSprite2];
+                        break;
+                }
+                conditionIcon2.color = sNegative2 ? Color.red : Color.green;
+            }
+            else
+            {
+                conditionIcon2.gameObject.SetActive(false);
             }
         }
         else

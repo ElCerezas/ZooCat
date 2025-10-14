@@ -49,7 +49,9 @@ public class Animal : MonoBehaviour
     }
     private void OnMouseEnter()
     {
-        UIIconShow.instance.NewInfo(this, parentSlot, isNegative, condition, workingVar.GetHashCode(), condition2, workingVar2.GetHashCode());
+        int var1 = (workingVar.GetHashCode() == null) ? 0 : workingVar.GetHashCode();
+        int var2 = (workingVar2.GetHashCode() == null) ? 0 : workingVar2.GetHashCode();
+        UIIconShow.instance.NewInfo(this, parentSlot, isNegative, condition, var1 ,isNegative2 ,condition2, var2 );
     }
     private void OnMouseExit()
     {
@@ -198,7 +200,7 @@ public class Animal : MonoBehaviour
                 workingVar = transportCon;
                 break;
             default:
-                workingVar = null;
+                workingVar = TypeOfConditions.Null;
                 break;
         }
         switch (condition2)
@@ -219,7 +221,7 @@ public class Animal : MonoBehaviour
                 workingVar2 = transportCon2;
                 break;
             default:
-                workingVar2 = null;
+                workingVar2 = TypeOfConditions.Null;
                 break;
         }
     }
