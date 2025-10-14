@@ -6,7 +6,7 @@ public class SettingsManager : MonoBehaviour
     float musicVolume, soundVolume;
     public static SettingsManager instance;
     [SerializeField] Canvas settingsMenu;
-    bool displayedSettings = false;
+    bool displayedSettings = true;
     [SerializeField] float showTime = 1f;
     [SerializeField] Vector3 hiddenPos, shownPos;
 
