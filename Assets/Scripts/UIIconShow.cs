@@ -25,6 +25,7 @@ public class UIIconShow : MonoBehaviour
     [SerializeField]Vector3 HideT;
     [SerializeField]float upTime, downTime;
     Vector3 currentPos;
+    [SerializeField] AnimationCurve curve;
 
     [Header("Local Saves")]
     Animal sAnimal = null;
@@ -89,7 +90,8 @@ public class UIIconShow : MonoBehaviour
         //Hide
         while (elapsedTime < waitTime)
         {
-            transform.position = Vector3.Lerp(currentPos, HideT, (elapsedTime / waitTime));
+            float t1 = curve.Evaluate(elapsedTime / waitTime);
+            transform.position = Vector3.Lerp(currentPos, HideT, t1);
             elapsedTime += Time.deltaTime;
 
             // Yield here
@@ -100,14 +102,15 @@ public class UIIconShow : MonoBehaviour
         transform.position = HideT;
 
         UpdateInfo();
-
+        
         elapsedTime = 0;
         waitTime = downTime;
         currentPos = transform.position;
         //Show
         while (elapsedTime < waitTime)
         {
-            transform.position = Vector3.Lerp(currentPos, DisplayedT, (elapsedTime / waitTime));
+            float t1 = curve.Evaluate(elapsedTime / waitTime);
+            transform.position = Vector3.Lerp(currentPos, DisplayedT, t1);
             elapsedTime += Time.deltaTime;
 
             // Yield here
@@ -143,8 +146,7 @@ public class UIIconShow : MonoBehaviour
                         conditionIcon1.sprite = iconsTemperature[sIndexSprite1];
                         break;
                     case TypeOfConditions.Biome:
-                        break; //TO DELETE
-                        conditionIcon1.sprite = iconsBiome[sIndexSprite1];
+                        //conditionIcon1.sprite = iconsBiome[sIndexSprite1];
                         break;
                 }
                 conditionIcon1.color = sNegative1 ? Color.red : Color.green;
@@ -172,8 +174,7 @@ public class UIIconShow : MonoBehaviour
                         conditionIcon2.sprite = iconsTemperature[sIndexSprite2];
                         break;
                     case TypeOfConditions.Biome:
-                        break; //TO DELETE
-                        conditionIcon2.sprite = iconsBiome[sIndexSprite2];
+                        //conditionIcon2.sprite = iconsBiome[sIndexSprite2];
                         break;
                 }
                 conditionIcon2.color = sNegative2 ? Color.red : Color.green;

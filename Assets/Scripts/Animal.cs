@@ -49,8 +49,8 @@ public class Animal : MonoBehaviour
     }
     private void OnMouseEnter()
     {
-        int var1 = (workingVar.GetHashCode() == null) ? 0 : workingVar.GetHashCode();
-        int var2 = (workingVar2.GetHashCode() == null) ? 0 : workingVar2.GetHashCode();
+        int var1 = workingVar.GetHashCode(); //(workingVar.GetHashCode() == null) ? 0 : workingVar.GetHashCode();
+        int var2 = workingVar2.GetHashCode(); //(workingVar2.GetHashCode() == null) ? 0 : workingVar2.GetHashCode();
         UIIconShow.instance.NewInfo(this, parentSlot, isNegative, condition, var1 ,isNegative2 ,condition2, var2 );
     }
     private void OnMouseExit()
