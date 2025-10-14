@@ -36,4 +36,8 @@ public class CuaLogic : MonoBehaviour
             }
         }
     }
+    public bool IsCuaEmpty()
+    {
+        return (animalCua.Count == 0);
+    }
 }

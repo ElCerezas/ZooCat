@@ -1,12 +1,20 @@
 using NUnit.Framework;
 using System.Collections.Generic;
+using System.Net.Http.Headers;
+using TMPro;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
     public static LevelManager instance;
+
+    [Header("Slots & Animals")]
     public List<Animal> animals = new List<Animal>();
     public List<Animal> placedAnimals = new List<Animal>();
+
+    [Header("Timer")]
+    [SerializeField] TextMeshProUGUI timerText;
+    float time = 0;
     void Awake()
     {
         instance = this;
@@ -15,6 +23,17 @@ public class LevelManager : MonoBehaviour
         {
             animals.Add(gmObj[i].GetComponent<Animal>());
         }
+    }
+    private void Update()
+    {
+        time += Time.deltaTime;
+        timerText.text = TimerFormat(time);
+    }
+    string TimerFormat(float t)
+    {
+        string min = Mathf.Floor(t / 60).ToString("00");
+        string sec = Mathf.Floor(t % 60).ToString("00");
+        return min + ":" + sec;
     }
     public void  OverallHappiness()
     {
@@ -32,7 +51,15 @@ public class LevelManager : MonoBehaviour
         }
         if (allHappy)
         {
-            CuaLogic.instance.UpdateCua();
+            if (CuaLogic.instance.IsCuaEmpty())
+            {
+                //TO DO: WIN
+                Debug.Log("WIN");
+            }
+            else
+            {
+                CuaLogic.instance.UpdateCua();
+            }
         }
     }
 }
