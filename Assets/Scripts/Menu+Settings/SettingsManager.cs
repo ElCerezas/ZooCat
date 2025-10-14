@@ -4,11 +4,13 @@ using UnityEngine;
 public class SettingsManager : MonoBehaviour
 {
     float musicVolume, soundVolume;
+    int soundToggle, musicToggle;
     public static SettingsManager instance;
     [SerializeField] Canvas settingsMenu;
     bool displayedSettings = true;
     [SerializeField] float showTime = 1f;
     [SerializeField] Vector3 hiddenPos, shownPos;
+    bool animatingSettings = false;
 
     public AnimationCurve curve;
     private void Awake()
@@ -17,6 +19,8 @@ public class SettingsManager : MonoBehaviour
         {
             musicVolume = PlayerPrefs.GetFloat("musicVolume", 100);
             soundVolume = PlayerPrefs.GetFloat("soundVolume", 100);
+            musicToggle = PlayerPrefs.GetInt("musicToggle", 1);
+            soundToggle = PlayerPrefs.GetInt("musicToggle", 1);
             DontDestroyOnLoad(gameObject);
             DontDestroyOnLoad(settingsMenu.gameObject);
             instance = this;
@@ -29,15 +33,15 @@ public class SettingsManager : MonoBehaviour
     }
     public void SetVolumes(float MusicVolume = -1, float SoundVolume = -1)
     {
-        if (!(MusicVolume <= -1))
+        if ((MusicVolume >= 0))
         {
             musicVolume = MusicVolume;
-            musicVolume = PlayerPrefs.GetFloat("musicVolume", 100);
+            PlayerPrefs.SetFloat("musicVolume", musicVolume);
         }
-        if (!(SoundVolume <= -1))
+        if ((SoundVolume >= 0))
         {
             soundVolume = SoundVolume;
-            soundVolume = PlayerPrefs.GetFloat("soundVolume", 100);
+            PlayerPrefs.SetFloat("soundVolume", soundVolume);
         }
     }
     public float GetSoundVolume()
@@ -51,8 +55,12 @@ public class SettingsManager : MonoBehaviour
     public void OnSettings()
     {
         displayedSettings = !displayedSettings;
-        StopCoroutine(ShowOrHide());
-        StartCoroutine(ShowOrHide());
+        Debug.Log(ShowOrHide().Current);
+        if(!animatingSettings)
+        {
+            animatingSettings = true;
+            StartCoroutine(ShowOrHide());
+        }
     }
     IEnumerator ShowOrHide()
     {
@@ -86,6 +94,7 @@ public class SettingsManager : MonoBehaviour
                 yield return null;
             }
         }
+        animatingSettings = false;
         yield return null;
     }
 }

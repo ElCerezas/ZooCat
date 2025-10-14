@@ -537,6 +537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIComponents
   slider: {fileID: 0}
+  percentage: {fileID: 0}
 --- !u!114 &199529791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -786,6 +787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIComponents
   slider: {fileID: 0}
+  percentage: {fileID: 0}
 --- !u!114 &423009717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -902,19 +904,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 894641893395828576, guid: 4bb7c15b807f45c43bd8b7d080fcf79e, type: 3}
       propertyPath: m_Pivot.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 894641893395828576, guid: 4bb7c15b807f45c43bd8b7d080fcf79e, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 894641893395828576, guid: 4bb7c15b807f45c43bd8b7d080fcf79e, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 894641893860645206, guid: 4bb7c15b807f45c43bd8b7d080fcf79e, type: 3}
       propertyPath: m_Name
-      value: UISwitcher (1)
+      value: MusicToggle
       objectReference: {fileID: 0}
     - target: {fileID: 894641893860645206, guid: 4bb7c15b807f45c43bd8b7d080fcf79e, type: 3}
       propertyPath: m_TagString
@@ -1002,7 +1004,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 894641893860645208, guid: 4bb7c15b807f45c43bd8b7d080fcf79e, type: 3}
       propertyPath: m_isOnNullable
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 894641893860645208, guid: 4bb7c15b807f45c43bd8b7d080fcf79e, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size
@@ -1063,6 +1065,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIComponents
   slider: {fileID: 1162094725}
+  percentage: {fileID: 0}
 --- !u!1 &515264411
 GameObject:
   m_ObjectHideFlags: 0
@@ -1581,9 +1584,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Musica:
-
-'
+  m_text: "M\xFAsica:\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4e72326265797094fb61ff380df06341, type: 2}
   m_sharedMaterial: {fileID: 1139985375460464385, guid: 4e72326265797094fb61ff380df06341, type: 2}
@@ -1928,6 +1929,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIComponents
   slider: {fileID: 0}
+  percentage: {fileID: 0}
 --- !u!114 &786807304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2412,6 +2414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIComponents
   slider: {fileID: 0}
+  percentage: {fileID: 0}
 --- !u!95 &849365567
 Animator:
   serializedVersion: 7
@@ -2719,7 +2722,7 @@ GameObject:
   - component: {fileID: 1045154387}
   - component: {fileID: 1045154388}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: SoundSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2792,16 +2795,16 @@ MonoBehaviour:
   m_HandleRect: {fileID: 515264412}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
-  m_Value: 0
+  m_MaxValue: 100
+  m_WholeNumbers: 1
+  m_Value: 50
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1045154388}
         m_TargetAssemblyTypeName: UIComponents, Assembly-CSharp
         m_MethodName: OnSliderSound
-        m_Mode: 4
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2823,6 +2826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIComponents
   slider: {fileID: 0}
+  percentage: {fileID: 1342031436}
 --- !u!1 &1162094723
 GameObject:
   m_ObjectHideFlags: 0
@@ -2835,7 +2839,7 @@ GameObject:
   - component: {fileID: 1162094725}
   - component: {fileID: 1162094726}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: MusicSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2908,16 +2912,16 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2028297239}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
-  m_Value: 0
+  m_MaxValue: 100
+  m_WholeNumbers: 1
+  m_Value: 50
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1162094726}
         m_TargetAssemblyTypeName: UIComponents, Assembly-CSharp
         m_MethodName: OnSliderMusic
-        m_Mode: 4
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2939,6 +2943,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIComponents
   slider: {fileID: 0}
+  percentage: {fileID: 1857480534}
 --- !u!1 &1172227976
 GameObject:
   m_ObjectHideFlags: 0
@@ -3222,6 +3227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIComponents
   slider: {fileID: 0}
+  percentage: {fileID: 0}
 --- !u!95 &1186569169
 Animator:
   serializedVersion: 7
@@ -3392,6 +3398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIComponents
   slider: {fileID: 0}
+  percentage: {fileID: 0}
 --- !u!95 &1197735419
 Animator:
   serializedVersion: 7
@@ -4420,19 +4427,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 894641893395828576, guid: 4bb7c15b807f45c43bd8b7d080fcf79e, type: 3}
       propertyPath: m_Pivot.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 894641893395828576, guid: 4bb7c15b807f45c43bd8b7d080fcf79e, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 894641893395828576, guid: 4bb7c15b807f45c43bd8b7d080fcf79e, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 894641893860645206, guid: 4bb7c15b807f45c43bd8b7d080fcf79e, type: 3}
       propertyPath: m_Name
-      value: UISwitcher
+      value: SoundToggle
       objectReference: {fileID: 0}
     - target: {fileID: 894641893860645206, guid: 4bb7c15b807f45c43bd8b7d080fcf79e, type: 3}
       propertyPath: m_TagString
@@ -4520,7 +4527,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 894641893860645208, guid: 4bb7c15b807f45c43bd8b7d080fcf79e, type: 3}
       propertyPath: m_isOnNullable
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 894641893860645208, guid: 4bb7c15b807f45c43bd8b7d080fcf79e, type: 3}
       propertyPath: m_nullValueEnabled
@@ -4597,6 +4604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIComponents
   slider: {fileID: 1045154387}
+  percentage: {fileID: 0}
 --- !u!1 &1967549614
 GameObject:
   m_ObjectHideFlags: 0
@@ -4856,6 +4864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIComponents
   slider: {fileID: 0}
+  percentage: {fileID: 0}
 --- !u!95 &2102340708
 Animator:
   serializedVersion: 7
