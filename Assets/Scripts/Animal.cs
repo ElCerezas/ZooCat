@@ -67,6 +67,7 @@ public class Animal : MonoBehaviour
         {
             LevelManager.instance.placedAnimals.Add(this);
             isOnQueue = false;
+            LevelManager.instance.canUpdateCua = true;
             LevelManager.instance.OverallHappiness();
         }
         LevelManager.instance.OverallHappiness();

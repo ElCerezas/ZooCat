@@ -11,6 +11,7 @@ public class LevelManager : MonoBehaviour
     [Header("Slots & Animals")]
     public List<Animal> animals = new List<Animal>();
     public List<Animal> placedAnimals = new List<Animal>();
+    public bool canUpdateCua = false;
 
     [Header("Timer")]
     [SerializeField] TextMeshProUGUI timerText;
@@ -58,7 +59,11 @@ public class LevelManager : MonoBehaviour
             }
             else
             {
-                CuaLogic.instance.AdvanceCua();
+                if (canUpdateCua)
+                {
+                    CuaLogic.instance.AdvanceCua();
+                    canUpdateCua = false;
+                }
             }
         }
     }
