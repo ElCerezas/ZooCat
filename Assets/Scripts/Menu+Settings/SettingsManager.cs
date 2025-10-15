@@ -55,7 +55,6 @@ public class SettingsManager : MonoBehaviour
     public void OnSettings()
     {
         displayedSettings = !displayedSettings;
-        Debug.Log(ShowOrHide().Current);
         if(!animatingSettings)
         {
             animatingSettings = true;
