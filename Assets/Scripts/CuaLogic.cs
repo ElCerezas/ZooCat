@@ -1,43 +1,73 @@
-using NUnit.Framework;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CuaLogic : MonoBehaviour
 {
     public static CuaLogic instance;
+
     public List<Transform> animalCua = new List<Transform>();
     public Transform slot1, slot2, storage;
 
-    private void Start()
+    private void Awake()
     {
         instance = this;
+    }
+
+    private void Start()
+    {
         UpdateCua();
     }
+
     public void UpdateCua()
     {
         for (int i = 0; i < animalCua.Count; i++)
         {
+            Transform animal = animalCua[i];
+            Animal a = animal.GetComponent<Animal>();
             if (i == 0)
             {
-                animalCua[i].position = slot1.position;
-                animalCua[i].GetComponent<Animal>().selectable = true;
-                animalCua[i].parent = slot1;
+                animal.SetParent(slot1);
+                animal.position = slot1.position;
+                a.selectable = true;
+                a.parentSlot = null;
             }
             else if (i == 1)
             {
-                animalCua[i].position = slot2.position;
-                animalCua[i].parent = slot2;
+                animal.SetParent(slot2);
+                animal.position = slot2.position;
+                a.selectable = false;
+                a.parentSlot = null;
             }
             else
             {
-                animalCua[i].position = storage.position;
-                animalCua[i].parent = storage;
+                animal.SetParent(storage);
+                animal.position = storage.position;
+                a.selectable = false;
+                a.parentSlot = null;
             }
+        }
+        foreach (var t in animalCua)
+        {
+            t.GetComponent<AnimalDragHandler>().ResetPosition();
+        }
+
+    }
+    public void AdvanceCua()
+    {
+        if (animalCua.Count == 0) return;
+        animalCua.RemoveAt(0);
+        UpdateCua();
+    }
+    public void RegisterAnimal(Transform newAnimal)
+    {
+        if (!animalCua.Contains(newAnimal))
+        {
+            animalCua.Add(newAnimal);
+            UpdateCua();
         }
     }
     public bool IsCuaEmpty()
     {
-        return (animalCua.Count == 0);
+        return animalCua.Count == 0;
     }
 }

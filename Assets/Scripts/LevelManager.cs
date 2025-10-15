@@ -58,7 +58,7 @@ public class LevelManager : MonoBehaviour
             }
             else
             {
-                CuaLogic.instance.UpdateCua();
+                CuaLogic.instance.AdvanceCua();
             }
         }
     }
