@@ -9,23 +9,24 @@ public class UIIconShow : MonoBehaviour
 
     [Header("UI")]
     [SerializeField] Image[] animalIcons; //Taxon - Food - Transport
-    [SerializeField] Image[] biomeIcons; //Temperature - Biome
+    [SerializeField] Image[] biomeIcons;  //Temperature - Biome
     [SerializeField] GameObject animalUI, biomeUI, animalName;
     [SerializeField] Image conditionIcon1, conditionIcon2;
 
     [Header("Sprites")]
-    [SerializeField] Sprite[] iconsTaxon; //Mamifer, Reptil, Ocell, Anfibi, Peix
-    [SerializeField] Sprite[] iconsFood; //Carnivor, Herbivor, Omnivor
-    [SerializeField] Sprite[] iconsTransport; //Volador, Mari, Terrestre
-    [SerializeField] Sprite[] iconsTemperature; //Fred, Templat, Calent
-    [SerializeField] Sprite[] iconsBiome; //Aigua, Terra, Arbre, Aire
+    [SerializeField] Sprite[] iconsTaxon;       // Mamífero, Reptil, Ave, etc.
+    [SerializeField] Sprite[] iconsFood;        // Carnívoro, Herbívoro, Omnívoro
+    [SerializeField] Sprite[] iconsTransport;   // Volador, Marino, Terrestre
+    [SerializeField] Sprite[] iconsTemperature; // Frío, Templado, Cálido
+    [SerializeField] Sprite[] iconsBiome;       // Agua, Tierra, Árbol, Aire
 
     [Header("Animation")]
-    [SerializeField]Vector3 DisplayedT;
-    [SerializeField]Vector3 HideT;
-    [SerializeField]float upTime, downTime;
-    Vector3 currentPos;
+    [SerializeField] Vector3 DisplayedT;
+    [SerializeField] Vector3 HideT;
+    [SerializeField] float upTime = 0.3f;
+    [SerializeField] float downTime = 0.3f;
     [SerializeField] AnimationCurve curve;
+    private Vector3 currentPos;
 
     [Header("Local Saves")]
     Animal sAnimal = null;
@@ -39,6 +40,7 @@ public class UIIconShow : MonoBehaviour
     TypeOfConditions sCondition2 = TypeOfConditions.Null;
     int sIndexSprite2 = 0;
 
+    Coroutine activeAnimation = null;
 
     void Awake()
     {
@@ -47,7 +49,9 @@ public class UIIconShow : MonoBehaviour
     public void NewInfo(Animal animal = null, BiomeSlot biomeSlot = null, bool isNegative = false, TypeOfConditions condition = TypeOfConditions.Null, int Index = 0, bool isNegative2 = false, TypeOfConditions condition2 = TypeOfConditions.Null, int Index2 = 0)
     {
         bool newInfo = (animal != sAnimal || biomeSlot != sBiome);
-        if(animal != null)
+
+        // Guardar referencias nuevas
+        if (animal != null)
         {
             sAnimal = animal;
             if (condition != TypeOfConditions.Null)
@@ -63,23 +67,20 @@ public class UIIconShow : MonoBehaviour
                 sIndexSprite2 = Index2;
             }
         }
-        else
-        {
-            sAnimal = null;
-        }
-        if (biomeSlot != null)
-        {
-            sBiome = biomeSlot;
-        }
-        else
-        {
-            sBiome = null;
-        }
+        else sAnimal = null;
+
+        if (biomeSlot != null) sBiome = biomeSlot;
+        else sBiome = null;
+
+        // Control de animación
         if (newInfo)
         {
-            StopCoroutine(StartUIAnimation());
-            StartCoroutine(StartUIAnimation());
-            //UpdateInfo();
+            if (activeAnimation != null)
+            {
+                StopCoroutine(activeAnimation);
+                activeAnimation = null;
+            }
+            activeAnimation = StartCoroutine(StartUIAnimation());
         }
     }
     IEnumerator StartUIAnimation()
@@ -87,36 +88,34 @@ public class UIIconShow : MonoBehaviour
         float elapsedTime = 0;
         float waitTime = upTime;
         currentPos = transform.position;
-        //Hide
+
+        // Animación de ocultar
         while (elapsedTime < waitTime)
         {
             float t1 = curve.Evaluate(elapsedTime / waitTime);
             transform.position = Vector3.Lerp(currentPos, HideT, t1);
             elapsedTime += Time.deltaTime;
-
-            // Yield here
             yield return null;
         }
 
-        // Make sure we got there
         transform.position = HideT;
-
         UpdateInfo();
-        
+
         elapsedTime = 0;
         waitTime = downTime;
         currentPos = transform.position;
-        //Show
+
+        // Animación de mostrar
         while (elapsedTime < waitTime)
         {
-            float t1 = curve.Evaluate(elapsedTime / waitTime);
-            transform.position = Vector3.Lerp(currentPos, DisplayedT, t1);
+            float t2 = curve.Evaluate(elapsedTime / waitTime);
+            transform.position = Vector3.Lerp(currentPos, DisplayedT, t2);
             elapsedTime += Time.deltaTime;
-
-            // Yield here
             yield return null;
         }
-        yield return null;
+
+        transform.position = DisplayedT;
+        activeAnimation = null;
     }
     void UpdateInfo()
     {
@@ -124,81 +123,50 @@ public class UIIconShow : MonoBehaviour
         {
             animalUI.SetActive(true);
             animalName.GetComponent<TMP_Text>().text = sAnimal.animalName;
-            animalIcons[0].sprite = iconsTaxon[sAnimal.taxon.GetHashCode()]; //Taxon
-            animalIcons[1].sprite = iconsFood[sAnimal.dieta.GetHashCode()]; //Food
-            animalIcons[2].sprite = iconsTransport[sAnimal.medi.GetHashCode()];//Terrain
+            animalIcons[0].sprite = iconsTaxon[sAnimal.taxon.GetHashCode()];
+            animalIcons[1].sprite = iconsFood[sAnimal.dieta.GetHashCode()];
+            animalIcons[2].sprite = iconsTransport[sAnimal.medi.GetHashCode()];
 
-            if(sCondition1 != TypeOfConditions.Null)
+            // Condición 1
+            if (sCondition1 != TypeOfConditions.Null)
             {
                 conditionIcon1.gameObject.SetActive(true);
-                switch (sCondition1)
-                {
-                    case TypeOfConditions.CompanionTaxon:
-                        conditionIcon1.sprite = iconsTaxon[sIndexSprite1];
-                        break;
-                    case TypeOfConditions.CompanionTransport:
-                        conditionIcon1.sprite = iconsTransport[sIndexSprite1];
-                        break;
-                    case TypeOfConditions.CompanionFood:
-                        conditionIcon1.sprite = iconsFood[sIndexSprite1];
-                        break;
-                    case TypeOfConditions.Temperature:
-                        conditionIcon1.sprite = iconsTemperature[sIndexSprite1];
-                        break;
-                    case TypeOfConditions.Biome:
-                        //conditionIcon1.sprite = iconsBiome[sIndexSprite1];
-                        break;
-                }
+                conditionIcon1.sprite = GetSpriteForCondition(sCondition1, sIndexSprite1);
                 conditionIcon1.color = sNegative1 ? Color.red : Color.green;
             }
-            else
-            {
-                conditionIcon1.gameObject.SetActive(false);
-            }
+            else conditionIcon1.gameObject.SetActive(false);
 
+            // Condición 2
             if (sCondition2 != TypeOfConditions.Null)
             {
                 conditionIcon2.gameObject.SetActive(true);
-                switch (sCondition2)
-                {
-                    case TypeOfConditions.CompanionTaxon:
-                        conditionIcon2.sprite = iconsTaxon[sIndexSprite2];
-                        break;
-                    case TypeOfConditions.CompanionTransport:
-                        conditionIcon2.sprite = iconsTransport[sIndexSprite2];
-                        break;
-                    case TypeOfConditions.CompanionFood:
-                        conditionIcon2.sprite = iconsFood[sIndexSprite2];
-                        break;
-                    case TypeOfConditions.Temperature:
-                        conditionIcon2.sprite = iconsTemperature[sIndexSprite2];
-                        break;
-                    case TypeOfConditions.Biome:
-                        //conditionIcon2.sprite = iconsBiome[sIndexSprite2];
-                        break;
-                }
+                conditionIcon2.sprite = GetSpriteForCondition(sCondition2, sIndexSprite2);
                 conditionIcon2.color = sNegative2 ? Color.red : Color.green;
             }
-            else
-            {
-                conditionIcon2.gameObject.SetActive(false);
-            }
+            else conditionIcon2.gameObject.SetActive(false);
         }
         else
         {
             animalUI.SetActive(false);
         }
+
         if (sBiome != null)
         {
-            biomeIcons[0].sprite = iconsTemperature[sBiome.temp.GetHashCode()]; //Temperature
-            //biomeIcons[0].sprite = iconsBiome[sBiome.biome.GetHashCode()]; //Biome
-
+            biomeIcons[0].sprite = iconsTemperature[sBiome.temp.GetHashCode()];
             biomeUI.SetActive(true);
         }
-        else
+        else biomeUI.SetActive(false);
+    }
+    Sprite GetSpriteForCondition(TypeOfConditions type, int index)
+    {
+        switch (type)
         {
-            biomeUI.SetActive(false);
+            case TypeOfConditions.CompanionTaxon: return iconsTaxon[index];
+            case TypeOfConditions.CompanionTransport: return iconsTransport[index];
+            case TypeOfConditions.CompanionFood: return iconsFood[index];
+            case TypeOfConditions.Temperature: return iconsTemperature[index];
+            //case TypeOfConditions.Biome: return iconsBiome[index];
+            default: return null;
         }
     }
-
 }

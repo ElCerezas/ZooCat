@@ -48,7 +48,6 @@ public class Animal : MonoBehaviour
         gameObject.name = animalName;
         SetWorkingVariables();
     }
-
     public void SetParentSlot(BiomeSlot newSlot)
     {
         if (parentSlot != null) { parentSlot.SlotPle = false; }
@@ -72,13 +71,11 @@ public class Animal : MonoBehaviour
         }
         LevelManager.instance.OverallHappiness();
     }
-
     public void SetMood(bool isHappy)
     {
         if (!spriteRenderer) spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.color = isHappy ? Color.green : Color.red;
     }
-
     void SetWorkingVariables()
     {
         workingVar = condition switch
@@ -88,7 +85,7 @@ public class Animal : MonoBehaviour
             TypeOfConditions.Temperature => temperaturaCon,
             TypeOfConditions.CompanionTaxon => taxonCon,
             TypeOfConditions.CompanionTransport => transportCon,
-            _ => null
+            _ => TypeOfConditions.Null
         };
 
         workingVar2 = condition2 switch
@@ -98,7 +95,7 @@ public class Animal : MonoBehaviour
             TypeOfConditions.Temperature => temperaturaCon2,
             TypeOfConditions.CompanionTaxon => taxonCon2,
             TypeOfConditions.CompanionTransport => transportCon2,
-            _ => null
+            _ => TypeOfConditions.Null
         };
     }
     public bool CheckIfHappy()
@@ -113,7 +110,6 @@ public class Animal : MonoBehaviour
         SetMood(happy1 && happy2);
         return happy1 && happy2;
     }
-
     private bool EvaluateCondition(TypeOfConditions conditionType, bool isNegative, Bioma bioma, Temperatura temperatura, Dieta dieta, Taxon taxon, Medi medi, BiomeSlot slot, List<BiomeSlot> nearSlots)
     {
         switch (conditionType)
@@ -160,5 +156,11 @@ public class Animal : MonoBehaviour
             default:
                 return true;
         }
+    }
+    private void OnMouseEnter()
+    {
+        int var1 = workingVar.GetHashCode(); //(workingVar.GetHashCode() == null) ? 0 : workingVar.GetHashCode();
+        int var2 = workingVar2.GetHashCode(); //(workingVar2.GetHashCode() == null) ? 0 : workingVar2.GetHashCode();
+        UIIconShow.instance.NewInfo(this, parentSlot, isNegative, condition, var1, isNegative2, condition2, var2);
     }
 }
