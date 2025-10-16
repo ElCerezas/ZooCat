@@ -1,12 +1,21 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 [RequireComponent(typeof(Animal))]
 public class AnimalDragHandler : MonoBehaviour
 {
     [Header("Drag settings")]
-    public float followSpeed = 10f;       // Cuanto más alto, más rápido sigue al ratón
-    public float snapBackSpeed = 8f;      // Velocidad al volver al slot original
+    public float followSpeed = 10f;
+    public float snapBackSpeed = 8f;
+
+    [Header("PickUp Effect")]
+    [SerializeField] float zoomScale = 1.5f;
+    [SerializeField] float zoomDuration = 1f;
+    Vector3 originalScale;
+    
+    Coroutine scaleRoutine = null;
 
     private Vector3 targetPosition;
     private Vector3 originalPosition;
@@ -18,6 +27,7 @@ public class AnimalDragHandler : MonoBehaviour
     private void Start()
     {
         animal = GetComponent<Animal>();
+        originalScale = transform.localScale;
 
         if (animal.parentSlot != null)
         {
@@ -39,6 +49,7 @@ public class AnimalDragHandler : MonoBehaviour
     {
         if (!animal.selectable) return;
         isDragging = true;
+        StartpickUpEffect(zoomScale);
     }
 
     private void OnMouseDrag()
@@ -74,6 +85,7 @@ public class AnimalDragHandler : MonoBehaviour
             // Snap back
             targetPosition = animal.parentSlot != null  ? animal.parentSlot.transform.position : originalPosition;
         }
+        StartpickUpEffect(originalScale.x);
     }
 
     private BiomeSlot GetClosestSlot()
@@ -95,6 +107,28 @@ public class AnimalDragHandler : MonoBehaviour
     {
         originalPosition = transform.position;
         targetPosition = originalPosition;
+    }
+    private void StartpickUpEffect(float targetScale)
+    {
+        if (scaleRoutine != null)
+            StopCoroutine(scaleRoutine);
+        scaleRoutine = StartCoroutine(pickUpEffect(targetScale));
+    }
+    private IEnumerator pickUpEffect(float targetScale)
+    {
+        Vector3 startScale = transform.localScale;
+        Vector3 endScale = originalScale * targetScale;
+        float elapsed = 0f;
+
+        while (elapsed < zoomDuration)
+        {
+            transform.localScale = Vector3.Lerp(startScale, endScale, elapsed / zoomDuration);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        transform.localScale = endScale;
+        scaleRoutine = null;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

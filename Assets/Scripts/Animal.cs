@@ -51,7 +51,7 @@ public class Animal : MonoBehaviour
     public void SetParentSlot(BiomeSlot newSlot)
     {
         if (parentSlot != null) { parentSlot.SlotPle = false; }
-        
+
         parentSlot = newSlot;
 
         if (newSlot != null)
@@ -157,7 +157,13 @@ public class Animal : MonoBehaviour
                 return true;
         }
     }
-    private void OnMouseEnter()
+    /*private void OnMouseEnter()
+    {
+        int var1 = workingVar.GetHashCode(); //(workingVar.GetHashCode() == null) ? 0 : workingVar.GetHashCode();
+        int var2 = workingVar2.GetHashCode(); //(workingVar2.GetHashCode() == null) ? 0 : workingVar2.GetHashCode();
+        UIIconShow.instance.NewInfo(this, parentSlot, isNegative, condition, var1, isNegative2, condition2, var2);
+    }*/
+    private void OnMouseDown()
     {
         int var1 = workingVar.GetHashCode(); //(workingVar.GetHashCode() == null) ? 0 : workingVar.GetHashCode();
         int var2 = workingVar2.GetHashCode(); //(workingVar2.GetHashCode() == null) ? 0 : workingVar2.GetHashCode();

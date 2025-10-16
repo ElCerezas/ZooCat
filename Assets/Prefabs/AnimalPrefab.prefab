@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 1031813251127324914}
   - component: {fileID: 7076355406995444889}
   - component: {fileID: 2402565664728313798}
+  - component: {fileID: 6870685764934338048}
   - component: {fileID: 6587320152439281715}
   - component: {fileID: 773898432869912934}
-  - component: {fileID: 6870685764934338048}
   m_Layer: 7
   m_Name: AnimalPrefab
   m_TagString: Animal
@@ -124,8 +124,25 @@ MonoBehaviour:
   temperaturaCon2: 0
   taxonCon2: 0
   transportCon2: 0
+  parentSlot: {fileID: 0}
   isOnQueue: 1
   selectable: 0
+--- !u!114 &6870685764934338048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6213540850650849024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d1348bf7290f224caa47523a6f39a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimalDragHandler
+  followSpeed: 10
+  snapBackSpeed: 8
+  zoomScale: 1.1
+  zoomDuration: 0.1
 --- !u!50 &6587320152439281715
 Rigidbody2D:
   serializedVersion: 5
@@ -199,15 +216,3 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6870685764934338048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6213540850650849024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d1348bf7290f224caa47523a6f39a0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AnimalDragHandler

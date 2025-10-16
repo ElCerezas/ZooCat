@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 public enum Temperatura {Fred, Templat, Calent}
 public enum Bioma {Aigua, Terra, Arbre, Aire}
@@ -54,6 +55,10 @@ public class BiomeSlot : MonoBehaviour
         }
     }
     private void OnMouseEnter()
+    {
+        //UIIconShow.instance.NewInfo(animalInSlot, this);
+    }
+    private void OnMouseDown()
     {
         UIIconShow.instance.NewInfo(animalInSlot, this);
     }
