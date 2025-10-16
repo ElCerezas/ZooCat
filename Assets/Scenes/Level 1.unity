@@ -1600,15 +1600,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.0050315126, g: 0.20125782, b: 0, a: 1}
+  m_Color: {r: 0.19607845, g: 0.34901962, b: 0.16078432, a: 0.67058825}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: ef741d948dcdfd14e85a4c15e4b6cb62, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3130,7 +3130,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5222624380084724999, guid: 2a7d1dce72c1480438cdad8a0a74f6f4, type: 3}
       propertyPath: temp
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5222624380084724999, guid: 2a7d1dce72c1480438cdad8a0a74f6f4, type: 3}
       propertyPath: biome
