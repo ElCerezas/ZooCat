@@ -38,13 +38,18 @@ public class Animal : MonoBehaviour
     public bool isOnQueue = true;
     public bool selectable = false;
 
+    [Header("Transforms")]
+    public Transform head, body;
+
     private object workingVar;
     private object workingVar2;
     private SpriteRenderer spriteRenderer;
+    public AnimalAnimator aAnimator;
 
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        aAnimator = GetComponent<AnimalAnimator>();
         gameObject.name = animalName;
         SetWorkingVariables();
     }
@@ -58,6 +63,7 @@ public class Animal : MonoBehaviour
         {
             newSlot.SlotPle = true;
             transform.SetParent(newSlot.transform);
+            transform.localScale = Vector3.one;
             transform.localPosition = Vector3.zero;
             SetMood(CheckIfHappy());
         }
@@ -73,8 +79,14 @@ public class Animal : MonoBehaviour
     }
     public void SetMood(bool isHappy)
     {
-        if (!spriteRenderer) spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.color = isHappy ? Color.green : Color.red;
+        if (!isHappy)
+        {
+            aAnimator.OnMoodSwap(Mood.Angry);
+        }
+        else
+        {
+            aAnimator.OnMoodSwap(Mood.Happy);
+        }
     }
     void SetWorkingVariables()
     {
@@ -107,7 +119,6 @@ public class Animal : MonoBehaviour
 
         bool happy1 = EvaluateCondition(condition, isNegative, biomeCon, temperaturaCon, dietaCon, taxonCon, transportCon, parentSlot, nearSlots);
         bool happy2 = EvaluateCondition(condition2, isNegative2, biomeCon2, temperaturaCon2, dietaCon2, taxonCon2, transportCon2, parentSlot, nearSlots);
-        SetMood(happy1 && happy2);
         return happy1 && happy2;
     }
     private bool EvaluateCondition(TypeOfConditions conditionType, bool isNegative, Bioma bioma, Temperatura temperatura, Dieta dieta, Taxon taxon, Medi medi, BiomeSlot slot, List<BiomeSlot> nearSlots)

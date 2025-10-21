@@ -49,6 +49,7 @@ public class AnimalDragHandler : MonoBehaviour
     {
         if (!animal.selectable) return;
         isDragging = true;
+        animal.aAnimator.OnMoodSwap(Mood.Grabed);
         StartpickUpEffect(zoomScale);
     }
 
@@ -79,11 +80,20 @@ public class AnimalDragHandler : MonoBehaviour
             animal.SetParentSlot(closestSlot);
             targetPosition = closestSlot.transform.position;
             originalPosition = targetPosition;
+            animal.SetMood(animal.CheckIfHappy());
         }
         else
         {
             // Snap back
             targetPosition = animal.parentSlot != null  ? animal.parentSlot.transform.position : originalPosition;
+            if (animal.parentSlot != null)
+            {
+                animal.SetMood(animal.CheckIfHappy());
+            }
+            else
+            {
+                animal.aAnimator.OnMoodSwap(Mood.Idle);
+            }
         }
         StartpickUpEffect(originalScale.x);
     }
@@ -146,3 +156,6 @@ public class AnimalDragHandler : MonoBehaviour
     }
 }
 
+// B# C D Eb F G A Bb
+//  T  T ST T T T  ST
+//

@@ -282,10 +282,22 @@ PrefabInstance:
       propertyPath: temperaturaCon2
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4181914709448659449, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.008333355
+      objectReference: {fileID: 0}
     - target: {fileID: 6213540850650849024, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: m_Name
       value: AnimalPrefab (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6748406296317132295, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: body
+      value: 
+      objectReference: {fileID: 7658443031168280270, guid: a9b179e2604c82a42995b93df98e2053, type: 3}
+    - target: {fileID: 6748406296317132295, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: head
+      value: 
+      objectReference: {fileID: 3182749822633333672, guid: 5743d14eb9b19114085f8120bb4c2a56, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -379,7 +391,7 @@ GameObject:
   m_Layer: 0
   m_Name: Cua
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -415,7 +427,7 @@ Transform:
   m_GameObject: {fileID: 98660785}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.07, y: -4.04, z: 0.03841563}
+  m_LocalPosition: {x: -7.07, y: -4.69, z: 0.03841563}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -511,9 +523,21 @@ PrefabInstance:
       propertyPath: temperaturaCon
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4181914709448659449, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.008333355
+      objectReference: {fileID: 0}
     - target: {fileID: 6213540850650849024, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: m_Name
       value: AnimalPrefab (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840051723449401599, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: parent
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840051723449401599, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: noStatOffset
+      value: -4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -890,7 +914,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -2.47}
+  m_AnchoredPosition: {x: -0.13, y: -2.51}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &569548442
@@ -1015,10 +1039,22 @@ PrefabInstance:
       propertyPath: temperaturaCon
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4181914709448659449, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.008333355
+      objectReference: {fileID: 0}
     - target: {fileID: 6213540850650849024, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: m_Name
       value: AnimalPrefab (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6748406296317132295, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: body
+      value: 
+      objectReference: {fileID: 1830181978440124316, guid: a9b179e2604c82a42995b93df98e2053, type: 3}
+    - target: {fileID: 6748406296317132295, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: head
+      value: 
+      objectReference: {fileID: 2751822678610202288, guid: 5743d14eb9b19114085f8120bb4c2a56, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1251,10 +1287,22 @@ PrefabInstance:
       propertyPath: isNegative
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4181914709448659449, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.008333355
+      objectReference: {fileID: 0}
     - target: {fileID: 6213540850650849024, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: m_Name
       value: AnimalPrefab (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6748406296317132295, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: body
+      value: 
+      objectReference: {fileID: -6671218268463431859, guid: a9b179e2604c82a42995b93df98e2053, type: 3}
+    - target: {fileID: 6748406296317132295, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: head
+      value: 
+      objectReference: {fileID: 590016141747191124, guid: 5743d14eb9b19114085f8120bb4c2a56, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1716,7 +1764,7 @@ RectTransform:
   m_GameObject: {fileID: 936327026}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 187.40152, y: 81.29752, z: 54.457}
+  m_LocalScale: {x: 140.55115, y: 60.973145, z: 40.84275}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 907474202}
@@ -1724,7 +1772,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 36, y: -40}
+  m_AnchoredPosition: {x: 36, y: -39.53572}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &936327028
@@ -2575,10 +2623,22 @@ PrefabInstance:
       propertyPath: isNegative
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4181914709448659449, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.008333355
+      objectReference: {fileID: 0}
     - target: {fileID: 6213540850650849024, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: m_Name
       value: AnimalPrefab (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6748406296317132295, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: body
+      value: 
+      objectReference: {fileID: -3882842551134758315, guid: a9b179e2604c82a42995b93df98e2053, type: 3}
+    - target: {fileID: 6748406296317132295, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: head
+      value: 
+      objectReference: {fileID: -6232188084933989229, guid: 5743d14eb9b19114085f8120bb4c2a56, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3135,10 +3195,22 @@ PrefabInstance:
       propertyPath: isNegative
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4181914709448659449, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.008333355
+      objectReference: {fileID: 0}
     - target: {fileID: 6213540850650849024, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: m_Name
       value: AnimalPrefab (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6748406296317132295, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: body
+      value: 
+      objectReference: {fileID: -6671218268463431859, guid: a9b179e2604c82a42995b93df98e2053, type: 3}
+    - target: {fileID: 6748406296317132295, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: head
+      value: 
+      objectReference: {fileID: 590016141747191124, guid: 5743d14eb9b19114085f8120bb4c2a56, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3258,7 +3330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -3770,10 +3842,22 @@ PrefabInstance:
       propertyPath: temperaturaCon
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4181914709448659449, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.008333355
+      objectReference: {fileID: 0}
     - target: {fileID: 6213540850650849024, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: m_Name
       value: AnimalPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 6748406296317132295, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: body
+      value: 
+      objectReference: {fileID: -1012404319176444870, guid: a9b179e2604c82a42995b93df98e2053, type: 3}
+    - target: {fileID: 6748406296317132295, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: head
+      value: 
+      objectReference: {fileID: -3515941479406946491, guid: 5743d14eb9b19114085f8120bb4c2a56, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
