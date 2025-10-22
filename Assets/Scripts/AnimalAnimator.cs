@@ -63,7 +63,7 @@ public class AnimalAnimator : MonoBehaviour
 
                 headRenderer.transform.localScale = Vector3.Lerp(headRenderer.transform.localScale, headOrigScale * pickUpScaler, Time.deltaTime * 10f);
 
-                // cuerpo balanceándose
+                // cuerpo balanceï¿½ndose
                 float swing = Mathf.Sin(Time.time * grabSwingSpeed) * grabSwingAmplitude;
                 bodyRenderer.transform.localRotation = Quaternion.Euler(0, 0, swing);
                 break;

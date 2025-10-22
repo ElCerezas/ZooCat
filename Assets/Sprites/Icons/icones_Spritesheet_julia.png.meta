@@ -5,6 +5,114 @@ TextureImporter:
   - first:
       213: 3608231471656727838
     second: icones_Spritesheet_julia_0
+  - first:
+      213: -4170705803492448240
+    second: icones_Spritesheet_julia_1
+  - first:
+      213: 5234638107410506465
+    second: icones_Spritesheet_julia_2
+  - first:
+      213: 2972262766164667194
+    second: icones_Spritesheet_julia_3
+  - first:
+      213: 65851206034140261
+    second: icones_Spritesheet_julia_4
+  - first:
+      213: 2196913927165289868
+    second: icones_Spritesheet_julia_5
+  - first:
+      213: -1286630039312900158
+    second: icones_Spritesheet_julia_6
+  - first:
+      213: -3759836003269068018
+    second: icones_Spritesheet_julia_7
+  - first:
+      213: 7365249759799345340
+    second: icones_Spritesheet_julia_8
+  - first:
+      213: 5771917186879820705
+    second: icones_Spritesheet_julia_9
+  - first:
+      213: -4251098868850165290
+    second: icones_Spritesheet_julia_10
+  - first:
+      213: -8609751473631188649
+    second: icones_Spritesheet_julia_11
+  - first:
+      213: -7081054075526756428
+    second: icones_Spritesheet_julia_12
+  - first:
+      213: 6605628007691508279
+    second: icones_Spritesheet_julia_13
+  - first:
+      213: -2834842638262528485
+    second: icones_Spritesheet_julia_14
+  - first:
+      213: -8057373166715260338
+    second: icones_Spritesheet_julia_15
+  - first:
+      213: 6590840151501955616
+    second: icones_Spritesheet_julia_16
+  - first:
+      213: 1051194111642631305
+    second: icones_Spritesheet_julia_17
+  - first:
+      213: 7158360404331371763
+    second: icones_Spritesheet_julia_18
+  - first:
+      213: -1026446939102085708
+    second: icones_Spritesheet_julia_19
+  - first:
+      213: 8023878293470646443
+    second: icones_Spritesheet_julia_20
+  - first:
+      213: 3650179047813061698
+    second: icones_Spritesheet_julia_21
+  - first:
+      213: -3954046700932086498
+    second: icones_Spritesheet_julia_22
+  - first:
+      213: 4433008373496870920
+    second: icones_Spritesheet_julia_23
+  - first:
+      213: -4098549979828961498
+    second: icones_Spritesheet_julia_24
+  - first:
+      213: 24509600060025960
+    second: icones_Spritesheet_julia_25
+  - first:
+      213: -8875305682180083742
+    second: icones_Spritesheet_julia_26
+  - first:
+      213: -3795255278028638069
+    second: icones_Spritesheet_julia_27
+  - first:
+      213: 803216524138873335
+    second: icones_Spritesheet_julia_28
+  - first:
+      213: -7105478522247824524
+    second: icones_Spritesheet_julia_29
+  - first:
+      213: 1614186868441741293
+    second: icones_Spritesheet_julia_30
+  - first:
+      213: 4031525801992556838
+    second: icones_Spritesheet_julia_31
+  - first:
+      213: -5820792524802875304
+    second: icones_Spritesheet_julia_32
+  - first:
+      213: -2816601200749838629
+    second: icones_Spritesheet_julia_33
+  - first:
+      213: 7200600676251822762
+    second: icones_Spritesheet_julia_34
+  - first:
+      213: -8794523828766392601
+    second: icones_Spritesheet_julia_35
+  - first:
+      213: -2596383475211764006
+    second: icones_Spritesheet_julia_36
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +159,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1000
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -135,10 +243,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 3f871a8cab91bd9469d5599eab92aa5e
-      internalID: -1691880407
+      spriteID: 0182c284b2dae16c0800000000000000
+      internalID: -4170705803492448240
       vertices: []
       indices: 
       edges: []
@@ -157,10 +265,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4844d4f5de8f1f4459be9ad293b523d1
-      internalID: 1279692649
+      spriteID: 1e22de7df9b25a840800000000000000
+      internalID: 5234638107410506465
       vertices: []
       indices: 
       edges: []
@@ -179,10 +287,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 783695591c729b646801822f53e03d16
-      internalID: 1577464177
+      spriteID: a3b6d54fc399f3920800000000000000
+      internalID: 2972262766164667194
       vertices: []
       indices: 
       edges: []
@@ -201,10 +309,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 95f4ef6b129cf41478c3f9a1e932f14d
-      internalID: -168425431
+      spriteID: 56c22bfa253f9e000800000000000000
+      internalID: 65851206034140261
       vertices: []
       indices: 
       edges: []
@@ -223,10 +331,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b7ab2a57598942846bd94e8d1307c8dc
-      internalID: -831104587
+      spriteID: c85abc6b3910d7e10800000000000000
+      internalID: 2196913927165289868
       vertices: []
       indices: 
       edges: []
@@ -245,10 +353,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 51c19ce1746301c4887c77a5b6fa08dd
-      internalID: 1579882549
+      spriteID: 2cf586dcbc8f42ee0800000000000000
+      internalID: -1286630039312900158
       vertices: []
       indices: 
       edges: []
@@ -267,60 +375,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c4bca504ce1082041858fcdfd463613f
-      internalID: -265167376
+      spriteID: e0b3c63531162dbc0800000000000000
+      internalID: -3759836003269068018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: icones_Spritesheet_julia_8
-      rect:
-        serializedVersion: 2
-        x: 3000
-        y: 3000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c9416223dac03b44f9a9c60466276dd7
-      internalID: -1488485300
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: icones_Spritesheet_julia_9
-      rect:
-        serializedVersion: 2
-        x: 4000
-        y: 3000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0d47570dcaff6cb4c85fb75d8936407f
-      internalID: -1107881448
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: icones_Spritesheet_julia_10
       rect:
         serializedVersion: 2
         x: 0
@@ -333,16 +397,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c15e16c14a5ee3247abc71a156cfe6be
-      internalID: -1708678746
+      spriteID: cb00fde32af963660800000000000000
+      internalID: 7365249759799345340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_11
+      name: icones_Spritesheet_julia_9
       rect:
         serializedVersion: 2
         x: 1000
@@ -355,16 +419,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6b7877da2edd2124d83db3d2871989df
-      internalID: 1312112341
+      spriteID: 1a391fcb918f91050800000000000000
+      internalID: 5771917186879820705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_12
+      name: icones_Spritesheet_julia_10
       rect:
         serializedVersion: 2
         x: 2000
@@ -377,10 +441,32 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0ddeccb03d3777643b9128d6f6d67667
-      internalID: 1751162155
+      spriteID: 6d9fe112a101105c0800000000000000
+      internalID: -4251098868850165290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icones_Spritesheet_julia_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b745e8d5da0bbd90800000000000000
+      internalID: -7081054075526756428
       vertices: []
       indices: 
       edges: []
@@ -389,8 +475,8 @@ TextureImporter:
       name: icones_Spritesheet_julia_13
       rect:
         serializedVersion: 2
-        x: 3000
-        y: 2000
+        x: 1000
+        y: 1000
         width: 1000
         height: 1000
       alignment: 0
@@ -399,10 +485,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a77c3297fdb083144a7c9e03cdabf9af
-      internalID: 569346069
+      spriteID: 73ad2d4cca7ebab50800000000000000
+      internalID: 6605628007691508279
       vertices: []
       indices: 
       edges: []
@@ -411,8 +497,8 @@ TextureImporter:
       name: icones_Spritesheet_julia_14
       rect:
         serializedVersion: 2
-        x: 4000
-        y: 2000
+        x: 2000
+        y: 1000
         width: 1000
         height: 1000
       alignment: 0
@@ -421,10 +507,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 85c39c4bf310e154eb18cb40babe4a76
-      internalID: -392622518
+      spriteID: b161b30e3ad98a8d0800000000000000
+      internalID: -2834842638262528485
       vertices: []
       indices: 
       edges: []
@@ -434,7 +520,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1000
+        y: 0
         width: 1000
         height: 1000
       alignment: 0
@@ -443,10 +529,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ddf729bbba4ee8e4385ac716c158e394
-      internalID: -1818268983
+      spriteID: e423c2f6bc57e2090800000000000000
+      internalID: -8057373166715260338
       vertices: []
       indices: 
       edges: []
@@ -456,7 +542,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1000
-        y: 1000
+        y: 0
         width: 1000
         height: 1000
       alignment: 0
@@ -465,10 +551,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6b24e31595c2ba745b2725c358b4daec
-      internalID: -665780941
+      spriteID: 022e7a1b23e577b50800000000000000
+      internalID: 6590840151501955616
       vertices: []
       indices: 
       edges: []
@@ -478,7 +564,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2000
-        y: 1000
+        y: 0
         width: 1000
         height: 1000
       alignment: 0
@@ -487,10 +573,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 03d79eb957c1cf947a8394c6afa75823
-      internalID: 1552564948
+      spriteID: 98cf07e9977969e00800000000000000
+      internalID: 1051194111642631305
       vertices: []
       indices: 
       edges: []
@@ -500,50 +586,6 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3000
-        y: 1000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1dc145f0611ecd4eb4e5316c114c7b2
-      internalID: -1973995572
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: icones_Spritesheet_julia_19
-      rect:
-        serializedVersion: 2
-        x: 4000
-        y: 1000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a78e224cf8a83ec45ae109259d066d11
-      internalID: -1702936235
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: icones_Spritesheet_julia_20
-      rect:
-        serializedVersion: 2
-        x: 0
         y: 0
         width: 1000
         height: 1000
@@ -553,98 +595,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0c621f0af673d454a89bc8941f2471f4
-      internalID: 656590244
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: icones_Spritesheet_julia_21
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 0
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b67c4b9a114ed0945832f59ae61f6080
-      internalID: 1525714665
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: icones_Spritesheet_julia_22
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 0
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb06859411b1dea4598ce9316da7ba94
-      internalID: -934080982
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: icones_Spritesheet_julia_23
-      rect:
-        serializedVersion: 2
-        x: 3000
-        y: 0
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c91e79a9fef05814db0042a097b8a768
-      internalID: 1712512555
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: icones_Spritesheet_julia_24
-      rect:
-        serializedVersion: 2
-        x: 4000
-        y: 0
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 66614929f5bff5d4da6d097e8f7145c7
-      internalID: -1081647960
+      spriteID: 3fc94627cda975360800000000000000
+      internalID: 7158360404331371763
       vertices: []
       indices: 
       edges: []
@@ -653,7 +607,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a47f4a0a572d6db45aafce5d02cc784a
+    spriteID: d6198f121a0281b4d9ec2ab387b39573
     internalID: 0
     vertices: []
     indices: 
@@ -666,30 +620,25 @@ TextureImporter:
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1000.0,"y":1000.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       icones_Spritesheet_julia_0: 3608231471656727838
-      icones_Spritesheet_julia_1: -1691880407
-      icones_Spritesheet_julia_10: -1708678746
-      icones_Spritesheet_julia_11: 1312112341
-      icones_Spritesheet_julia_12: 1751162155
-      icones_Spritesheet_julia_13: 569346069
-      icones_Spritesheet_julia_14: -392622518
-      icones_Spritesheet_julia_15: -1818268983
-      icones_Spritesheet_julia_16: -665780941
-      icones_Spritesheet_julia_17: 1552564948
-      icones_Spritesheet_julia_18: -1973995572
-      icones_Spritesheet_julia_19: -1702936235
-      icones_Spritesheet_julia_2: 1279692649
-      icones_Spritesheet_julia_20: 656590244
-      icones_Spritesheet_julia_21: 1525714665
-      icones_Spritesheet_julia_22: -934080982
-      icones_Spritesheet_julia_23: 1712512555
-      icones_Spritesheet_julia_24: -1081647960
-      icones_Spritesheet_julia_3: 1577464177
-      icones_Spritesheet_julia_4: -168425431
-      icones_Spritesheet_julia_5: -831104587
-      icones_Spritesheet_julia_6: 1579882549
-      icones_Spritesheet_julia_7: -265167376
-      icones_Spritesheet_julia_8: -1488485300
-      icones_Spritesheet_julia_9: -1107881448
+      icones_Spritesheet_julia_1: -4170705803492448240
+      icones_Spritesheet_julia_10: -4251098868850165290
+      icones_Spritesheet_julia_11: -8609751473631188649
+      icones_Spritesheet_julia_12: -7081054075526756428
+      icones_Spritesheet_julia_13: 6605628007691508279
+      icones_Spritesheet_julia_14: -2834842638262528485
+      icones_Spritesheet_julia_15: -8057373166715260338
+      icones_Spritesheet_julia_16: 6590840151501955616
+      icones_Spritesheet_julia_17: 1051194111642631305
+      icones_Spritesheet_julia_18: 7158360404331371763
+      icones_Spritesheet_julia_19: -1026446939102085708
+      icones_Spritesheet_julia_2: 5234638107410506465
+      icones_Spritesheet_julia_3: 2972262766164667194
+      icones_Spritesheet_julia_4: 65851206034140261
+      icones_Spritesheet_julia_5: 2196913927165289868
+      icones_Spritesheet_julia_6: -1286630039312900158
+      icones_Spritesheet_julia_7: -3759836003269068018
+      icones_Spritesheet_julia_8: 7365249759799345340
+      icones_Spritesheet_julia_9: 5771917186879820705
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
