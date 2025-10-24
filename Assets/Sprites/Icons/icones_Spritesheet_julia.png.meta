@@ -208,7 +208,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_0
+      name: Mamal
       rect:
         serializedVersion: 2
         x: 0
@@ -230,7 +230,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_1
+      name: Reptile
       rect:
         serializedVersion: 2
         x: 1000
@@ -252,7 +252,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_2
+      name: Bird
       rect:
         serializedVersion: 2
         x: 2000
@@ -274,7 +274,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_3
+      name: Anfibi
       rect:
         serializedVersion: 2
         x: 3000
@@ -296,7 +296,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_4
+      name: Fish
       rect:
         serializedVersion: 2
         x: 4000
@@ -318,7 +318,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_5
+      name: Carn
       rect:
         serializedVersion: 2
         x: 0
@@ -340,7 +340,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_6
+      name: Vegano
       rect:
         serializedVersion: 2
         x: 1000
@@ -362,7 +362,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_7
+      name: Omnivor
       rect:
         serializedVersion: 2
         x: 2000
@@ -384,7 +384,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_8
+      name: Volador
       rect:
         serializedVersion: 2
         x: 0
@@ -406,7 +406,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_9
+      name: "Mar\xED"
       rect:
         serializedVersion: 2
         x: 1000
@@ -428,7 +428,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_10
+      name: Terrestre
       rect:
         serializedVersion: 2
         x: 2000
@@ -450,7 +450,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_12
+      name: Fred
       rect:
         serializedVersion: 2
         x: 0
@@ -472,7 +472,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_13
+      name: Templat
       rect:
         serializedVersion: 2
         x: 1000
@@ -494,7 +494,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_14
+      name: Calent
       rect:
         serializedVersion: 2
         x: 2000
@@ -516,7 +516,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_15
+      name: Aigua
       rect:
         serializedVersion: 2
         x: 0
@@ -538,7 +538,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_16
+      name: Terra
       rect:
         serializedVersion: 2
         x: 1000
@@ -560,7 +560,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_17
+      name: Arbre
       rect:
         serializedVersion: 2
         x: 2000
@@ -582,7 +582,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_18
+      name: Aire
       rect:
         serializedVersion: 2
         x: 3000
@@ -619,26 +619,26 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1000.0,"y":1000.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      icones_Spritesheet_julia_0: 3608231471656727838
-      icones_Spritesheet_julia_1: -4170705803492448240
-      icones_Spritesheet_julia_10: -4251098868850165290
+      Aigua: -8057373166715260338
+      Aire: 7158360404331371763
+      Anfibi: 2972262766164667194
+      Arbre: 1051194111642631305
+      Bird: 5234638107410506465
+      Calent: -2834842638262528485
+      Carn: 2196913927165289868
+      Fish: 65851206034140261
+      Fred: -7081054075526756428
+      Mamal: 3608231471656727838
+      "Mar\xED": 5771917186879820705
+      Omnivor: -3759836003269068018
+      Reptile: -4170705803492448240
+      Templat: 6605628007691508279
+      Terra: 6590840151501955616
+      Terrestre: -4251098868850165290
+      Vegano: -1286630039312900158
+      Volador: 7365249759799345340
       icones_Spritesheet_julia_11: -8609751473631188649
-      icones_Spritesheet_julia_12: -7081054075526756428
-      icones_Spritesheet_julia_13: 6605628007691508279
-      icones_Spritesheet_julia_14: -2834842638262528485
-      icones_Spritesheet_julia_15: -8057373166715260338
-      icones_Spritesheet_julia_16: 6590840151501955616
-      icones_Spritesheet_julia_17: 1051194111642631305
-      icones_Spritesheet_julia_18: 7158360404331371763
       icones_Spritesheet_julia_19: -1026446939102085708
-      icones_Spritesheet_julia_2: 5234638107410506465
-      icones_Spritesheet_julia_3: 2972262766164667194
-      icones_Spritesheet_julia_4: 65851206034140261
-      icones_Spritesheet_julia_5: 2196913927165289868
-      icones_Spritesheet_julia_6: -1286630039312900158
-      icones_Spritesheet_julia_7: -3759836003269068018
-      icones_Spritesheet_julia_8: 7365249759799345340
-      icones_Spritesheet_julia_9: 5771917186879820705
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -9,6 +9,7 @@ public class AnimalDragHandler : MonoBehaviour
     [Header("Drag settings")]
     public float followSpeed = 10f;
     public float snapBackSpeed = 8f;
+    public float grabOffset = 1.5f;
 
     [Header("PickUp Effect")]
     [SerializeField] float zoomScale = 1.5f;
@@ -58,7 +59,7 @@ public class AnimalDragHandler : MonoBehaviour
         if (!isDragging) return;
         Vector3 mousePos = Input.mousePosition;
         mousePos.z = Camera.main.nearClipPlane;
-        targetPosition = Camera.main.ScreenToWorldPoint(mousePos);
+        targetPosition = Camera.main.ScreenToWorldPoint(mousePos) - (Vector3.down.normalized * grabOffset);
     }
 
     private void OnMouseUp()

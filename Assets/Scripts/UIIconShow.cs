@@ -11,10 +11,16 @@ public class UIIconShow : MonoBehaviour
     [SerializeField] Image[] animalIcons; //Taxon - Food - Transport
     [SerializeField] Image[] biomeIcons;  //Temperature - Biome
     [SerializeField] GameObject animalUI, biomeUI, animalName;
-    [SerializeField] Image conditionIcon1, conditionIcon2;
+
+
+    [Header("Conditions")]
+    [SerializeField] Image conditionIcon1;
+    [SerializeField] Image conditionIcon2;
+    [SerializeField] GameObject conditionSlot1, conditionSlot2;
+    [SerializeField] Image conditionBG1, conditionBG2;
 
     [Header("Sprites")]
-    [SerializeField] Sprite[] iconsTaxon;       // Mamífero, Reptil, Ave, etc.
+    [SerializeField] Sprite[] iconsTaxon;       // Mamífero, Reptil, Ave, Anfibi, peix
     [SerializeField] Sprite[] iconsFood;        // Carnívoro, Herbívoro, Omnívoro
     [SerializeField] Sprite[] iconsTransport;   // Volador, Marino, Terrestre
     [SerializeField] Sprite[] iconsTemperature; // Frío, Templado, Cálido
@@ -130,20 +136,20 @@ public class UIIconShow : MonoBehaviour
             // Condición 1
             if (sCondition1 != TypeOfConditions.Null)
             {
-                conditionIcon1.gameObject.SetActive(true);
+                conditionSlot1.gameObject.SetActive(true);
                 conditionIcon1.sprite = GetSpriteForCondition(sCondition1, sIndexSprite1);
-                conditionIcon1.color = sNegative1 ? Color.red : Color.green;
+                conditionBG1.color = sNegative1 ? Color.red : Color.green;
             }
-            else conditionIcon1.gameObject.SetActive(false);
+            else conditionSlot1.gameObject.SetActive(false);
 
             // Condición 2
             if (sCondition2 != TypeOfConditions.Null)
             {
-                conditionIcon2.gameObject.SetActive(true);
+                conditionSlot2.gameObject.SetActive(true);
                 conditionIcon2.sprite = GetSpriteForCondition(sCondition2, sIndexSprite2);
-                conditionIcon2.color = sNegative2 ? Color.red : Color.green;
+                conditionBG2.color = sNegative2 ? Color.red : Color.green;
             }
-            else conditionIcon2.gameObject.SetActive(false);
+            else conditionSlot2.gameObject.SetActive(false);
         }
         else
         {
@@ -153,7 +159,9 @@ public class UIIconShow : MonoBehaviour
         if (sBiome != null)
         {
             biomeIcons[0].sprite = iconsTemperature[sBiome.temp.GetHashCode()];
+            biomeIcons[1].sprite = iconsBiome[sBiome.biome.GetHashCode()];
             biomeUI.SetActive(true);
+
         }
         else biomeUI.SetActive(false);
     }
@@ -165,7 +173,7 @@ public class UIIconShow : MonoBehaviour
             case TypeOfConditions.CompanionTransport: return iconsTransport[index];
             case TypeOfConditions.CompanionFood: return iconsFood[index];
             case TypeOfConditions.Temperature: return iconsTemperature[index];
-            //case TypeOfConditions.Biome: return iconsBiome[index];
+            case TypeOfConditions.Biome: return iconsBiome[index];
             default: return null;
         }
     }

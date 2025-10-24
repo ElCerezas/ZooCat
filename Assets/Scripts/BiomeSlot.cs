@@ -25,7 +25,7 @@ public class BiomeSlot : MonoBehaviour
     {
         SpriteRenderer = GetComponent<SpriteRenderer>();
         SetColorProximity(0);
-        Collider2D[] t = Physics2D.OverlapCircleAll(new Vector2(transform.position.x, transform.position.y), radius);
+        Collider2D[] t = Physics2D.OverlapCircleAll(new Vector2(transform.position.x, transform.position.y+0.75f), radius);
         for (int i = 0; i < t.Length; i++)
         {
             if (t[i].gameObject.tag == "Slot" && t[i].gameObject != this.gameObject)
@@ -77,6 +77,6 @@ public class BiomeSlot : MonoBehaviour
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.magenta;
-        Gizmos.DrawWireSphere(new Vector2(transform.position.x, transform.position.y), radius);
+        Gizmos.DrawWireSphere(new Vector2(transform.position.x, transform.position.y + 0.75f), radius);
     }
 }

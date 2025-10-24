@@ -115,7 +115,7 @@ Transform:
   m_GameObject: {fileID: 2500283008439763187}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.008333355, z: 0}
+  m_LocalPosition: {x: 0, y: 0.008333385, z: 0}
   m_LocalScale: {x: 1.7, y: 1.7, z: 1.7}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -301,6 +301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AnimalDragHandler
   followSpeed: 10
   snapBackSpeed: 8
+  grabOffset: -1.4
   zoomScale: 1.1
   zoomDuration: 0.1
 --- !u!50 &6587320152439281715
@@ -344,7 +345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AnimalAnimator
   head: {fileID: 6840385186124387026, guid: 5743d14eb9b19114085f8120bb4c2a56, type: 3}
   body: {fileID: 7785057561689886592, guid: a9b179e2604c82a42995b93df98e2053, type: 3}
-  pickUpScaler: 2
+  pickUpScaler: 1.5
   grabSwingSpeed: 10
   grabSwingAmplitude: 5
   angryUpScaler: 1.5
