@@ -7,6 +7,7 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     public static LevelManager instance;
+    [SerializeField] EndScreenManager endScreenManager;
 
     [Header("Slots & Animals")]
     public List<Animal> animals = new List<Animal>();
@@ -54,8 +55,7 @@ public class LevelManager : MonoBehaviour
         {
             if (CuaLogic.instance.IsCuaEmpty())
             {
-                //TO DO: WIN
-                Debug.Log("WIN");
+                endScreenManager.StartEndScreenShow(time);
             }
             else
             {
