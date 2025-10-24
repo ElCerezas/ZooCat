@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AutoFlip
   Mode: 0
-  PageFlipTime: 100
+  PageFlipTime: 0.1
   TimeBetweenPages: 0
   DelayBeforeStarting: 0
   AutoStartFlip: 0
@@ -659,6 +659,10 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 1399757051}
+    - target: {fileID: 11415212, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 3}
+      propertyPath: interactable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 11415212, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 3}
       propertyPath: OnFlip.m_PersistentCalls.m_Calls.Array.size
       value: 0
