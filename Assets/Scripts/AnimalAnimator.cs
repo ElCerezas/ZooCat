@@ -5,8 +5,8 @@ public enum Mood { Happy, Angry, Grabed, Idle}
 public class AnimalAnimator : MonoBehaviour
 {
     [Header("Sprites")]
-    [SerializeField] Sprite head;
-    [SerializeField] Sprite body;
+    public Sprite head;
+    public Sprite body;
 
     [Header("AnimationSettings")]
     [SerializeField] float pickUpScaler = 1.3f;
@@ -17,8 +17,8 @@ public class AnimalAnimator : MonoBehaviour
     [SerializeField] float angryShakeAmplitude = 5f;
 
     [Header("Renderer")]
-    [SerializeField] SpriteRenderer headRenderer;
-    [SerializeField] SpriteRenderer bodyRenderer;
+    public SpriteRenderer headRenderer;
+    public SpriteRenderer bodyRenderer;
 
     [SerializeField] Mood actualMood = Mood.Idle;
 

@@ -263,7 +263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97495070aebf1a64f87721c549d6b86b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animalName: 
+  animalName: AnimalPrefab
   taxon: 0
   medi: 2
   dieta: 2
@@ -284,9 +284,9 @@ MonoBehaviour:
   parentSlot: {fileID: 0}
   isOnQueue: 1
   selectable: 0
-  head: {fileID: 0}
-  body: {fileID: 0}
-  aAnimator: {fileID: 0}
+  head: {fileID: 5266778451697003469}
+  body: {fileID: 7392111330052777676}
+  aAnimator: {fileID: 6748406296317132295}
 --- !u!114 &6870685764934338048
 MonoBehaviour:
   m_ObjectHideFlags: 0

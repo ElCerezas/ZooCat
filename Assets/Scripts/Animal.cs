@@ -1,6 +1,7 @@
 using UnityEngine;
 using NaughtyAttributes;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 
 public enum Taxon { Mamifer, Reptil, Ocell, Anfibi, Peix }
 public enum Dieta { Carnivor, Herbivor, Omnivor }
@@ -135,34 +136,46 @@ public class Animal : MonoBehaviour
                 return (slot.GetTemperatura() == temperatura) != isNegative;
 
             case TypeOfConditions.CompanionFood:
+                bool hasMatch = false;
                 foreach (var s in nearSlots)
                 {
                     if (!s.SlotPle) continue;
                     var other = s.GetComponentInChildren<Animal>();
-                    if ((other.dieta == dieta) == isNegative)
-                        return false;
+                    if (other != null && other.dieta == dieta)
+                    {
+                        hasMatch = true;
+                        break;
+                    }
                 }
-                return true;
+                return isNegative ? !hasMatch : hasMatch;
 
             case TypeOfConditions.CompanionTaxon:
+                bool hasMatch2 = false;
                 foreach (var s in nearSlots)
                 {
                     if (!s.SlotPle) continue;
                     var other = s.GetComponentInChildren<Animal>();
-                    if ((other.taxon == taxon) == isNegative)
-                        return false;
+                    if (other != null && other.taxon == taxon)
+                    {
+                        hasMatch2 = true;
+                        break;
+                    }
                 }
-                return true;
+                return isNegative ? !hasMatch2 : hasMatch2;
 
             case TypeOfConditions.CompanionTransport:
+                bool hasMatch3 = false;
                 foreach (var s in nearSlots)
                 {
                     if (!s.SlotPle) continue;
                     var other = s.GetComponentInChildren<Animal>();
-                    if ((other.medi == medi) == isNegative)
-                        return false;
+                    if (other != null && other.medi == medi)
+                    {
+                        hasMatch3 = true;
+                        break;
+                    }
                 }
-                return true;
+                return isNegative ? !hasMatch3 : hasMatch3;
 
             default:
                 return true;
@@ -181,3 +194,4 @@ public class Animal : MonoBehaviour
         UIIconShow.instance.NewInfo(this, parentSlot, isNegative, condition, var1, isNegative2, condition2, var2);
     }
 }
+
