@@ -54,7 +54,7 @@ public class Animal : MonoBehaviour
         gameObject.name = animalName;
         SetWorkingVariables();
     }
-    public void SetParentSlot(BiomeSlot newSlot)
+    public void SetParentSlot(BiomeSlot newSlot, bool transformImediatly = false)
     {
         if (parentSlot != null) { parentSlot.SlotPle = false; }
 
@@ -65,7 +65,9 @@ public class Animal : MonoBehaviour
             newSlot.SlotPle = true;
             transform.SetParent(newSlot.transform);
             transform.localScale = Vector3.one;
-            transform.localPosition = Vector3.zero;
+            if (transformImediatly)
+                transform.localPosition = Vector3.zero;
+
             SetMood(CheckIfHappy());
         }
 

@@ -8,7 +8,6 @@ public class AnimalDragHandler : MonoBehaviour
 {
     [Header("Drag settings")]
     public float followSpeed = 10f;
-    public float snapBackSpeed = 8f;
     public float grabOffset = 1.5f;
 
     [Header("PickUp Effect")]
@@ -69,13 +68,23 @@ public class AnimalDragHandler : MonoBehaviour
 
         BiomeSlot closestSlot = GetClosestSlot();
 
-        if (closestSlot != null && !closestSlot.SlotPle)
+        if (closestSlot == null)
         {
-            // Asignar al nuevo slot
+            targetPosition = animal.parentSlot != null ? animal.parentSlot.transform.position : originalPosition;
+            if (animal.parentSlot != null)
+                animal.SetMood(animal.CheckIfHappy());
+            else
+                animal.aAnimator.OnMoodSwap(Mood.Idle);
+
+            StartpickUpEffect(originalScale.x);
+            return;
+        }
+        if (!closestSlot.SlotPle)
+        {
             if (animal.parentSlot != null)
                 animal.parentSlot.SlotPle = false;
 
-            animal.parentSlot = closestSlot;
+            animal.SetParentSlot(closestSlot, false);
             closestSlot.SlotPle = true;
 
             animal.SetParentSlot(closestSlot);
@@ -83,23 +92,45 @@ public class AnimalDragHandler : MonoBehaviour
             originalPosition = targetPosition;
             animal.SetMood(animal.CheckIfHappy());
         }
-        else
+        else if (!animal.isOnQueue)
         {
-            // Snap back
-            targetPosition = animal.parentSlot != null  ? animal.parentSlot.transform.position : originalPosition;
-            if (animal.parentSlot != null)
+            Animal otherAnimal = closestSlot.GetComponentInChildren<Animal>();
+            BiomeSlot newSlot = otherAnimal != null ? otherAnimal.parentSlot : null;
+            BiomeSlot oldSlot = animal.parentSlot;
+            AnimalDragHandler otherDrag = otherAnimal != null ? otherAnimal.GetComponent<AnimalDragHandler>() : null;
+
+            if (otherAnimal != null && otherAnimal != animal && !otherAnimal.isOnQueue)
             {
+                animal.SetParentSlot(newSlot,false);
+                otherAnimal.SetParentSlot(oldSlot,false);
+
+                newSlot.SlotPle = true;
+                oldSlot.SlotPle = true;
+
+                targetPosition = animal.parentSlot != null ? animal.parentSlot.transform.position : originalPosition;
+                originalPosition = targetPosition;
+
+                otherDrag.targetPosition = otherAnimal.parentSlot != null ? otherAnimal.parentSlot.transform.position : otherDrag.originalPosition;
+
                 animal.SetMood(animal.CheckIfHappy());
+                otherAnimal.SetMood(otherAnimal.CheckIfHappy());
+
             }
             else
             {
-                animal.aAnimator.OnMoodSwap(Mood.Idle);
+                targetPosition = animal.parentSlot != null ? animal.parentSlot.transform.position : originalPosition;
             }
         }
+        else
+        {
+            targetPosition = animal.parentSlot != null ? animal.parentSlot.transform.position : originalPosition;
+        }
+
         StartpickUpEffect(originalScale.x);
     }
 
-    private BiomeSlot GetClosestSlot()
+
+    BiomeSlot GetClosestSlot()
     {
         BiomeSlot closest = null;
         float minDist = Mathf.Infinity;
@@ -125,7 +156,7 @@ public class AnimalDragHandler : MonoBehaviour
             StopCoroutine(scaleRoutine);
         scaleRoutine = StartCoroutine(pickUpEffect(targetScale));
     }
-    private IEnumerator pickUpEffect(float targetScale)
+    IEnumerator pickUpEffect(float targetScale)
     {
         Vector3 startScale = transform.localScale;
         Vector3 endScale = originalScale * targetScale;
@@ -141,15 +172,14 @@ public class AnimalDragHandler : MonoBehaviour
         transform.localScale = endScale;
         scaleRoutine = null;
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         var slot = collision.GetComponent<BiomeSlot>();
         if (slot != null && !nearbySlots.Contains(slot))
             nearbySlots.Add(slot);
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    void OnTriggerExit2D(Collider2D collision)
     {
         var slot = collision.GetComponent<BiomeSlot>();
         if (slot != null)
