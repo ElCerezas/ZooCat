@@ -8,6 +8,7 @@ public class LevelManager : MonoBehaviour
 {
     public static LevelManager instance;
     [SerializeField] EndScreenManager endScreenManager;
+    [SerializeField] GameObject[] GameObjectsToHide;
 
     [Header("Slots & Animals")]
     public List<Animal> animals = new List<Animal>();
@@ -56,6 +57,10 @@ public class LevelManager : MonoBehaviour
             if (CuaLogic.instance.IsCuaEmpty())
             {
                 endScreenManager.StartEndScreenShow(time);
+                for (int i = 0; i< GameObjectsToHide.Length; i++)
+                {
+                    GameObjectsToHide[i].SetActive(false);
+                }
             }
             else
             {
