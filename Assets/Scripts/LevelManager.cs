@@ -57,6 +57,10 @@ public class LevelManager : MonoBehaviour
             if (CuaLogic.instance.IsCuaEmpty())
             {
                 endScreenManager.StartEndScreenShow(time);
+                for (int i = 0; i < placedAnimals.Count; i++)
+                {
+                    placedAnimals[i].selectable = false;
+                }
                 for (int i = 0; i< GameObjectsToHide.Length; i++)
                 {
                     GameObjectsToHide[i].SetActive(false);

@@ -30,7 +30,7 @@ public class LevelSelectManager : MonoBehaviour
     {
         for (int i = 0; i < levelButtons.Length; i++)
         {
-            Debug.Log($"{i}/{levelButtons.Length}");
+            Debug.Log($"{i+1}/{levelButtons.Length}");
             unlockLevels[i] = levelButtons[i].isUnlockedByDefault;
             levelButtons[i].SetUp(unlockLevels[i]);
         }

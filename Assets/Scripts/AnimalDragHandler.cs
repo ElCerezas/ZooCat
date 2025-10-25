@@ -157,6 +157,3 @@ public class AnimalDragHandler : MonoBehaviour
     }
 }
 
-// B# C D Eb F G A Bb
-//  T  T ST T T T  ST
-//

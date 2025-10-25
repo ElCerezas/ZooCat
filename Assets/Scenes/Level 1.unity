@@ -242,6 +242,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1834753041740935390, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7658443031168280270, guid: a9b179e2604c82a42995b93df98e2053, type: 3}
     - target: {fileID: 2402565664728313798, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: medi
       value: 2
@@ -284,8 +288,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4181914709448659449, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.008333385
+      value: 0.008333355
       objectReference: {fileID: 0}
+    - target: {fileID: 4369231714530850546, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3182749822633333672, guid: 5743d14eb9b19114085f8120bb4c2a56, type: 3}
     - target: {fileID: 6213540850650849024, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: m_Name
       value: AnimalPrefab (5)
@@ -675,6 +683,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1834753041740935390, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7785057561689886592, guid: a9b179e2604c82a42995b93df98e2053, type: 3}
     - target: {fileID: 2402565664728313798, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: medi
       value: 0
@@ -717,8 +729,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4181914709448659449, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.008333385
+      value: 0.114700735
       objectReference: {fileID: 0}
+    - target: {fileID: 4369231714530850546, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6840385186124387026, guid: 5743d14eb9b19114085f8120bb4c2a56, type: 3}
     - target: {fileID: 6213540850650849024, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: m_Name
       value: AnimalPrefab (1)
@@ -735,8 +751,7 @@ PrefabInstance:
       propertyPath: noStatOffset
       value: -4
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2458982954031711815, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -1203,7 +1218,6 @@ MonoBehaviour:
   GameObjectsToHide:
   - {fileID: 1869371614}
   - {fileID: 1125697856}
-  - {fileID: 1621886290}
   animals: []
   placedAnimals: []
   canUpdateCua: 0
@@ -2030,6 +2044,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1834753041740935390, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1830181978440124316, guid: a9b179e2604c82a42995b93df98e2053, type: 3}
     - target: {fileID: 2402565664728313798, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: medi
       value: 2
@@ -2072,8 +2090,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4181914709448659449, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.008333385
+      value: 0.047521412
       objectReference: {fileID: 0}
+    - target: {fileID: 4369231714530850546, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2751822678610202288, guid: 5743d14eb9b19114085f8120bb4c2a56, type: 3}
     - target: {fileID: 6213540850650849024, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: m_Name
       value: AnimalPrefab (4)
@@ -2382,6 +2404,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1834753041740935390, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6671218268463431859, guid: a9b179e2604c82a42995b93df98e2053, type: 3}
     - target: {fileID: 2402565664728313798, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: medi
       value: 1
@@ -2412,8 +2438,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4181914709448659449, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.008333385
+      value: 0.123098135
       objectReference: {fileID: 0}
+    - target: {fileID: 4369231714530850546, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 590016141747191124, guid: 5743d14eb9b19114085f8120bb4c2a56, type: 3}
     - target: {fileID: 6213540850650849024, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: m_Name
       value: AnimalPrefab (3)
@@ -5009,6 +5039,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9e58344c9bb8c04484dd7adec65868f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Namer
+  applyChanges: 0
 --- !u!1 &1535460992 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6213540850650849024, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
@@ -5026,6 +5057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9e58344c9bb8c04484dd7adec65868f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Namer
+  applyChanges: 0
 --- !u!1 &1551510311
 GameObject:
   m_ObjectHideFlags: 0
@@ -5143,6 +5175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9e58344c9bb8c04484dd7adec65868f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Namer
+  applyChanges: 0
 --- !u!1 &1616719976
 GameObject:
   m_ObjectHideFlags: 0
@@ -5381,6 +5414,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1834753041740935390, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6671218268463431859, guid: a9b179e2604c82a42995b93df98e2053, type: 3}
     - target: {fileID: 2402565664728313798, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: medi
       value: 1
@@ -5411,8 +5448,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4181914709448659449, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.008333385
+      value: 0.123098135
       objectReference: {fileID: 0}
+    - target: {fileID: 4369231714530850546, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 590016141747191124, guid: 5743d14eb9b19114085f8120bb4c2a56, type: 3}
     - target: {fileID: 6213540850650849024, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: m_Name
       value: AnimalPrefab (2)
@@ -5425,8 +5466,7 @@ PrefabInstance:
       propertyPath: head
       value: 
       objectReference: {fileID: 590016141747191124, guid: 5743d14eb9b19114085f8120bb4c2a56, type: 3}
-    m_RemovedComponents:
-    - {fileID: 2458982954031711815, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -5601,6 +5641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9e58344c9bb8c04484dd7adec65868f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Namer
+  applyChanges: 0
 --- !u!1001 &1768673658
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5832,6 +5873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9e58344c9bb8c04484dd7adec65868f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Namer
+  applyChanges: 0
 --- !u!1 &1847151317 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6213540850650849024, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
@@ -5849,6 +5891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9e58344c9bb8c04484dd7adec65868f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Namer
+  applyChanges: 0
 --- !u!1 &1869371614
 GameObject:
   m_ObjectHideFlags: 0
@@ -5968,6 +6011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9e58344c9bb8c04484dd7adec65868f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Namer
+  applyChanges: 0
 --- !u!1 &1899346885
 GameObject:
   m_ObjectHideFlags: 0
@@ -6696,6 +6740,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1834753041740935390, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1012404319176444870, guid: a9b179e2604c82a42995b93df98e2053, type: 3}
     - target: {fileID: 2402565664728313798, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: dieta
       value: 0
@@ -6730,8 +6778,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4181914709448659449, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.008333385
+      value: 0.17348266
       objectReference: {fileID: 0}
+    - target: {fileID: 4369231714530850546, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3515941479406946491, guid: 5743d14eb9b19114085f8120bb4c2a56, type: 3}
     - target: {fileID: 6213540850650849024, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: m_Name
       value: AnimalPrefab

@@ -60,15 +60,17 @@ public class UIIconShow : MonoBehaviour
         if (animal != null)
         {
             sAnimal = animal;
+
+            sCondition1 = condition;
             if (condition != TypeOfConditions.Null)
             {
-                sCondition1 = condition;
                 sNegative1 = isNegative;
                 sIndexSprite1 = Index;
             }
+
+            sCondition2 = condition2;
             if (condition2 != TypeOfConditions.Null)
             {
-                sCondition2 = condition2;
                 sNegative2 = isNegative2;
                 sIndexSprite2 = Index2;
             }
