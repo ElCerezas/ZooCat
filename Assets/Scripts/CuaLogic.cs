@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CuaLogic : MonoBehaviour
@@ -7,6 +8,7 @@ public class CuaLogic : MonoBehaviour
 
     public List<Transform> animalCua = new List<Transform>();
     public Transform slot1, slot2, storage;
+    public UIIconShow shower;
 
     private void Awake()
     {
@@ -30,6 +32,7 @@ public class CuaLogic : MonoBehaviour
                 animal.position = slot1.position;
                 a.selectable = true;
                 a.parentSlot = null;
+                a.ShowAnimalInfo();
             }
             else if (i == 1)
             {

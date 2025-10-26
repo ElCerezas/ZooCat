@@ -70,7 +70,7 @@ public class AnimalDragHandler : MonoBehaviour
 
         BiomeSlot closestSlot = GetClosestSlot();
 
-        if (closestSlot == null)
+        if (closestSlot == null) //No slot aprop
         {
             targetPosition = animal.parentSlot != null ? animal.parentSlot.transform.position : originalPosition;
             if (animal.parentSlot != null)
@@ -96,6 +96,7 @@ public class AnimalDragHandler : MonoBehaviour
         }
         else if (!animal.isOnQueue)
         {
+            Debug.Log("On");
             Animal otherAnimal = closestSlot.GetComponentInChildren<Animal>();
             BiomeSlot newSlot = otherAnimal != null ? otherAnimal.parentSlot : null;
             BiomeSlot oldSlot = animal.parentSlot;
@@ -103,6 +104,7 @@ public class AnimalDragHandler : MonoBehaviour
 
             if (otherAnimal != null && otherAnimal != animal && !otherAnimal.isOnQueue)
             {
+                Debug.Log(1);
                 animal.SetParentSlot(newSlot,false);
                 otherAnimal.SetParentSlot(oldSlot,false);
 
@@ -120,6 +122,7 @@ public class AnimalDragHandler : MonoBehaviour
             }
             else
             {
+                animal.SetMood(animal.CheckIfHappy());
                 targetPosition = animal.parentSlot != null ? animal.parentSlot.transform.position : originalPosition;
             }
         }
