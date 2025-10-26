@@ -18,14 +18,15 @@ public class BiomeSlot : MonoBehaviour
     Color[] colors = { Color.white, Color.cyan, Color.yellow };
     [SerializeField] float radius = 1f;
     [SerializeField] List<BiomeSlot> NearSlots = new List<BiomeSlot>();
-    SpriteRenderer SpriteRenderer;
+    [SerializeField]SpriteRenderer SpriteRenderer;
+    public static bool AllHighLighted = false;
     public bool SlotPle { get => slotPle; set => slotPle = value; }
 
     private void Start()
     {
-        SpriteRenderer = GetComponent<SpriteRenderer>();
+        OnHighLight(false);
         SetColorProximity(0);
-        Collider2D[] t = Physics2D.OverlapCircleAll(new Vector2(transform.position.x, transform.position.y+0.75f), radius);
+        Collider2D[] t = Physics2D.OverlapCircleAll(new Vector2(transform.position.x, transform.position.y+ 0.75f), radius);
         for (int i = 0; i < t.Length; i++)
         {
             if (t[i].gameObject.tag == "Slot" && t[i].gameObject != this.gameObject)
@@ -48,7 +49,8 @@ public class BiomeSlot : MonoBehaviour
     }
     private void OnMouseExit()
     {
-        SetColorProximity(0);
+        OnHighLight(false);
+        //SetColorProximity(0);
         for (int i = 0; i < NearSlots.Count; i++)
         {
             NearSlots[i].SetColorProximity(0);
@@ -56,7 +58,7 @@ public class BiomeSlot : MonoBehaviour
     }
     private void OnMouseEnter()
     {
-        //UIIconShow.instance.NewInfo(animalInSlot, this);
+        OnHighLight(true);
     }
     private void OnMouseDown()
     {
@@ -78,5 +80,24 @@ public class BiomeSlot : MonoBehaviour
     {
         Gizmos.color = Color.magenta;
         Gizmos.DrawWireSphere(new Vector2(transform.position.x, transform.position.y + 0.75f), radius);
+    }
+    public void OnHighLight(bool inHighlight)
+    {
+        if (AllHighLighted)
+        {
+            SpriteRenderer.color = Color.yellow;
+            SpriteRenderer.color = new Color(SpriteRenderer.color.r, SpriteRenderer.color.g, SpriteRenderer.color.b, 1f);
+            return;
+        }
+        if(inHighlight)
+        {
+            SpriteRenderer.color = Color.yellow;
+            SpriteRenderer.color = new Color(SpriteRenderer.color.r, SpriteRenderer.color.g, SpriteRenderer.color.b, 1f);
+        }
+        else
+        {
+            SpriteRenderer.color = Color.white;
+            SpriteRenderer.color = new Color(SpriteRenderer.color.r, SpriteRenderer.color.g, SpriteRenderer.color.b, 0.3f);
+        }
     }
 }

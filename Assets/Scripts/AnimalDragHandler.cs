@@ -51,6 +51,7 @@ public class AnimalDragHandler : MonoBehaviour
         isDragging = true;
         animal.aAnimator.OnMoodSwap(Mood.Grabed);
         StartpickUpEffect(zoomScale);
+        LevelManager.instance.HighLightAll(true);
     }
 
     private void OnMouseDrag()
@@ -65,6 +66,7 @@ public class AnimalDragHandler : MonoBehaviour
     {
         if (!isDragging) return;
         isDragging = false;
+        LevelManager.instance.HighLightAll(false);
 
         BiomeSlot closestSlot = GetClosestSlot();
 

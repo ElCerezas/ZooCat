@@ -1220,6 +1220,7 @@ MonoBehaviour:
   - {fileID: 1125697856}
   animals: []
   placedAnimals: []
+  slots: []
   canUpdateCua: 0
   timerText: {fileID: 907474203}
 --- !u!4 &279599390
@@ -4060,7 +4061,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 880884312198272908, guid: 2a7d1dce72c1480438cdad8a0a74f6f4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.65
+      value: 1.6499999
       objectReference: {fileID: 0}
     - target: {fileID: 880884312198272908, guid: 2a7d1dce72c1480438cdad8a0a74f6f4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6429,11 +6430,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 880884312198272908, guid: 2a7d1dce72c1480438cdad8a0a74f6f4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.534
+      value: 7.974
       objectReference: {fileID: 0}
     - target: {fileID: 880884312198272908, guid: 2a7d1dce72c1480438cdad8a0a74f6f4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.08
+      value: -2.84
       objectReference: {fileID: 0}
     - target: {fileID: 880884312198272908, guid: 2a7d1dce72c1480438cdad8a0a74f6f4, type: 3}
       propertyPath: m_LocalPosition.z

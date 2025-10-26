@@ -13,6 +13,7 @@ public class LevelManager : MonoBehaviour
     [Header("Slots & Animals")]
     public List<Animal> animals = new List<Animal>();
     public List<Animal> placedAnimals = new List<Animal>();
+    public List<BiomeSlot> slots = new List<BiomeSlot>();
     public bool canUpdateCua = false;
 
     [Header("Timer")]
@@ -25,6 +26,11 @@ public class LevelManager : MonoBehaviour
         for (int i = 0; i < gmObj.Length; i++)
         {
             animals.Add(gmObj[i].GetComponent<Animal>());
+        }
+        gmObj = GameObject.FindGameObjectsWithTag("Slot");
+        for (int i = 0; i < gmObj.Length; i++)
+        {
+            slots.Add(gmObj[i].GetComponent<BiomeSlot>());
         }
     }
     private void Update()
@@ -74,6 +80,14 @@ public class LevelManager : MonoBehaviour
                     canUpdateCua = false;
                 }
             }
+        }
+    }
+    public void HighLightAll(bool highlight)
+    {
+        BiomeSlot.AllHighLighted = highlight;
+        for (int i = 0; i < slots.Count; ++i)
+        {
+            slots[i].OnHighLight(highlight);
         }
     }
 }
