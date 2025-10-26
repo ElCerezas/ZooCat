@@ -3746,6 +3746,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2955007966652348450, guid: 2a7d1dce72c1480438cdad8a0a74f6f4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 2955007966652348450, guid: 2a7d1dce72c1480438cdad8a0a74f6f4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.83
+      objectReference: {fileID: 0}
     - target: {fileID: 3483026535974845076, guid: 2a7d1dce72c1480438cdad8a0a74f6f4, type: 3}
       propertyPath: m_Name
       value: SlotPrefab (7)
@@ -6467,6 +6475,14 @@ PrefabInstance:
     - target: {fileID: 880884312198272908, guid: 2a7d1dce72c1480438cdad8a0a74f6f4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2955007966652348450, guid: 2a7d1dce72c1480438cdad8a0a74f6f4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 2955007966652348450, guid: 2a7d1dce72c1480438cdad8a0a74f6f4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.76
       objectReference: {fileID: 0}
     - target: {fileID: 3483026535974845076, guid: 2a7d1dce72c1480438cdad8a0a74f6f4, type: 3}
       propertyPath: m_Name
