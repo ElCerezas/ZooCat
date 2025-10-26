@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System.Collections;
 using System.Collections.Generic;
 using System.Net.Http.Headers;
 using TMPro;
@@ -19,6 +20,9 @@ public class LevelManager : MonoBehaviour
     [Header("Timer")]
     [SerializeField] TextMeshProUGUI timerText;
     float time = 0;
+
+    Coroutine UntilEnd;
+
     void Awake()
     {
         instance = this;
@@ -62,7 +66,7 @@ public class LevelManager : MonoBehaviour
         {
             if (CuaLogic.instance.IsCuaEmpty())
             {
-                endScreenManager.StartEndScreenShow(time);
+                UntilEnd = StartCoroutine(WaitForCompletion());
                 for (int i = 0; i < placedAnimals.Count; i++)
                 {
                     placedAnimals[i].selectable = false;
@@ -81,6 +85,10 @@ public class LevelManager : MonoBehaviour
                 }
             }
         }
+        else if (CuaLogic.instance.IsCuaEmpty() && UntilEnd != null)
+        {
+            StopCoroutine(UntilEnd);
+        }
     }
     public void HighLightAll(bool highlight)
     {
@@ -89,5 +97,11 @@ public class LevelManager : MonoBehaviour
         {
             slots[i].OnHighLight(highlight);
         }
+    }
+    IEnumerator WaitForCompletion()
+    {
+        yield return new WaitForSeconds(3f);
+        endScreenManager.StartEndScreenShow(time-3f);
+        yield return null;
     }
 }
