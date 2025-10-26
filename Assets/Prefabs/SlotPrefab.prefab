@@ -142,6 +142,9 @@ MonoBehaviour:
   animalInSlot: {fileID: 0}
   radius: 1.61
   NearSlots: []
+  highLight: {r: 0, g: 0, b: 0, a: 1}
+  lowLight: {r: 0.18238991, g: 0.18238991, b: 0.18238991, a: 0.37254903}
+  highlightSpeed: 3
   SpriteRenderer: {fileID: 6991279549318121814}
 --- !u!61 &9063023311444730855
 BoxCollider2D:

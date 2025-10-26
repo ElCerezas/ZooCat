@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -15,9 +16,14 @@ public class BiomeSlot : MonoBehaviour
     [SerializeField] Animal animalInSlot;
 
     [Header("Near Slots")]
-    Color[] colors = { Color.white, Color.cyan, Color.yellow };
     [SerializeField] float radius = 1f;
     [SerializeField] List<BiomeSlot> NearSlots = new List<BiomeSlot>();
+
+    [Header("Highlighter")]
+    [SerializeField] Color highLight = Color.white;
+    [SerializeField] Color lowLight = Color.darkGray;
+    [SerializeField] float highlightSpeed = 1f;
+    Coroutine highlightCoroutine;
     [SerializeField]SpriteRenderer SpriteRenderer;
     public static bool AllHighLighted = false;
     public bool SlotPle { get => slotPle; set => slotPle = value; }
@@ -83,21 +89,32 @@ public class BiomeSlot : MonoBehaviour
     }
     public void OnHighLight(bool inHighlight)
     {
+        if (highlightCoroutine != null)
+            StopCoroutine(highlightCoroutine);
+        Color targetColor;
         if (AllHighLighted)
         {
-            SpriteRenderer.color = Color.yellow;
-            SpriteRenderer.color = new Color(SpriteRenderer.color.r, SpriteRenderer.color.g, SpriteRenderer.color.b, 1f);
+            targetColor = highLight;
+            highlightCoroutine = StartCoroutine(SmoothHighlight(targetColor));
             return;
         }
-        if(inHighlight)
+
+        targetColor = inHighlight ? highLight : lowLight;
+
+        highlightCoroutine = StartCoroutine(SmoothHighlight(targetColor));
+    }
+    private IEnumerator SmoothHighlight(Color targetColor)
+    {
+        Color startColor = SpriteRenderer.color;
+        float t = 0f;
+
+        while (t < 1f)
         {
-            SpriteRenderer.color = Color.yellow;
-            SpriteRenderer.color = new Color(SpriteRenderer.color.r, SpriteRenderer.color.g, SpriteRenderer.color.b, 1f);
+            t += Time.deltaTime * highlightSpeed;
+            SpriteRenderer.color = Color.Lerp(startColor, targetColor, t);
+            yield return null;
         }
-        else
-        {
-            SpriteRenderer.color = Color.white;
-            SpriteRenderer.color = new Color(SpriteRenderer.color.r, SpriteRenderer.color.g, SpriteRenderer.color.b, 0.3f);
-        }
+
+        SpriteRenderer.color = targetColor;
     }
 }
