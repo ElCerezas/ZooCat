@@ -68,6 +68,7 @@ public class LevelManager : MonoBehaviour
             {
                 if(UntilEnd != null)
                     StopCoroutine(UntilEnd);
+
                 UntilEnd = StartCoroutine(WaitForCompletion());
             }
             else
