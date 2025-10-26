@@ -66,15 +66,9 @@ public class LevelManager : MonoBehaviour
         {
             if (CuaLogic.instance.IsCuaEmpty())
             {
+                if(UntilEnd != null)
+                    StopCoroutine(UntilEnd);
                 UntilEnd = StartCoroutine(WaitForCompletion());
-                for (int i = 0; i < placedAnimals.Count; i++)
-                {
-                    placedAnimals[i].selectable = false;
-                }
-                for (int i = 0; i< GameObjectsToHide.Length; i++)
-                {
-                    GameObjectsToHide[i].SetActive(false);
-                }
             }
             else
             {
@@ -101,6 +95,14 @@ public class LevelManager : MonoBehaviour
     IEnumerator WaitForCompletion()
     {
         yield return new WaitForSeconds(3f);
+        for (int i = 0; i < placedAnimals.Count; i++)
+        {
+            placedAnimals[i].selectable = false;
+        }
+        for (int i = 0; i < GameObjectsToHide.Length; i++)
+        {
+            GameObjectsToHide[i].SetActive(false);
+        }
         endScreenManager.StartEndScreenShow(time-3f);
         yield return null;
     }

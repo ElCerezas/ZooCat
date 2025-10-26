@@ -1514,11 +1514,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   Bg: {fileID: 500132477}
-  titleText: {fileID: 1936000672}
-  txt1: {fileID: 229149042}
-  timerText: {fileID: 1408840773}
-  txt2: {fileID: 1771416263}
+  titleText: {fileID: 1863162230}
+  txt1: {fileID: 1939185318}
+  timer: {fileID: 1239722872}
+  score: {fileID: 2135486673}
   scoreText: {fileID: 271845668}
+  timerText: {fileID: 1408840773}
   SealOfAproval: {fileID: 1029493874}
   SealOfAprovalShadow: {fileID: 1388371839}
   returnButton: {fileID: 932349887}
@@ -1610,7 +1611,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &500132478
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3115,7 +3116,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &932349888
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3522,7 +3523,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1029493873
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4060,7 +4061,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1239722873
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4632,7 +4633,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1388371838
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5994,7 +5995,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1863162231
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6585,7 +6586,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1939185319
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6954,7 +6955,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2135486674
 RectTransform:
   m_ObjectHideFlags: 0

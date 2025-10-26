@@ -11,11 +11,12 @@ public class EndScreenManager : MonoBehaviour
 {
     [Header("UI References")]
     [SerializeField] GameObject Bg;
-    [SerializeField] TMP_Text titleText;
-    [SerializeField] TMP_Text txt1;
-    [SerializeField] TMP_Text timerText;
-    [SerializeField] TMP_Text txt2;
+    [SerializeField] GameObject titleText;
+    [SerializeField] GameObject txt1;
+    [SerializeField] GameObject timer;
+    [SerializeField] GameObject score;
     [SerializeField] TMP_Text scoreText;
+    [SerializeField] TMP_Text timerText;
     [SerializeField] Image SealOfAproval,SealOfAprovalShadow;
     [SerializeField] GameObject returnButton;
 
@@ -39,7 +40,7 @@ public class EndScreenManager : MonoBehaviour
             StartEndScreenShow(testTime);
         }
     }
-    public void StartEndScreenShow(float time, float minTime = 2f * 60f, float maxTime = 20f * 60f)
+    public void StartEndScreenShow(float time, float minTime = 1f * 60f, float maxTime = 10f * 60f)
     {
         StopAllCoroutines();
 
@@ -79,13 +80,12 @@ public class EndScreenManager : MonoBehaviour
         yield return new WaitForSeconds(0.4f);
 
         yield return AnimatePop(txt1.transform, 1.1f);
-        yield return AnimatePop(timerText.transform, 1.1f);
+        yield return AnimatePop(timer.transform, 1.1f);
         yield return StartCoroutine(AnimateTimer(timerText, totalTime));
 
         yield return new WaitForSeconds(0.6f);
 
-        yield return AnimatePop(txt2.transform, 1.1f);
-        yield return AnimatePop(scoreText.transform, 1.1f);
+        yield return AnimatePop(score.transform, 1.1f);
         yield return StartCoroutine(AnimateScore(scoreText, finalScore));
 
         yield return new WaitForSeconds(0.3f);
