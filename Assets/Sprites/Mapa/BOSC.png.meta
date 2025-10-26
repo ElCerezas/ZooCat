@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2616468632c07e94794044bd0f601ba0
+guid: 76fe5d67fccd5a24f906542a93854f3d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 179998609114555169
-    second: PLATJA_0
+      213: -4150842588206014825
+    second: BOSC_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PLATJA_0
+      name: BOSC_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 193
-        height: 249
+        width: 230
+        height: 176
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 123665408cb7f7200800000000000000
-      internalID: 179998609114555169
+      spriteID: 79eda6b78ae3566c0800000000000000
+      internalID: -4150842588206014825
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PLATJA_0: 179998609114555169
+      BOSC_0: -4150842588206014825
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

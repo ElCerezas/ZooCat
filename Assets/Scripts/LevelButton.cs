@@ -6,6 +6,7 @@ public class LevelButton : MonoBehaviour
     [Header("Level")]
     public bool isUnlockedByDefault;
     public int LevelToGo;
+    [SerializeField] bool isFake = false;
 
     [Header("Button")]
     Button button;
@@ -35,6 +36,10 @@ public class LevelButton : MonoBehaviour
     }
     public void Unlock()
     {
+        if (isFake)
+        {
+            return;
+        }
         button.interactable = true;
         button.onClick.AddListener(LoadLevel);
         image.color = Color.white;
