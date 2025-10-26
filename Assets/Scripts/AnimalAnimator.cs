@@ -20,6 +20,11 @@ public class AnimalAnimator : MonoBehaviour
     public SpriteRenderer headRenderer;
     public SpriteRenderer bodyRenderer;
 
+    [Header("Particles")]
+    [SerializeField]ParticleSystem particlesHappy;
+    [SerializeField]ParticleSystem particlesAngry;
+    [SerializeField]ParticleSystem particlesPop;
+
     [SerializeField] Mood actualMood = Mood.Idle;
 
     Vector3 headOrigScale;
@@ -28,6 +33,7 @@ public class AnimalAnimator : MonoBehaviour
     Vector3 bodyOrigPos;
     private void Start()
     {
+        particlesHappy.Stop(); particlesAngry.Stop();
         headRenderer.sprite = head;
         bodyRenderer.sprite = body;
 
@@ -42,33 +48,34 @@ public class AnimalAnimator : MonoBehaviour
         {
             ResetProperties();
             actualMood = newMood;
+            switch (newMood)
+            {
+                case Mood.Happy:
+                    particlesHappy.Play(); particlesAngry.Stop(); break;
+                case Mood.Angry:
+                    particlesHappy.Stop(); particlesAngry.Play(); break;
+                default:
+                    particlesHappy.Stop(); particlesAngry.Stop(); break;
+            }
         }
-
     }
     private void Update()
     {
         switch (actualMood)
         {
             case Mood.Happy:
-                //No ce
                 break;
             case Mood.Angry:
-                //headRenderer.color = Color.red;
                 float shake = Mathf.Sin(Time.time * angryShakeSpeed) * angryShakeAmplitude;
                 headRenderer.transform.localScale = headOrigScale * angryUpScaler;
                 headRenderer.transform.localRotation = Quaternion.Euler(0, 0, shake);
                 break;
             case Mood.Grabed:
-                headRenderer.color = Color.white;
-
                 headRenderer.transform.localScale = Vector3.Lerp(headRenderer.transform.localScale, headOrigScale * pickUpScaler, Time.deltaTime * 10f);
-
-                // cuerpo balance�ndose
                 float swing = Mathf.Sin(Time.time * grabSwingSpeed) * grabSwingAmplitude;
                 bodyRenderer.transform.localRotation = Quaternion.Euler(0, 0, swing);
                 break;
             default: // Idle
-                headRenderer.color = Color.white;
                 break;
         }
     }
