@@ -1,10 +1,6 @@
 using System.Collections;
 using TMPro;
-using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
-using UnityEngine.tvOS;
 using UnityEngine.UI;
 
 public class EndScreenManager : MonoBehaviour
