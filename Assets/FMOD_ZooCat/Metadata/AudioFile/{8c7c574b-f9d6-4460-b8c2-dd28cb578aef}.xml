@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{8c7c574b-f9d6-4460-b8c2-dd28cb578aef}">
 		<property name="assetPath">
-			<value>BOSC.wav</value>
+			<value>Ambient/BOSC.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

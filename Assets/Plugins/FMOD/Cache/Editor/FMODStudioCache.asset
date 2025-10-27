@@ -69,38 +69,11 @@ MonoBehaviour:
   Path: Assets/FMOD_ZooCat/Build/Desktop/MUSICA.bank
   Name: MUSICA
   StudioPath: bank:/MUSICA
-  lastModified: 638971987175323143
+  lastModified: 638972014564416142
   FileSizes:
   - Name: Desktop
     Value: 5429888
   Exists: 1
---- !u!114 &-6882687094102876362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/PANTALLA-INICI/M\xFAsicaINICI"
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: "event:/PANTALLA-INICI/M\xFAsicaINICI"
-  Guid:
-    Data1: -1722194017
-    Data2: 1128763866
-    Data3: 52982671
-    Data4: -1337176675
-  Banks:
-  - {fileID: -1624711420487651644}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 61132
 --- !u!114 &-6775523681781776934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,7 +116,7 @@ MonoBehaviour:
   Path: Assets/FMOD_ZooCat/Build/Desktop/AMBIENT.bank
   Name: AMBIENT
   StudioPath: bank:/AMBIENT
-  lastModified: 638971837924776437
+  lastModified: 638972014563483464
   FileSizes:
   - Name: Desktop
     Value: 1166112
@@ -167,6 +140,7 @@ MonoBehaviour:
     Data3: -1170081356
     Data4: 610853088
   Banks:
+  - {fileID: -1624711420487651644}
   - {fileID: -7735991717518963183}
   IsStream: 1
   Is3D: 0
@@ -217,7 +191,7 @@ MonoBehaviour:
   Path: "Assets/FMOD_ZooCat/Build/Desktop/M\xDASICA.bank"
   Name: "M\xDASICA"
   StudioPath: "bank:/M\xDASICA"
-  lastModified: 638971837925838189
+  lastModified: 638971856619019143
   FileSizes:
   - Name: Desktop
     Value: 5429888
@@ -281,20 +255,19 @@ MonoBehaviour:
   - {fileID: 5513509273620026064}
   - {fileID: 292850489387397313}
   - {fileID: 3105108724822057600}
-  - {fileID: 8424814567520078792}
-  - {fileID: 2601119349657112221}
-  - {fileID: -6882687094102876362}
   - {fileID: 9121173334118018119}
   - {fileID: -8686872536251513196}
   - {fileID: 6778173861688198276}
   - {fileID: -2832096237188243600}
   - {fileID: 2823444803018687006}
+  - {fileID: 7501802506599339750}
+  - {fileID: 2990755493888392185}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5911172482394290584}
   StringsBanks:
   - {fileID: 6344337719205130584}
-  cacheTime: 638971987175502799
+  cacheTime: 638972014564416142
   cacheVersion: 131632
 --- !u!114 &292850489387397313
 MonoBehaviour:
@@ -350,33 +323,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 41000
---- !u!114 &2601119349657112221
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/NIVELL2/M\xFAsica2"
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: "event:/NIVELL2/M\xFAsica2"
-  Guid:
-    Data1: 970737968
-    Data2: 1088666127
-    Data3: -1170081356
-    Data4: 610853088
-  Banks:
-  - {fileID: -1624711420487651644}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 58536
 --- !u!114 &2823444803018687006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -396,6 +342,7 @@ MonoBehaviour:
     Data3: 52982671
     Data4: -1337176675
   Banks:
+  - {fileID: -1624711420487651644}
   - {fileID: -7735991717518963183}
   IsStream: 1
   Is3D: 0
@@ -404,6 +351,33 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 61132
+--- !u!114 &2990755493888392185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ANIMALS/Granota
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/ANIMALS/Granota
+  Guid:
+    Data1: 1861455739
+    Data2: 1218800853
+    Data3: -1347119481
+    Data4: 971551406
+  Banks:
+  - {fileID: 3642173932355874811}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &3105108724822057600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -473,10 +447,10 @@ MonoBehaviour:
   Path: Assets/FMOD_ZooCat/Build/Desktop/FXS.bank
   Name: FXS
   StudioPath: bank:/FXS
-  lastModified: 638971987174891041
+  lastModified: 638972014563985165
   FileSizes:
   - Name: Desktop
-    Value: 820992
+    Value: 874272
   Exists: 1
 --- !u!114 &4956112438674576635
 MonoBehaviour:
@@ -547,7 +521,7 @@ MonoBehaviour:
   Path: Assets/FMOD_ZooCat/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638971987175412980
+  lastModified: 638972014564006572
   FileSizes:
   - Name: Desktop
     Value: 1552
@@ -567,10 +541,10 @@ MonoBehaviour:
   Path: Assets/FMOD_ZooCat/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638971987175502799
+  lastModified: 638972014564010787
   FileSizes:
   - Name: Desktop
-    Value: 1828
+    Value: 1912
   Exists: 1
 --- !u!114 &6778173861688198276
 MonoBehaviour:
@@ -591,6 +565,7 @@ MonoBehaviour:
     Data3: 1956985233
     Data4: 531468224
   Banks:
+  - {fileID: -1624711420487651644}
   - {fileID: -7735991717518963183}
   IsStream: 1
   Is3D: 0
@@ -599,6 +574,33 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 43200
+--- !u!114 &7501802506599339750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PAgina
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/PAgina
+  Guid:
+    Data1: -269518436
+    Data2: 1233376765
+    Data3: 823327935
+    Data4: -1548801890
+  Banks:
+  - {fileID: 3642173932355874811}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &8093352457948921469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -626,33 +628,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &8424814567520078792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/NIVELL1/M\xFAsica1"
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: "event:/NIVELL1/M\xFAsica1"
-  Guid:
-    Data1: -2124977136
-    Data2: 1323641057
-    Data3: 1956985233
-    Data4: 531468224
-  Banks:
-  - {fileID: -1624711420487651644}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 43200
 --- !u!114 &9047673510582726801
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
-	<object class="AudioFile" id="{d5b11bcc-1f04-402b-bf50-e3c8e3859d1b}">
+	<object class="AudioFile" id="{e97f6468-2e5d-4210-a3bb-9523c1ab1976}">
 		<property name="assetPath">
-			<value>Ambient/AIGUAMOLL.wav</value>
-		</property>
-		<property name="isStreaming">
-			<value>true</value>
+			<value>GRANOTA/Granota2.wav</value>
 		</property>
 		<property name="frequencyInKHz">
-			<value>96</value>
+			<value>48</value>
 		</property>
 		<property name="channelCount">
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>41</value>
+			<value>0.375</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{2c9ef9d5-93fe-4e80-bf4e-d53f86855562}</destination>

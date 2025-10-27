@@ -2370,6 +2370,69 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &635434025
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 635434026}
+  - component: {fileID: 635434027}
+  m_Layer: 0
+  m_Name: Peix
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &635434026
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635434025}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1758907331}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &635434027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635434025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 787850570
+      Data2: 1155522692
+      Data3: 1725494922
+      Data4: 2044316521
+    Path: event:/ANIMALS/Peix
+  Event: 
+  EventPlayTrigger: 15
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &648148808 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6213540850650849024, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
@@ -3531,11 +3594,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 2121857871
-      Data2: 1295022054
-      Data3: 1993461917
-      Data4: 1599557263
-    Path: event:/NIVELL1/Ambient1
+      Data1: 1407154444
+      Data2: 1250063897
+      Data3: -1041950276
+      Data4: -1279173670
+    Path: event:/NIVELL2/Ambient2
   Event: 
   EventPlayTrigger: 1
   EventStopTrigger: 2
@@ -5177,11 +5240,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 909506072
-      Data2: 1309831659
-      Data3: 1543055275
-      Data4: -1216449802
-    Path: event:/ANIMALS/Geneta
+      Data1: 787850570
+      Data2: 1155522692
+      Data3: 1725494922
+      Data4: 2044316521
+    Path: event:/ANIMALS/Peix
   Event: 
   EventPlayTrigger: 15
   EventStopTrigger: 0
@@ -5330,11 +5393,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 909506072
-      Data2: 1309831659
-      Data3: 1543055275
-      Data4: -1216449802
-    Path: event:/ANIMALS/Geneta
+      Data1: 787850570
+      Data2: 1155522692
+      Data3: 1725494922
+      Data4: 2044316521
+    Path: event:/ANIMALS/Peix
   Event: 
   EventPlayTrigger: 15
   EventStopTrigger: 0
@@ -5946,6 +6009,7 @@ Transform:
   - {fileID: 571070807}
   - {fileID: 2033327069}
   - {fileID: 1655066930}
+  - {fileID: 635434026}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1768673658
@@ -6209,11 +6273,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -2124977136
-      Data2: 1323641057
-      Data3: 1956985233
-      Data4: 531468224
-    Path: "event:/NIVELL1/M\xFAsica1"
+      Data1: 970737968
+      Data2: 1088666127
+      Data3: -1170081356
+      Data4: 610853088
+    Path: event:/NIVELL2/Musica2
   Event: 
   EventPlayTrigger: 1
   EventStopTrigger: 2
@@ -6370,11 +6434,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1700782478
-      Data2: 1228597307
-      Data3: 15422911
-      Data4: 1543021576
-    Path: event:/ANIMALS/Garsa
+      Data1: 1861455739
+      Data2: 1218800853
+      Data3: -1347119481
+      Data4: 971551406
+    Path: event:/ANIMALS/Granota
   Event: 
   EventPlayTrigger: 15
   EventStopTrigger: 0
