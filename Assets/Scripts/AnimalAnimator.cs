@@ -25,6 +25,9 @@ public class AnimalAnimator : MonoBehaviour
     [SerializeField]ParticleSystem particlesAngry;
     [SerializeField]ParticleSystem particlesPop;
 
+    [Header("Sound")]
+    [SerializeField] AudioSource audioHappy;
+
     [SerializeField] Mood actualMood = Mood.Idle;
 
     Vector3 headOrigScale;
@@ -51,7 +54,12 @@ public class AnimalAnimator : MonoBehaviour
             switch (newMood)
             {
                 case Mood.Happy:
-                    particlesHappy.Play(); particlesAngry.Stop(); break;
+                    particlesHappy.Play(); particlesAngry.Stop();
+                    if (audioHappy != null)
+                    {
+                        audioHappy.Play();
+                    }
+                    break;
                 case Mood.Angry:
                     particlesHappy.Stop(); particlesAngry.Play(); break;
                 default:
