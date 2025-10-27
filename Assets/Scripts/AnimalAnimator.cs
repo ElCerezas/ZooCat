@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Rendering;
+using FMODUnity;
 
 public enum Mood { Happy, Angry, Grabed, Idle}
 public class AnimalAnimator : MonoBehaviour
@@ -26,7 +27,8 @@ public class AnimalAnimator : MonoBehaviour
     [SerializeField]ParticleSystem particlesPop;
 
     [Header("Sound")]
-    [SerializeField] AudioSource audioHappy;
+    [SerializeField] EventReference audioHappy;
+    [SerializeField] EventReference audioAngry;
 
     [SerializeField] Mood actualMood = Mood.Idle;
 
@@ -55,13 +57,12 @@ public class AnimalAnimator : MonoBehaviour
             {
                 case Mood.Happy:
                     particlesHappy.Play(); particlesAngry.Stop();
-                    if (audioHappy != null)
-                    {
-                        audioHappy.Play();
-                    }
+                    AudioManager.PlayOneShot(audioHappy, this.transform.position);
                     break;
                 case Mood.Angry:
-                    particlesHappy.Stop(); particlesAngry.Play(); break;
+                    particlesHappy.Stop(); particlesAngry.Play();
+                    AudioManager.PlayOneShot(audioAngry, this.transform.position);
+                    break;
                 default:
                     particlesHappy.Stop(); particlesAngry.Stop(); break;
             }

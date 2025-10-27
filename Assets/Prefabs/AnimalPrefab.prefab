@@ -5192,6 +5192,20 @@ MonoBehaviour:
   particlesHappy: {fileID: 4099894362897815502}
   particlesAngry: {fileID: 9108260732187354339}
   particlesPop: {fileID: 0}
+  audioHappy:
+    Guid:
+      Data1: -799501529
+      Data2: 1334574480
+      Data3: 1024406693
+      Data4: 134913524
+    Path: event:/Apladuments
+  audioAngry:
+    Guid:
+      Data1: 1834331491
+      Data2: 1207386207
+      Data3: -938393717
+      Data4: 806920459
+    Path: event:/Error
   actualMood: 3
 --- !u!70 &8373605355444689266
 CapsuleCollider2D:
