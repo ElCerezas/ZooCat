@@ -9,11 +9,17 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: a5883ed46a8cbcd4d8f91fbba417f524
   - enabled: 1
+    path: Assets/Scenes/Wikipedia.unity
+    guid: 5c52a5639348bd64f884fb41e03c4cda
+  - enabled: 1
     path: Assets/Scenes/MapExplorer.unity
     guid: 590c59cc0b48ca34aa5b43eef859dba8
   - enabled: 1
     path: Assets/Scenes/Levels/Level 1.unity
     guid: b2e653ca7ebd3e643ba37ade0c7e152d
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level 2.unity
+    guid: b1f71a3d4146ab74eb5a22ec86f1638c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

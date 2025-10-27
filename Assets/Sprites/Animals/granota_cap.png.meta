@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 16729a0d0fb8ebd41930c6e9d0812a07
+guid: 1a37da6d2951cc542a9d8b805269424c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3985860655147841301
-    second: Butt_0
+      213: 4350056355299269986
+    second: granota_cap_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,10 +48,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 684
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Butt_0
+      name: granota_cap_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2
-        width: 970
-        height: 1022
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 174
+        y: 275
+        width: 335
+        height: 224
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: be805b52ad06fa8c0800000000000000
-      internalID: -3985860655147841301
+      spriteID: 26d1b8225318e5c30800000000000000
+      internalID: 4350056355299269986
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e3447ca45273e6449cfe5aa060765da
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Butt_0: -3985860655147841301
+      granota_cap_0: 4350056355299269986
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

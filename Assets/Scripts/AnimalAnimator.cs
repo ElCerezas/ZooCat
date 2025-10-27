@@ -57,11 +57,11 @@ public class AnimalAnimator : MonoBehaviour
             {
                 case Mood.Happy:
                     particlesHappy.Play(); particlesAngry.Stop();
-                    AudioManager.PlayOneShot(audioHappy, this.transform.position);
+                    AudioManager.PlayOneShot(audioHappy);
                     break;
                 case Mood.Angry:
                     particlesHappy.Stop(); particlesAngry.Play();
-                    AudioManager.PlayOneShot(audioAngry, this.transform.position);
+                    AudioManager.PlayOneShot(audioAngry);
                     break;
                 default:
                     particlesHappy.Stop(); particlesAngry.Stop(); break;

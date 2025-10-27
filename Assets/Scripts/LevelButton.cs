@@ -30,7 +30,7 @@ public class LevelButton : MonoBehaviour
         }
         else
         {
-            image.color = Color.darkGray;
+            image.color = Color.black;
 
         }
     }

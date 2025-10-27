@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 587d0c4be9bc174439c04c9d9c4415e6
+guid: dc54e7b49922d23489db00a12aa9bc4c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4515074771684787246
-    second: cartell_0
+      213: -6959760399159537891
+    second: fartet cos_0
+  - first:
+      213: 3222549095119824493
+    second: fartet cos_1
+  - first:
+      213: -6426802675687142787
+    second: fartet cos_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,10 +54,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 684
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +78,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -100,23 +106,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cartell_0
+      name: fartet cos_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 446
-        height: 760
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 182
+        y: 16
+        width: 319
+        height: 361
+      alignment: 9
+      pivot: {x: 0.5, y: 0.83}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2db7663ca6b3751c0800000000000000
-      internalID: -4515074771684787246
+      spriteID: d7a432264096fc6a0800000000000000
+      internalID: -6426802675687142787
       vertices: []
       indices: 
       edges: []
@@ -125,7 +131,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: fd98c841b9b57694283da57d98e0aadd
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +141,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cartell_0: -4515074771684787246
+      fartet cos_0: -6959760399159537891
+      fartet cos_1: 3222549095119824493
+      fartet cos_2: -6426802675687142787
+      fartet cos_3: 919577379
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

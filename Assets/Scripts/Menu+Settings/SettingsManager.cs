@@ -1,10 +1,10 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class SettingsManager : MonoBehaviour
 {
     float musicVolume, soundVolume;
-    int soundToggle, musicToggle;
     public static SettingsManager instance;
     [SerializeField] Canvas settingsMenu;
     bool displayedSettings = true;
@@ -13,14 +13,20 @@ public class SettingsManager : MonoBehaviour
     bool animatingSettings = false;
 
     public AnimationCurve curve;
+
+    [Header("FMOD")]
+    [SerializeField] string pathMusica = "vca:/Música";
+    [SerializeField] string pathSo = "vca:/So";
+    FMOD.Studio.VCA vcaMusica;
+    FMOD.Studio.VCA vcaSo;
+
+
     private void Awake()
     {
         if (instance == null)
         {
             musicVolume = PlayerPrefs.GetFloat("musicVolume", 100);
             soundVolume = PlayerPrefs.GetFloat("soundVolume", 100);
-            musicToggle = PlayerPrefs.GetInt("musicToggle", 1);
-            soundToggle = PlayerPrefs.GetInt("musicToggle", 1);
             DontDestroyOnLoad(gameObject);
             DontDestroyOnLoad(settingsMenu.gameObject);
             instance = this;
@@ -31,17 +37,26 @@ public class SettingsManager : MonoBehaviour
             Destroy(this);
         }
     }
+    private void Start()
+    {
+        vcaMusica = FMODUnity.RuntimeManager.GetVCA(pathMusica);
+        vcaSo = FMODUnity.RuntimeManager.GetVCA(pathSo);
+        vcaMusica.setVolume(musicVolume);
+        vcaSo.setVolume(soundVolume);
+    }
     public void SetVolumes(float MusicVolume = -1, float SoundVolume = -1)
     {
         if ((MusicVolume >= 0))
         {
             musicVolume = MusicVolume;
             PlayerPrefs.SetFloat("musicVolume", musicVolume);
+            vcaMusica.setVolume(musicVolume);
         }
         if ((SoundVolume >= 0))
         {
             soundVolume = SoundVolume;
             PlayerPrefs.SetFloat("soundVolume", soundVolume);
+            vcaSo.setVolume(soundVolume);
         }
     }
     public float GetSoundVolume()

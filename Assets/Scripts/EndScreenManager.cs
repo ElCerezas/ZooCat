@@ -26,12 +26,16 @@ public class EndScreenManager : MonoBehaviour
     [SerializeField] AnimationCurve numberCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
     [SerializeField] AnimationCurve popCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
 
+    [Header("Stamps")]
+    [SerializeField] Sprite[] stamps;
+
     [Header("Debug")]
     [SerializeField] bool debugTest = false;
     [SerializeField] float testTime = 135.7f;
     [SerializeField] int testScore = 8742;
 
     int maxScorePossible = 1714; //Visca Catalunya ostiaaaaaa
+    int howManyStars;
 
     private void Start()
     {
@@ -40,7 +44,7 @@ public class EndScreenManager : MonoBehaviour
             StartEndScreenShow(testTime);
         }
     }
-    public void StartEndScreenShow(float time, float minTime = 1f * 60f, float maxTime = 10f * 60f)
+    public void StartEndScreenShow(float time, float minTime = 1f * 60f, float maxTime = 5f * 60f)
     {
         StopAllCoroutines();
 
@@ -67,7 +71,14 @@ public class EndScreenManager : MonoBehaviour
             Score = Mathf.Max((int)(maxScorePossible * scoreFactor), 50);
         }
 
-        return Score;
+        if (Score <= (maxScorePossible / 3f))
+            howManyStars = 1;
+        else if (Score > (maxScorePossible / 3) && Score <= (maxScorePossible / 3) * 2)
+            howManyStars = 2;
+        else
+            howManyStars = 3;
+
+            return Score;
     }
     IEnumerator EndScreenSequence(float totalTime, int finalScore)
     {
@@ -89,6 +100,8 @@ public class EndScreenManager : MonoBehaviour
         yield return StartCoroutine(AnimateScore(scoreText, finalScore));
 
         yield return new WaitForSeconds(0.3f);
+        SealOfAproval.sprite = stamps[howManyStars - 1];
+        SealOfAprovalShadow.sprite = stamps[howManyStars - 1];
         yield return ApprovalSeal(SealOfAproval.transform, SealOfAprovalShadow.transform);
         yield return AnimatePop(returnButton.transform, 1.1f);
     }
@@ -126,8 +139,6 @@ public class EndScreenManager : MonoBehaviour
     }
     IEnumerator FadeCanvasGroup()
     {
-        float t = 0;
-        //TO DO ApareixerMillor
         Bg.SetActive(true);
         yield return null;
     }
@@ -223,7 +234,6 @@ public class EndScreenManager : MonoBehaviour
 
         yield return StartCoroutine(StampImpact(Seal));
     }
-
     IEnumerator StampImpact(Transform Seal)
     {
         float duration = 0.16f;
