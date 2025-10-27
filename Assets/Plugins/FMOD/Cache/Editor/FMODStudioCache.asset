@@ -19,7 +19,7 @@ MonoBehaviour:
     Data3: 1282640537
     Data4: -1210570109
   Banks:
-  - {fileID: -1108155011588331277}
+  - {fileID: 3642173932355874811}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -27,26 +27,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &-7702568172467051874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
-  Path: ../../FMOD_ZooCat/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638971749956717362
-  FileSizes:
-  - Name: Desktop
-    Value: 1582
-  Exists: 1
 --- !u!114 &-6882687094102876362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,7 +46,7 @@ MonoBehaviour:
     Data3: 52982671
     Data4: -1337176675
   Banks:
-  - {fileID: -2480846510597663180}
+  - {fileID: -4421493719627683638}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -93,7 +73,7 @@ MonoBehaviour:
     Data3: 1543055275
     Data4: -1216449802
   Banks:
-  - {fileID: -1108155011588331277}
+  - {fileID: 3642173932355874811}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -101,7 +81,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &-2480846510597663180
+--- !u!114 &-4421493719627683638
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,15 +91,35 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: "bank:/MU\u0301SICA.bank"
+  m_Name: "bank:/M\xDASICA.bank"
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
-  Path: "../../FMOD_ZooCat/Build/Desktop/MU\u0301SICA.bank"
-  Name: "MU\u0301SICA"
-  StudioPath: "bank:/MU\u0301SICA"
-  lastModified: 638971749957243969
+  Path: "Assets/FMOD_ZooCat/Build/Desktop/M\xDASICA.bank"
+  Name: "M\xDASICA"
+  StudioPath: "bank:/M\xDASICA"
+  lastModified: 638971758136269451
   FileSizes:
   - Name: Desktop
     Value: 5429888
+  Exists: 1
+--- !u!114 &-3407878115118907541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/AMBIENT.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: Assets/FMOD_ZooCat/Build/Desktop/AMBIENT.bank
+  Name: AMBIENT
+  StudioPath: bank:/AMBIENT
+  lastModified: 638971758136021820
+  FileSizes:
+  - Name: Desktop
+    Value: 1166112
   Exists: 1
 --- !u!114 &-2468743844407284507
 MonoBehaviour:
@@ -140,7 +140,7 @@ MonoBehaviour:
     Data3: -831091026
     Data4: 213517386
   Banks:
-  - {fileID: -1108155011588331277}
+  - {fileID: 3642173932355874811}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -167,7 +167,7 @@ MonoBehaviour:
     Data3: 963788200
     Data4: 126626749
   Banks:
-  - {fileID: -1108155011588331277}
+  - {fileID: 3642173932355874811}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -175,26 +175,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &-1108155011588331277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/FXS.bank
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
-  Path: ../../FMOD_ZooCat/Build/Desktop/FXS.bank
-  Name: FXS
-  StudioPath: bank:/FXS
-  lastModified: 638971749956697587
-  FileSizes:
-  - Name: Desktop
-    Value: 404832
-  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,11 +188,11 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EventCache
   EditorBanks:
-  - {fileID: -7702568172467051874}
-  - {fileID: 7918999073585635740}
-  - {fileID: -1108155011588331277}
-  - {fileID: -2480846510597663180}
-  - {fileID: 4575687826797324339}
+  - {fileID: 6344337719205130584}
+  - {fileID: -3407878115118907541}
+  - {fileID: 3642173932355874811}
+  - {fileID: 5911172482394290584}
+  - {fileID: -4421493719627683638}
   EditorEvents:
   - {fileID: 1651695160390315026}
   - {fileID: 3388504187798458717}
@@ -231,10 +211,10 @@ MonoBehaviour:
   - {fileID: -6882687094102876362}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 4575687826797324339}
+  - {fileID: 5911172482394290584}
   StringsBanks:
-  - {fileID: -7702568172467051874}
-  cacheTime: 638971749957243969
+  - {fileID: 6344337719205130584}
+  cacheTime: 638971758136269451
   cacheVersion: 131632
 --- !u!114 &292850489387397313
 MonoBehaviour:
@@ -255,7 +235,7 @@ MonoBehaviour:
     Data3: 2128947586
     Data4: 773863919
   Banks:
-  - {fileID: -1108155011588331277}
+  - {fileID: 3642173932355874811}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -282,7 +262,7 @@ MonoBehaviour:
     Data3: -1041950276
     Data4: -1279173670
   Banks:
-  - {fileID: 7918999073585635740}
+  - {fileID: -3407878115118907541}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -309,7 +289,7 @@ MonoBehaviour:
     Data3: -1170081356
     Data4: 610853088
   Banks:
-  - {fileID: -2480846510597663180}
+  - {fileID: -4421493719627683638}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -336,7 +316,7 @@ MonoBehaviour:
     Data3: 1162391966
     Data4: -227578446
   Banks:
-  - {fileID: -1108155011588331277}
+  - {fileID: 3642173932355874811}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -363,7 +343,7 @@ MonoBehaviour:
     Data3: 1993461917
     Data4: 1599557263
   Banks:
-  - {fileID: 7918999073585635740}
+  - {fileID: -3407878115118907541}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -371,7 +351,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 41000
---- !u!114 &4575687826797324339
+--- !u!114 &3642173932355874811
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -381,15 +361,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Name: bank:/FXS.bank
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
-  Path: ../../FMOD_ZooCat/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638971749956713386
+  Path: Assets/FMOD_ZooCat/Build/Desktop/FXS.bank
+  Name: FXS
+  StudioPath: bank:/FXS
+  lastModified: 638971758136051824
   FileSizes:
   - Name: Desktop
-    Value: 1012
+    Value: 404832
   Exists: 1
 --- !u!114 &4956112438674576635
 MonoBehaviour:
@@ -410,7 +390,7 @@ MonoBehaviour:
     Data3: 1024406693
     Data4: 134913524
   Banks:
-  - {fileID: -1108155011588331277}
+  - {fileID: 3642173932355874811}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -437,7 +417,7 @@ MonoBehaviour:
     Data3: 15422911
     Data4: 1543021576
   Banks:
-  - {fileID: -1108155011588331277}
+  - {fileID: 3642173932355874811}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -445,7 +425,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &7918999073585635740
+--- !u!114 &5911172482394290584
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -455,15 +435,35 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/AMBIENT.bank
+  m_Name: bank:/Master.bank
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
-  Path: ../../FMOD_ZooCat/Build/Desktop/AMBIENT.bank
-  Name: AMBIENT
-  StudioPath: bank:/AMBIENT
-  lastModified: 638971749956284518
+  Path: Assets/FMOD_ZooCat/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638971758136061806
   FileSizes:
   - Name: Desktop
-    Value: 1166112
+    Value: 1012
+  Exists: 1
+--- !u!114 &6344337719205130584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: Assets/FMOD_ZooCat/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638971758136071717
+  FileSizes:
+  - Name: Desktop
+    Value: 1582
   Exists: 1
 --- !u!114 &8093352457948921469
 MonoBehaviour:
@@ -484,7 +484,7 @@ MonoBehaviour:
     Data3: -280267849
     Data4: 82963331
   Banks:
-  - {fileID: -1108155011588331277}
+  - {fileID: 3642173932355874811}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -511,7 +511,7 @@ MonoBehaviour:
     Data3: 1956985233
     Data4: 531468224
   Banks:
-  - {fileID: -2480846510597663180}
+  - {fileID: -4421493719627683638}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -538,7 +538,7 @@ MonoBehaviour:
     Data3: -938393717
     Data4: 806920459
   Banks:
-  - {fileID: -1108155011588331277}
+  - {fileID: 3642173932355874811}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1

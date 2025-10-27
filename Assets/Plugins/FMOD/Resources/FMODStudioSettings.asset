@@ -609,8 +609,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../../FMOD_ZooCat/FMOD_ZooCat.fspro
-  sourceBankPath: ../../FMOD_ZooCat/Build
+  sourceProjectPath: Assets/FMOD_ZooCat/FMOD_ZooCat.fspro
+  sourceBankPath: Assets/FMOD_ZooCat/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -636,7 +636,7 @@ MonoBehaviour:
   Banks:
   - AMBIENT
   - FXS
-  - "MU\u0301SICA"
+  - "M\xDASICA"
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
