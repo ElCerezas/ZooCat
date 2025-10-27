@@ -1622,6 +1622,14 @@ MonoBehaviour:
   debugTest: 0
   testTime: 135.7
   testScore: 8742
+  audioFinal:
+    Guid:
+      Data1: 107735794
+      Data2: 1312024812
+      Data3: 142539661
+      Data4: 1184439032
+    Path: event:/FINAL/Redoble-i-matasuegras
+  musica: {fileID: 1784426736}
 --- !u!1 &500132477
 GameObject:
   m_ObjectHideFlags: 0
@@ -6280,7 +6288,7 @@ MonoBehaviour:
     Path: event:/NIVELL2/Musica2
   Event: 
   EventPlayTrigger: 1
-  EventStopTrigger: 2
+  EventStopTrigger: 12
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0

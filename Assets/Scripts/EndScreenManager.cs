@@ -2,6 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using FMODUnity;
 
 public class EndScreenManager : MonoBehaviour
 {
@@ -29,6 +30,10 @@ public class EndScreenManager : MonoBehaviour
     [SerializeField] bool debugTest = false;
     [SerializeField] float testTime = 135.7f;
     [SerializeField] int testScore = 8742;
+    
+    [Header("Sound")]
+    [SerializeField] EventReference audioFinal;
+    [SerializeField] GameObject musica;
 
     int maxScorePossible = 1714; //Visca Catalunya ostiaaaaaa
     int howManyStars;
@@ -43,7 +48,8 @@ public class EndScreenManager : MonoBehaviour
     public void StartEndScreenShow(float time, float minTime = 1f * 60f, float maxTime = 5f * 60f)
     {
         StopAllCoroutines();
-
+        musica.SetActive(false);
+        AudioManager.PlayOneShot(audioFinal);
         StartCoroutine(EndScreenSequence(time, CalculateFinalScore(time, minTime, maxTime)));
     }
     int CalculateFinalScore(float t, float minTime, float maxTime)

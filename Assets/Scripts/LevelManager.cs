@@ -95,7 +95,7 @@ public class LevelManager : MonoBehaviour
     }
     IEnumerator WaitForCompletion()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
         for (int i = 0; i < placedAnimals.Count; i++)
         {
             placedAnimals[i].selectable = false;
