@@ -636,6 +636,7 @@ MonoBehaviour:
   Banks:
   - AMBIENT
   - FXS
+  - MUSICA
   - "M\xDASICA"
   BanksToLoad: []
   LiveUpdatePort: 9264
