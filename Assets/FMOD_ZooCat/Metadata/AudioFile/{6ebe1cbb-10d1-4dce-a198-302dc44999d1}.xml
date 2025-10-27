@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{6ebe1cbb-10d1-4dce-a198-302dc44999d1}">
+		<property name="assetPath">
+			<value>LLUDRIGA/LludrigaFELIÇ.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.95832199546485264</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2c9ef9d5-93fe-4e80-bf4e-d53f86855562}</destination>
+		</relationship>
+	</object>
+</objects>

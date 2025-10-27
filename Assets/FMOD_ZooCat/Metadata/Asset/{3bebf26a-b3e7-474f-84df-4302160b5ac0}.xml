@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="EncodableAsset" id="{3bebf26a-b3e7-474f-84df-4302160b5ac0}">
+		<property name="assetPath">
+			<value>SERP/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2c9ef9d5-93fe-4e80-bf4e-d53f86855562}</destination>
+		</relationship>
+	</object>
+</objects>

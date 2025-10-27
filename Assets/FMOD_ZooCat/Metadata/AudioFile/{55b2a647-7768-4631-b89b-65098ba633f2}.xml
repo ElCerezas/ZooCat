@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{55b2a647-7768-4631-b89b-65098ba633f2}">
+		<property name="assetPath">
+			<value>LLUDRIGA/Lludriga3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.62498866213151927</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2c9ef9d5-93fe-4e80-bf4e-d53f86855562}</destination>
+		</relationship>
+	</object>
+</objects>

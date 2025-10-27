@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{1fa3d1f7-83b7-4fa6-8c54-e090c4d41033}">
+		<property name="assetPath">
+			<value>CANÇÓ/Vibraphones.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>36</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2c9ef9d5-93fe-4e80-bf4e-d53f86855562}</destination>
+		</relationship>
+	</object>
+</objects>
