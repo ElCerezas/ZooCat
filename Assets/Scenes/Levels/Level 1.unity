@@ -5436,7 +5436,7 @@ MonoBehaviour:
       Data4: 213517386
     Path: event:/ANIMALS/Lludriga
   Event: 
-  EventPlayTrigger: 13
+  EventPlayTrigger: 15
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -5485,7 +5485,7 @@ MonoBehaviour:
       Data4: -1216449802
     Path: event:/ANIMALS/Geneta
   Event: 
-  EventPlayTrigger: 13
+  EventPlayTrigger: 15
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -5634,7 +5634,7 @@ MonoBehaviour:
       Data4: 126626749
     Path: event:/ANIMALS/Sargantana
   Event: 
-  EventPlayTrigger: 13
+  EventPlayTrigger: 15
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -6236,7 +6236,7 @@ MonoBehaviour:
       Data4: 213517386
     Path: event:/ANIMALS/Lludriga
   Event: 
-  EventPlayTrigger: 13
+  EventPlayTrigger: 15
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -6625,7 +6625,7 @@ MonoBehaviour:
       Data4: 773863919
     Path: event:/ANIMALS/Senglar
   Event: 
-  EventPlayTrigger: 13
+  EventPlayTrigger: 15
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -6674,7 +6674,7 @@ MonoBehaviour:
       Data4: 1543021576
     Path: event:/ANIMALS/Garsa
   Event: 
-  EventPlayTrigger: 13
+  EventPlayTrigger: 15
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -6901,7 +6901,7 @@ MonoBehaviour:
       Data4: -227578446
     Path: event:/ANIMALS/Serp
   Event: 
-  EventPlayTrigger: 13
+  EventPlayTrigger: 15
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0

@@ -636,7 +636,7 @@ MonoBehaviour:
   Banks:
   - AMBIENT
   - FXS
-  - "M\xDASICA"
+  - "MU\u0301SICA"
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

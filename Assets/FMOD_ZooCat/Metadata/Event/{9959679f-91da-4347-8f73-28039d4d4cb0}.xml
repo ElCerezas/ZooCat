@@ -58,7 +58,7 @@
 			<destination>{b6a35782-96a7-4aba-9973-eb745619ecd8}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{7d57acce-e254-448f-969b-06cdd4723bbd}</destination>
+			<destination>{f973dae5-fdce-4303-b65d-6949b2589155}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{efca6ddd-1788-400b-bbbf-e2f6418be014}" />
@@ -141,7 +141,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{55a54291-c9e9-4ea2-b633-c43997d55a37}">
 		<property name="volume">
-			<value>-10</value>
+			<value>-5</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -192,10 +192,10 @@
 	</object>
 	<object class="LoopRegion" id="{e9d5a6f6-8449-43ba-8628-1a5b27e951f7}">
 		<property name="position">
-			<value>10</value>
+			<value>0</value>
 		</property>
 		<property name="length">
-			<value>51.132086167800452</value>
+			<value>61.132086167800452</value>
 		</property>
 		<property name="name">
 			<value>Region B</value>
