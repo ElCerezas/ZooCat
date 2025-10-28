@@ -16,6 +16,13 @@ public class GameManager : MonoBehaviour
             Destroy(this);
         }
     }
+    private void Update()
+    {
+        if(Input.GetKey(KeyCode.P)&& Input.GetKey(KeyCode.U)&&Input.GetKey(KeyCode.T)&& Input.GetKey(KeyCode.A))
+        {
+            PlayerPrefs.DeleteAll();
+        }
+    }
     public void GoToScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);

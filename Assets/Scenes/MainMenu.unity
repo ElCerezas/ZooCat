@@ -214,6 +214,7 @@ GameObject:
   - component: {fileID: 291623502}
   - component: {fileID: 291623501}
   - component: {fileID: 291623500}
+  - component: {fileID: 291623504}
   m_Layer: 5
   m_Name: SettingsMenu
   m_TagString: Untagged
@@ -304,6 +305,48 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 10.5}
   m_SizeDelta: {x: 800, y: 450.04535}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &291623504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291623499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f62ce3202a52af41b9a8be56237b4bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SettingsManager
+  settingsMenu: {fileID: 291623502}
+  showTime: 1.5
+  hiddenPos: {x: 0, y: 10.5, z: 0}
+  shownPos: {x: 0, y: 0, z: 0}
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  pathMusica: vca:/Musica
+  pathSo: vca:/So
 --- !u!1 &312706291
 GameObject:
   m_ObjectHideFlags: 0
@@ -1616,7 +1659,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 844927401}
-  - component: {fileID: 844927400}
   - component: {fileID: 844927399}
   - component: {fileID: 844927402}
   m_Layer: 0
@@ -1638,48 +1680,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abeb7cb7215c51442b92eb5e2f0245bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
---- !u!114 &844927400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844927398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f62ce3202a52af41b9a8be56237b4bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SettingsManager
-  settingsMenu: {fileID: 291623502}
-  showTime: 1.5
-  hiddenPos: {x: 0, y: 10.5, z: 0}
-  shownPos: {x: 0, y: 0, z: 0}
-  curve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 2
-      outSlope: 2
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  pathMusica: vca:/Musica
-  pathSo: vca:/So
 --- !u!4 &844927401
 Transform:
   m_ObjectHideFlags: 0
