@@ -134,21 +134,26 @@ public class UIIconShow : MonoBehaviour
             animalIcons[0].sprite = iconsTaxon[sAnimal.taxon.GetHashCode()];
             animalIcons[1].sprite = iconsFood[sAnimal.dieta.GetHashCode()];
             animalIcons[2].sprite = iconsTransport[sAnimal.medi.GetHashCode()];
+            animalIcons[0].gameObject.GetComponent<SimpleTooltip>().SetTooltipLeftText($"{animalIcons[0].sprite.name}");
+            animalIcons[1].gameObject.GetComponent<SimpleTooltip>().SetTooltipLeftText($"{animalIcons[1].sprite.name}");
+            animalIcons[2].gameObject.GetComponent<SimpleTooltip>().SetTooltipLeftText($"{animalIcons[2].sprite.name}");
 
-            // Condici�n 1
+            // Condicion 1
             if (sCondition1 != TypeOfConditions.Null)
             {
                 conditionSlot1.gameObject.SetActive(true);
                 conditionIcon1.sprite = GetSpriteForCondition(sCondition1, sIndexSprite1);
+                conditionIcon1.gameObject.GetComponent<SimpleTooltip>().SetTooltipLeftText($"{(sNegative1 ? "NO vull " : "Vull")} {conditionIcon1.sprite.name}");
                 conditionBG1.color = sNegative1 ? new Color(0.63f,0.24f,0.24f) : new Color(0.415f,0.635f,0.4f);
             }
             else conditionSlot1.gameObject.SetActive(false);
 
-            // Condici�n 2
+            // Condicion 2
             if (sCondition2 != TypeOfConditions.Null)
             {
                 conditionSlot2.gameObject.SetActive(true);
                 conditionIcon2.sprite = GetSpriteForCondition(sCondition2, sIndexSprite2);
+                conditionIcon2.gameObject.GetComponent<SimpleTooltip>().SetTooltipLeftText($"{(sNegative2 ? "NO vull " : "Vull")} {conditionIcon2.sprite.name}");
                 conditionBG2.color = sNegative2 ? new Color(0.63f,0.24f,0.24f) : new Color(0.415f,0.635f,0.4f);
             }
             else conditionSlot2.gameObject.SetActive(false);
@@ -162,6 +167,8 @@ public class UIIconShow : MonoBehaviour
         {
             biomeIcons[0].sprite = iconsTemperature[sBiome.temp.GetHashCode()];
             biomeIcons[1].sprite = iconsBiome[sBiome.biome.GetHashCode()];
+            biomeIcons[0].gameObject.GetComponent<SimpleTooltip>().SetTooltipLeftText($"{biomeIcons[0].sprite.name}");
+            biomeIcons[1].gameObject.GetComponent<SimpleTooltip>().SetTooltipLeftText($"{biomeIcons[1].sprite.name}");
             biomeUI.SetActive(true);
 
         }

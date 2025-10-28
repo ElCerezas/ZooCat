@@ -139,7 +139,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -150,7 +150,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -202,7 +202,7 @@ TextureImporter:
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 12
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -215,7 +215,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_MarcNou_0
+      name: "Mam\xEDfer"
       rect:
         serializedVersion: 2
         x: 0
@@ -237,7 +237,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_MarcNou_1
+      name: "R\xE8ptil"
       rect:
         serializedVersion: 2
         x: 1000
@@ -259,7 +259,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_MarcNou_2
+      name: Ocell
       rect:
         serializedVersion: 2
         x: 2000
@@ -281,7 +281,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_MarcNou_3
+      name: Amfibi
       rect:
         serializedVersion: 2
         x: 3000
@@ -303,7 +303,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_MarcNou_4
+      name: Peix
       rect:
         serializedVersion: 2
         x: 4000
@@ -325,7 +325,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_MarcNou_5
+      name: Carnivor
       rect:
         serializedVersion: 2
         x: 0
@@ -347,7 +347,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_MarcNou_6
+      name: "Herb\xEDvor"
       rect:
         serializedVersion: 2
         x: 1000
@@ -369,7 +369,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_MarcNou_7
+      name: Omnivor
       rect:
         serializedVersion: 2
         x: 2000
@@ -391,7 +391,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_MarcNou_10
+      name: Volador
       rect:
         serializedVersion: 2
         x: 0
@@ -413,7 +413,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_MarcNou_11
+      name: "Mar\xED"
       rect:
         serializedVersion: 2
         x: 1000
@@ -435,7 +435,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_MarcNou_12
+      name: Terrestre
       rect:
         serializedVersion: 2
         x: 2000
@@ -457,7 +457,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_MarcNou_15
+      name: Fred
       rect:
         serializedVersion: 2
         x: 0
@@ -479,7 +479,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_MarcNou_16
+      name: Temperat
       rect:
         serializedVersion: 2
         x: 1000
@@ -501,7 +501,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_MarcNou_17
+      name: Calent
       rect:
         serializedVersion: 2
         x: 2000
@@ -523,7 +523,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_MarcNou_20
+      name: Riu
       rect:
         serializedVersion: 2
         x: 0
@@ -545,7 +545,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_MarcNou_21
+      name: Terra
       rect:
         serializedVersion: 2
         x: 1000
@@ -567,7 +567,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_MarcNou_22
+      name: Arbre
       rect:
         serializedVersion: 2
         x: 2000
@@ -589,7 +589,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icones_Spritesheet_julia_MarcNou_23
+      name: Aire
       rect:
         serializedVersion: 2
         x: 3000
@@ -626,29 +626,29 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1000.0,"y":1000.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      icones_Spritesheet_julia_MarcNou_0: 8660429235801799154
-      icones_Spritesheet_julia_MarcNou_1: -6185450758114106600
-      icones_Spritesheet_julia_MarcNou_10: 8739269647365862675
-      icones_Spritesheet_julia_MarcNou_11: -8744159206856038733
-      icones_Spritesheet_julia_MarcNou_12: 1311019188117870647
+      Aire: 7985563401581178375
+      Amfibi: 8552862612332657137
+      Arbre: 151719616589682965
+      Calent: -8686030063937773856
+      Carnivor: -3782921456712126283
+      Fred: 3565185272888471879
+      "Herb\xEDvor": -7265081023319661182
+      "Mam\xEDfer": 8660429235801799154
+      "Mar\xED": -8744159206856038733
+      Ocell: -8816448641549106699
+      Omnivor: 4703629226322046251
+      Peix: -814368556999718968
+      Riu: 5845922146833910804
+      "R\xE8ptil": -6185450758114106600
+      Temperat: 2375741080296887193
+      Terra: 3917973915228646219
+      Terrestre: 1311019188117870647
+      Volador: 8739269647365862675
       icones_Spritesheet_julia_MarcNou_13: -2450884606403582000
       icones_Spritesheet_julia_MarcNou_14: 6736718097507659398
-      icones_Spritesheet_julia_MarcNou_15: 3565185272888471879
-      icones_Spritesheet_julia_MarcNou_16: 2375741080296887193
-      icones_Spritesheet_julia_MarcNou_17: -8686030063937773856
       icones_Spritesheet_julia_MarcNou_18: 5216697511844664351
       icones_Spritesheet_julia_MarcNou_19: 1122768567129638518
-      icones_Spritesheet_julia_MarcNou_2: -8816448641549106699
-      icones_Spritesheet_julia_MarcNou_20: 5845922146833910804
-      icones_Spritesheet_julia_MarcNou_21: 3917973915228646219
-      icones_Spritesheet_julia_MarcNou_22: 151719616589682965
-      icones_Spritesheet_julia_MarcNou_23: 7985563401581178375
       icones_Spritesheet_julia_MarcNou_24: 6977333065345349250
-      icones_Spritesheet_julia_MarcNou_3: 8552862612332657137
-      icones_Spritesheet_julia_MarcNou_4: -814368556999718968
-      icones_Spritesheet_julia_MarcNou_5: -3782921456712126283
-      icones_Spritesheet_julia_MarcNou_6: -7265081023319661182
-      icones_Spritesheet_julia_MarcNou_7: 4703629226322046251
       icones_Spritesheet_julia_MarcNou_8: 6321024765251336422
       icones_Spritesheet_julia_MarcNou_9: -8727672137217486912
   mipmapLimitGroupName: 
