@@ -1,0 +1,201 @@
+using System.Collections;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+
+public enum TutorialPhase
+{
+    ClickSlot,
+    ShowSlotUI,
+    ClickAnimal,
+    ShowAnimalUI,
+    ShowConditionsUI,
+    DragAnimalWrong,
+    DragAnimalRight,
+    ShowTimer,
+    ShowStartCanvas
+}
+
+public class TutorialManager : LevelManager
+{
+    [Header("Tutorial")]
+    public TutorialPhase currentPhase = TutorialPhase.ClickSlot;
+    public SpriteRenderer fakeCursor;       // Cursor falso
+    public TextMeshProUGUI tutorialText;    // Texto explicativo
+    public GameObject startCanvas;          // Canvas final “Empezar nivel”
+    public float cursorTransparencyDistance = 0.5f;
+    public float cursorMinAlpha = 0.3f;
+    public Image Mask;
+    public Sprite[] maskPhases;
+    public float yOffset = 0.75f;
+
+    private Coroutine cursorAnimRoutine;
+    private Color baseCursorColor;
+    private bool cursorAnimating = false;
+
+    // Control de progreso
+    private bool clickedSlot = false;
+    private bool hoveredSlotUI = false;
+    private bool clickedAnimal = false;
+    private bool hoveredAnimalUI = false;
+    private bool hoveredConditionsUI = false;
+    private bool dragToWrongSlot = false;
+    private bool dragToRightSlot = false;
+
+    public BiomeSlot[] targetSlot;
+    public Animal targetAnimal;
+
+    public Vector3 SlotUI;
+    public Vector3 AnimalUI;
+    public Vector3 ConditionUI;
+
+    void Start()
+    {
+        startCanvas.SetActive(false);
+        tutorialText.gameObject.SetActive(true);
+
+        baseCursorColor = fakeCursor.color;
+        fakeCursor.transform.localScale = Vector3.one;
+
+        StartCoroutine(RunTutorial());
+    }
+    IEnumerator RunTutorial()
+    {
+        // Fase 1
+        targetAnimal.selectable = false;
+        targetSlot[0].OnHighLight(true);
+        currentPhase = TutorialPhase.ClickSlot;
+        tutorialText.text = "Fes clic sobre el espai per veure informació de l'espai";
+        StartCursorAnimation(targetSlot[0].transform.position + Vector3.up * yOffset);
+        yield return new WaitUntil(() => clickedSlot);
+        StopCursorAnimation();
+
+        // Fase 2
+        currentPhase = TutorialPhase.ShowSlotUI;
+        tutorialText.text = "Investiga quines propietats te l'espai";
+        StartCursorAnimation(SlotUI);
+        yield return new WaitUntil(() => hoveredSlotUI);
+        StopCursorAnimation();
+
+        // Fase 3
+        currentPhase = TutorialPhase.ClickAnimal;
+        tutorialText.text = "Fes clic sobre l'animal per veure informació de l'animal";
+        StartCursorAnimation(targetAnimal.transform.position + Vector3.up * yOffset);
+        yield return new WaitUntil(() => clickedAnimal);
+        StopCursorAnimation();
+
+        // Fase 4
+        currentPhase = TutorialPhase.ShowAnimalUI;
+        tutorialText.text = "Investiga quines propietats te l'animal";
+        StartCursorAnimation(AnimalUI);
+        yield return new WaitUntil(() => hoveredAnimalUI);
+        StopCursorAnimation();
+
+        // Fase 5
+        currentPhase = TutorialPhase.ShowConditionsUI;
+        tutorialText.text = "Observa les preferencies de l'animal";
+        StartCursorAnimation(ConditionUI);
+        yield return new WaitUntil(() => hoveredConditionsUI);
+        StopCursorAnimation();
+
+        // Fase 6   
+        currentPhase = TutorialPhase.DragAnimalWrong;
+        tutorialText.text = "Arrosega l'animal al espai per colocarlo";
+        StartCursorAnimation(SlotPathAnimation(false));
+        yield return new WaitUntil(() => dragToWrongSlot);
+        StopCursorAnimation();
+
+        // Fase 7
+        currentPhase = TutorialPhase.DragAnimalRight;
+        tutorialText.text = "Ups! Ara no esta content. Provem a posar-lo a un lloc que si que vulgui estar!";
+        StartCursorAnimation(SlotPathAnimation(true));
+        yield return new WaitUntil(() => dragToRightSlot);
+        StopCursorAnimation();
+
+        // Fase 8
+        currentPhase = TutorialPhase.ShowTimer;
+        tutorialText.text = "Perfecte!\n Ara has de intentar aconseguir que tots els animals estiguin contents en el menor temps possible!";
+        yield return new WaitForSeconds(15f);
+
+        // Fase 9
+        currentPhase = TutorialPhase.ShowStartCanvas;
+        tutorialText.text = "Ja podem començar!";
+        startCanvas.SetActive(true);
+    }
+    void StartCursorAnimation(Vector3 target)
+    {
+        if (cursorAnimRoutine != null)
+            StopCoroutine(cursorAnimRoutine);
+
+        cursorAnimRoutine = StartCoroutine(CursorMoveTo(target));
+    }
+    void StartCursorAnimation(IEnumerator animationRoutine)
+    {
+        if (cursorAnimRoutine != null)
+            StopCoroutine(cursorAnimRoutine);
+
+        cursorAnimRoutine = StartCoroutine(animationRoutine);
+    }
+    void StopCursorAnimation()
+    {
+        if (cursorAnimRoutine != null)
+        {
+            StopCoroutine(cursorAnimRoutine);
+            cursorAnimRoutine = null;
+        }
+    }
+    IEnumerator CursorMoveTo(Vector3 target)
+    {
+        cursorAnimating = true;
+        target.z = 0;
+        while (true)
+        {
+            fakeCursor.transform.position = Vector3.Lerp(fakeCursor.transform.position, target, Time.deltaTime * 2f);
+            fakeCursor.transform.localScale = Vector3.one * (1 + Mathf.Sin(Time.time * 6f) * 0.1f); // pequeño “latido”
+            yield return null;
+        }
+    }
+    IEnumerator SlotPathAnimation(bool correct)
+    {
+        cursorAnimating = true;
+        Vector3 start = targetAnimal.transform.position + Vector3.up * yOffset;
+        Vector3 end = (correct ? targetSlot[0].transform.position : targetSlot[1].transform.position) + Vector3.up * yOffset;
+
+        while (true)
+        {
+            float t = (Mathf.Sin(Time.time * 2f) + 1f) / 2f; // ida y vuelta
+            fakeCursor.transform.position = Vector3.Lerp(start, end, t);
+            yield return null;
+        }
+    }
+    public void OnSlotClicked()
+    {
+        if (currentPhase == TutorialPhase.ClickSlot)
+            clickedSlot = true;
+    }
+    public void OnSlotUIHovered() { if (currentPhase == TutorialPhase.ShowSlotUI) hoveredSlotUI = true; }
+    public void OnAnimalClicked() { if (currentPhase == TutorialPhase.ClickAnimal) clickedAnimal = true; }
+    public void OnAnimalUIHovered() { if (currentPhase == TutorialPhase.ShowAnimalUI) hoveredAnimalUI = true; }
+    public void OnConditionsUIHovered() { if (currentPhase == TutorialPhase.ShowConditionsUI) hoveredConditionsUI = true; }
+    public void OnAnimalDraggedToSlot(bool isCorrect)
+    {
+        if (currentPhase == TutorialPhase.DragAnimalWrong && !isCorrect) dragToWrongSlot = true;
+        else if (currentPhase == TutorialPhase.DragAnimalRight && isCorrect) dragToRightSlot = true;
+    }
+    void Update()
+    {
+        if (fakeCursor == null) return;
+
+        Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mouseWorld.z = 0;
+        float dist = Vector3.Distance(mouseWorld, fakeCursor.transform.position);
+
+        float alpha = baseCursorColor.a;
+        if (dist < cursorTransparencyDistance)
+            alpha = Mathf.Lerp(cursorMinAlpha, 1f, dist / cursorTransparencyDistance);
+
+        Color c = fakeCursor.color;
+        c.a = alpha;
+        fakeCursor.color = c;
+    }
+}
