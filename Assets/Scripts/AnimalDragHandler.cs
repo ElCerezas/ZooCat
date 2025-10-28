@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering;
-
 [RequireComponent(typeof(Animal))]
 public class AnimalDragHandler : MonoBehaviour
 {
@@ -69,7 +67,6 @@ public class AnimalDragHandler : MonoBehaviour
         LevelManager.instance.HighLightAll(false);
 
         BiomeSlot closestSlot = GetClosestSlot();
-
         if (closestSlot == null) //No slot aprop
         {
             targetPosition = animal.parentSlot != null ? animal.parentSlot.transform.position : originalPosition;

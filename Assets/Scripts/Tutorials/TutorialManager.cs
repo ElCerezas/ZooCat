@@ -99,6 +99,9 @@ public class TutorialManager : LevelManager
         StopCursorAnimation();
 
         // Fase 6   
+        targetAnimal.selectable = true;
+        targetSlot[0].SlotPle = false;
+        targetSlot[1].SlotPle = true;
         currentPhase = TutorialPhase.DragAnimalWrong;
         tutorialText.text = "Arrosega l'animal al espai per colocarlo";
         StartCursorAnimation(SlotPathAnimation(false));
@@ -106,6 +109,7 @@ public class TutorialManager : LevelManager
         StopCursorAnimation();
 
         // Fase 7
+        targetSlot[1].SlotPle = false;
         currentPhase = TutorialPhase.DragAnimalRight;
         tutorialText.text = "Ups! Ara no esta content. Provem a posar-lo a un lloc que si que vulgui estar!";
         StartCursorAnimation(SlotPathAnimation(true));
@@ -115,12 +119,13 @@ public class TutorialManager : LevelManager
         // Fase 8
         currentPhase = TutorialPhase.ShowTimer;
         tutorialText.text = "Perfecte!\n Ara has de intentar aconseguir que tots els animals estiguin contents en el menor temps possible!";
-        yield return new WaitForSeconds(15f);
+        yield return new WaitForSeconds(10f);
 
         // Fase 9
         currentPhase = TutorialPhase.ShowStartCanvas;
         tutorialText.text = "Ja podem començar!";
         startCanvas.SetActive(true);
+        yield return null;
     }
     void StartCursorAnimation(Vector3 target)
     {
@@ -159,7 +164,7 @@ public class TutorialManager : LevelManager
     {
         cursorAnimating = true;
         Vector3 start = targetAnimal.transform.position + Vector3.up * yOffset;
-        Vector3 end = (correct ? targetSlot[0].transform.position : targetSlot[1].transform.position) + Vector3.up * yOffset;
+        Vector3 end = (correct ? targetSlot[1].transform.position : targetSlot[0].transform.position) + Vector3.up * yOffset;
 
         while (true)
         {

@@ -47,7 +47,7 @@ public class Animal : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public AnimalAnimator aAnimator;
 
-    private void Start()
+    private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         aAnimator = GetComponent<AnimalAnimator>();
