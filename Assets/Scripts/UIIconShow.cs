@@ -20,11 +20,11 @@ public class UIIconShow : MonoBehaviour
     [SerializeField] Image conditionBG1, conditionBG2;
 
     [Header("Sprites")]
-    [SerializeField] Sprite[] iconsTaxon;       // Mamífero, Reptil, Ave, Anfibi, peix
-    [SerializeField] Sprite[] iconsFood;        // Carnívoro, Herbívoro, Omnívoro
+    [SerializeField] Sprite[] iconsTaxon;       // Mamï¿½fero, Reptil, Ave, Anfibi, peix
+    [SerializeField] Sprite[] iconsFood;        // Carnï¿½voro, Herbï¿½voro, Omnï¿½voro
     [SerializeField] Sprite[] iconsTransport;   // Volador, Marino, Terrestre
-    [SerializeField] Sprite[] iconsTemperature; // Frío, Templado, Cálido
-    [SerializeField] Sprite[] iconsBiome;       // Agua, Tierra, Árbol, Aire
+    [SerializeField] Sprite[] iconsTemperature; // Frï¿½o, Templado, Cï¿½lido
+    [SerializeField] Sprite[] iconsBiome;       // Agua, Tierra, ï¿½rbol, Aire
 
     [Header("Animation")]
     [SerializeField] Vector3 DisplayedT;
@@ -80,7 +80,7 @@ public class UIIconShow : MonoBehaviour
         if (biomeSlot != null) sBiome = biomeSlot;
         else sBiome = null;
 
-        // Control de animación
+        // Control de animaciï¿½n
         if (newInfo)
         {
             if (activeAnimation != null)
@@ -97,7 +97,7 @@ public class UIIconShow : MonoBehaviour
         float waitTime = upTime;
         currentPos = transform.position;
 
-        // Animación de ocultar
+        // Animaciï¿½n de ocultar
         while (elapsedTime < waitTime)
         {
             float t1 = curve.Evaluate(elapsedTime / waitTime);
@@ -113,7 +113,7 @@ public class UIIconShow : MonoBehaviour
         waitTime = downTime;
         currentPos = transform.position;
 
-        // Animación de mostrar
+        // Animaciï¿½n de mostrar
         while (elapsedTime < waitTime)
         {
             float t2 = curve.Evaluate(elapsedTime / waitTime);
@@ -135,21 +135,21 @@ public class UIIconShow : MonoBehaviour
             animalIcons[1].sprite = iconsFood[sAnimal.dieta.GetHashCode()];
             animalIcons[2].sprite = iconsTransport[sAnimal.medi.GetHashCode()];
 
-            // Condición 1
+            // Condiciï¿½n 1
             if (sCondition1 != TypeOfConditions.Null)
             {
                 conditionSlot1.gameObject.SetActive(true);
                 conditionIcon1.sprite = GetSpriteForCondition(sCondition1, sIndexSprite1);
-                conditionBG1.color = sNegative1 ? Color.red : Color.green;
+                conditionBG1.color = sNegative1 ? new Color(0.63f,0.24f,0.24f) : new Color(0.415f,0.635f,0.4f);
             }
             else conditionSlot1.gameObject.SetActive(false);
 
-            // Condición 2
+            // Condiciï¿½n 2
             if (sCondition2 != TypeOfConditions.Null)
             {
                 conditionSlot2.gameObject.SetActive(true);
                 conditionIcon2.sprite = GetSpriteForCondition(sCondition2, sIndexSprite2);
-                conditionBG2.color = sNegative2 ? Color.red : Color.green;
+                conditionBG2.color = sNegative2 ? new Color(0.63f,0.24f,0.24f) : new Color(0.415f,0.635f,0.4f);
             }
             else conditionSlot2.gameObject.SetActive(false);
         }
