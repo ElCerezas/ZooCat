@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using TMPro;
 using UnityEngine;
 
@@ -18,7 +19,16 @@ public class LevelManager : MonoBehaviour
 
     [Header("Timer")]
     [SerializeField] TextMeshProUGUI timerText;
-    float time = 0;
+    [SerializeField]float time = 0;
+
+    [Header("Pause")]
+    [SerializeField] float pausedTime;
+    [SerializeField] GameObject timerCanvas;
+    [SerializeField] GameObject[] pauseUI;
+    [SerializeField] float showTime = 1f;
+    [SerializeField] AnimationCurve curve;
+    bool isPaused = false;
+    
 
     Coroutine UntilEnd;
 
@@ -108,5 +118,49 @@ public class LevelManager : MonoBehaviour
 
         endScreenManager.StartEndScreenShow(time-3f);
         yield return null;
+    }
+    void PauseGame(bool isPasuedd)
+    {
+        this.isPaused = isPasuedd;
+        StartCoroutine(ShowOrHide());
+
+        if (isPasuedd)
+            time = pausedTime;
+        else
+            pausedTime = time;
+    }
+    IEnumerator ShowOrHide()
+    {
+        float elapsedTime = 0f;
+        float waitTime = showTime;
+
+        RectTransform rect1 = pauseUI[0].GetComponent<RectTransform>();
+        RectTransform rect2 = pauseUI[1].GetComponent<RectTransform>();
+
+        Vector2 startPos1 = rect1.anchoredPosition;
+        Vector2 startPos2 = rect2.anchoredPosition;
+
+        Vector2 targetPos = !isPaused ? new Vector2(0, 65f) : Vector2.zero;
+
+        while (elapsedTime < waitTime)
+        {
+            float t = curve.Evaluate(elapsedTime / waitTime);
+            rect1.anchoredPosition = Vector2.Lerp(startPos1, targetPos, t);
+            rect2.anchoredPosition = Vector2.Lerp(startPos2, targetPos, t);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        rect1.anchoredPosition = targetPos;
+        rect2.anchoredPosition = targetPos;
+    }
+
+    private void OnEnable()
+    {
+        SettingsManager.OnGamePaused += PauseGame;
+    }
+    private void OnDisable()
+    {
+        SettingsManager.OnGamePaused -= PauseGame;
     }
 }

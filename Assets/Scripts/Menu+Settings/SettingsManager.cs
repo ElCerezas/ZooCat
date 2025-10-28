@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Rendering;
 
 public class SettingsManager : MonoBehaviour
@@ -7,7 +8,6 @@ public class SettingsManager : MonoBehaviour
     public static SettingsManager instance;
     float musicVolume, soundVolume;
     [SerializeField] Canvas settingsMenu;
-    bool displayedSettings = true;
     [SerializeField] float showTime = 1f;
     [SerializeField] Vector3 hiddenPos, shownPos;
     bool animatingSettings = false;
@@ -20,19 +20,32 @@ public class SettingsManager : MonoBehaviour
     FMOD.Studio.VCA vcaMusica;
     FMOD.Studio.VCA vcaSo;
 
+    [Header("PauseMenu")]
+    bool displayedSettings = true;
+    public delegate void GamePaused(bool isPaused);
+    public static event GamePaused OnGamePaused;
 
     private void Awake()
     {
         if(instance == null)
         {
             instance = this;
+            DontDestroyOnLoad(gameObject);
+            musicVolume = PlayerPrefs.GetFloat("musicVolume", 100);
+            soundVolume = PlayerPrefs.GetFloat("soundVolume", 100);
+            SetVolumes(musicVolume,soundVolume);
         }
         else
         {
             Destroy(this);
         }
-            musicVolume = PlayerPrefs.GetFloat("musicVolume", 100);
-        soundVolume = PlayerPrefs.GetFloat("soundVolume", 100);
+    }
+    private void Update()
+    {
+        if(Input.GetKeyUp(KeyCode.Escape))
+        {
+            OnSettings();
+        }
     }
     private void Start()
     {
@@ -45,13 +58,15 @@ public class SettingsManager : MonoBehaviour
     {
         if ((MusicVolume >= 0))
         {
-            musicVolume = MusicVolume;
+            float musicLog = Mathf.Pow(10f, (MusicVolume - 1f) * 2f);
+            musicVolume = musicLog;
             PlayerPrefs.SetFloat("musicVolume", musicVolume);
             vcaMusica.setVolume(musicVolume);
         }
         if ((SoundVolume >= 0))
         {
-            soundVolume = SoundVolume;
+            float soundLog = Mathf.Pow(10f, (SoundVolume - 1f) * 2f);
+            soundVolume = soundLog;
             PlayerPrefs.SetFloat("soundVolume", soundVolume);
             vcaSo.setVolume(soundVolume);
         }
@@ -69,6 +84,7 @@ public class SettingsManager : MonoBehaviour
         displayedSettings = !displayedSettings;
         if(!animatingSettings)
         {
+            OnGamePaused.Invoke(displayedSettings);
             animatingSettings = true;
             StartCoroutine(ShowOrHide());
         }
