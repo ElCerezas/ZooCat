@@ -1,10 +1,46 @@
 fileFormatVersion: 2
-guid: 0edf048f1d832f24b88e50c04c0c64fb
+guid: 855b4349c920e324f8c3f036a0eb46b4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8768496111257899844
-    second: fusta_0
+      213: 2727128589467747240
+    second: tipografia menu 1_0
+  - first:
+      213: -8701763358324611001
+    second: tipografia menu 1_1
+  - first:
+      213: 1014129651903896311
+    second: tipografia menu 1_2
+  - first:
+      213: 3246941687386106446
+    second: tipografia menu 1_3
+  - first:
+      213: -3693826928720523841
+    second: tipografia menu 1_4
+  - first:
+      213: -568238141723711208
+    second: tipografia menu 1_5
+  - first:
+      213: -392660042977165683
+    second: tipografia menu 1_6
+  - first:
+      213: 4401812194548891190
+    second: tipografia menu 1_7
+  - first:
+      213: 8273001868238625576
+    second: tipografia menu 1_8
+  - first:
+      213: 7862679982151475215
+    second: tipografia menu 1_9
+  - first:
+      213: 271511456172913523
+    second: tipografia menu 1_10
+  - first:
+      213: 9032794370539184842
+    second: tipografia menu 1_11
+  - first:
+      213: -8828054702726164506
+    second: tipografia menu 1_12
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +149,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fusta_0
+      name: tipografia menu 1_0
       rect:
         serializedVersion: 2
-        x: 1274
-        y: 647
-        width: 1289
-        height: 351
+        x: 1233
+        y: 1261
+        width: 1473
+        height: 406
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 443dbe571c4ffa970800000000000000
-      internalID: 8768496111257899844
+      spriteID: 8a38900d005b8d520800000000000000
+      internalID: 2727128589467747240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia menu 1_5
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 743
+        width: 933
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 819eab6bb663d18f0800000000000000
+      internalID: -568238141723711208
       vertices: []
       indices: 
       edges: []
@@ -138,7 +196,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +206,19 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      fusta_0: 8768496111257899844
+      tipografia menu 1_0: 2727128589467747240
+      tipografia menu 1_1: -8701763358324611001
+      tipografia menu 1_10: 271511456172913523
+      tipografia menu 1_11: 9032794370539184842
+      tipografia menu 1_12: -8828054702726164506
+      tipografia menu 1_2: 1014129651903896311
+      tipografia menu 1_3: 3246941687386106446
+      tipografia menu 1_4: -3693826928720523841
+      tipografia menu 1_5: -568238141723711208
+      tipografia menu 1_6: -392660042977165683
+      tipografia menu 1_7: 4401812194548891190
+      tipografia menu 1_8: 8273001868238625576
+      tipografia menu 1_9: 7862679982151475215
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

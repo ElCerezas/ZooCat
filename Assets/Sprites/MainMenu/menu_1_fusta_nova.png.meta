@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f2cee7f3d8a707e4a9bd715bcb0eb0eb
+guid: b21c9fce082f00b4b8ecf38c05946f00
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -519052415876542791
-    second: scroll_0
+      213: 164696346764407564
+    second: menu_1_fusta_nova_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: scroll_0
+      name: menu_1_fusta_nova_0
       rect:
         serializedVersion: 2
-        x: 200
-        y: 966
-        width: 3442
-        height: 823
+        x: 1274
+        y: 647
+        width: 1289
+        height: 352
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9becedbe394fbc8f0800000000000000
-      internalID: -519052415876542791
+      spriteID: c0372bc647e194200800000000000000
+      internalID: 164696346764407564
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      scroll_0: -519052415876542791
+      menu_1_fusta_nova_0: 164696346764407564
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
