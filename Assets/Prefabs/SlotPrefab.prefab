@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: d7716178826a44f4d8c5e185d0a50359, type: 3}
+  m_Sprite: {fileID: -1488523101098151261, guid: 872fe5027e7b0144db9b337b425b5fd1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -142,8 +142,8 @@ MonoBehaviour:
   animalInSlot: {fileID: 0}
   radius: 1.61
   NearSlots: []
-  highLight: {r: 0, g: 0, b: 0, a: 1}
-  lowLight: {r: 0.18238991, g: 0.18238991, b: 0.18238991, a: 0.37254903}
+  highLight: {r: 1, g: 1, b: 1, a: 1}
+  lowLight: {r: 1, g: 1, b: 1, a: 0.37254903}
   highlightSpeed: 3
   SpriteRenderer: {fileID: 6991279549318121814}
 --- !u!61 &9063023311444730855
