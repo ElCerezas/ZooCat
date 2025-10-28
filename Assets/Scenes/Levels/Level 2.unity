@@ -1239,6 +1239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05317e222f2a8304e98d94b71d7e8639, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLevel: 2
   endScreenManager: {fileID: 471637946}
   GameObjectsToHide:
   - {fileID: 1869371614}

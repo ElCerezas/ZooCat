@@ -4,8 +4,8 @@ using UnityEngine.Rendering;
 
 public class SettingsManager : MonoBehaviour
 {
-    float musicVolume, soundVolume;
     public static SettingsManager instance;
+    float musicVolume, soundVolume;
     [SerializeField] Canvas settingsMenu;
     bool displayedSettings = true;
     [SerializeField] float showTime = 1f;
@@ -15,7 +15,7 @@ public class SettingsManager : MonoBehaviour
     public AnimationCurve curve;
 
     [Header("FMOD")]
-    [SerializeField] string pathMusica = "vca:/Música";
+    [SerializeField] string pathMusica = "vca:/Musica";
     [SerializeField] string pathSo = "vca:/So";
     FMOD.Studio.VCA vcaMusica;
     FMOD.Studio.VCA vcaSo;
@@ -23,19 +23,9 @@ public class SettingsManager : MonoBehaviour
 
     private void Awake()
     {
-        if (instance == null)
-        {
-            musicVolume = PlayerPrefs.GetFloat("musicVolume", 100);
-            soundVolume = PlayerPrefs.GetFloat("soundVolume", 100);
-            DontDestroyOnLoad(gameObject);
-            DontDestroyOnLoad(settingsMenu.gameObject);
-            instance = this;
-        }
-        else
-        {
-            Destroy(settingsMenu.gameObject);
-            Destroy(this);
-        }
+        instance = this;
+        musicVolume = PlayerPrefs.GetFloat("musicVolume", 100);
+        soundVolume = PlayerPrefs.GetFloat("soundVolume", 100);
     }
     private void Start()
     {

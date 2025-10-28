@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
+    public int currentLevel = 1;
     public static LevelManager instance;
     [SerializeField] EndScreenManager endScreenManager;
     [SerializeField] GameObject[] GameObjectsToHide;
@@ -104,6 +105,9 @@ public class LevelManager : MonoBehaviour
         {
             GameObjectsToHide[i].SetActive(false);
         }
+
+        LevelProgress.UnlockLevel(currentLevel + 1);
+
         endScreenManager.StartEndScreenShow(time-3f);
         yield return null;
     }
