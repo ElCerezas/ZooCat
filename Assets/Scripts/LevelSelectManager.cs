@@ -24,6 +24,10 @@ public class LevelSelectManager : MonoBehaviour
             string key = PREF_KEY_PREFIX + lb.LevelToGo;
 
             bool isUnlocked;
+            if(PlayerPrefs.GetInt("TutoComplete", 0) == 1 && levelsToLoad[i].LevelToGo == 0)
+            {
+                levelsToLoad[i].LevelToGo = 1;
+            }
             if (PlayerPrefs.HasKey(key))
             {
                 isUnlocked = PlayerPrefs.GetInt(key) == 1;

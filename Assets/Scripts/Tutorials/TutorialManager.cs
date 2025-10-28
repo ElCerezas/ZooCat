@@ -135,6 +135,7 @@ public class TutorialManager : LevelManager
         Mask.sprite = maskPhases[0];
         currentPhase = TutorialPhase.ShowStartCanvas;
         tutorialText.text = "Ja podem començar!";
+        PlayerPrefs.SetInt("TutoComplete", 1);
         startCanvas.SetActive(true);
         yield return null;
     }

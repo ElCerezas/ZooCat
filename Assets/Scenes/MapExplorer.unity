@@ -1649,6 +1649,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5373428049788577047, guid: a205af8e4f57f204cbaa55163390036a, type: 3}
+      propertyPath: LevelToGo
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6259322541168325880, guid: a205af8e4f57f204cbaa55163390036a, type: 3}
       propertyPath: m_Name
       value: LevelButton
