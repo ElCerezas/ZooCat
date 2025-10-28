@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e60a851372303fb47b7e3bcddb88c7b5
+guid: 5e91e2b3d0c3ae04b99c5263786a0553
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1437934368429505377
-    second: 4InfoAnimal_0
+      213: -3141316846971758202
+    second: 7RiuArbre 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 4InfoAnimal_0
+      name: 7RiuArbre 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 16bf09880b194f310800000000000000
-      internalID: 1437934368429505377
+      spriteID: 6895c4998fcc764d0800000000000000
+      internalID: -3141316846971758202
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      4InfoAnimal_0: 1437934368429505377
+      7RiuArbre 1_0: -3141316846971758202
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
