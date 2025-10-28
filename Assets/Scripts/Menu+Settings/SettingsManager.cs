@@ -84,7 +84,7 @@ public class SettingsManager : MonoBehaviour
         displayedSettings = !displayedSettings;
         if(!animatingSettings)
         {
-            OnGamePaused.Invoke(displayedSettings);
+            OnGamePaused?.Invoke(displayedSettings);
             animatingSettings = true;
             StartCoroutine(ShowOrHide());
         }
