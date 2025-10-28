@@ -51,6 +51,7 @@ public class TutorialManager : LevelManager
 
     void Start()
     {
+        Mask.sprite = maskPhases[0];
         startCanvas.SetActive(false);
         tutorialText.gameObject.SetActive(true);
 
@@ -62,6 +63,7 @@ public class TutorialManager : LevelManager
     IEnumerator RunTutorial()
     {
         // Fase 1
+        Mask.sprite = maskPhases[1];
         targetAnimal.selectable = false;
         targetSlot[0].OnHighLight(true);
         currentPhase = TutorialPhase.ClickSlot;
@@ -71,6 +73,7 @@ public class TutorialManager : LevelManager
         StopCursorAnimation();
 
         // Fase 2
+        Mask.sprite = maskPhases[2];
         currentPhase = TutorialPhase.ShowSlotUI;
         tutorialText.text = "Investiga quines propietats te l'espai";
         StartCursorAnimation(SlotUI);
@@ -78,6 +81,7 @@ public class TutorialManager : LevelManager
         StopCursorAnimation();
 
         // Fase 3
+        Mask.sprite = maskPhases[3];
         currentPhase = TutorialPhase.ClickAnimal;
         tutorialText.text = "Fes clic sobre l'animal per veure informació de l'animal";
         StartCursorAnimation(targetAnimal.transform.position + Vector3.up * yOffset);
@@ -85,6 +89,7 @@ public class TutorialManager : LevelManager
         StopCursorAnimation();
 
         // Fase 4
+        Mask.sprite = maskPhases[4];
         currentPhase = TutorialPhase.ShowAnimalUI;
         tutorialText.text = "Investiga quines propietats te l'animal";
         StartCursorAnimation(AnimalUI);
@@ -92,6 +97,7 @@ public class TutorialManager : LevelManager
         StopCursorAnimation();
 
         // Fase 5
+        Mask.sprite = maskPhases[5];
         currentPhase = TutorialPhase.ShowConditionsUI;
         tutorialText.text = "Observa les preferencies de l'animal";
         StartCursorAnimation(ConditionUI);
@@ -99,6 +105,7 @@ public class TutorialManager : LevelManager
         StopCursorAnimation();
 
         // Fase 6   
+        Mask.sprite = maskPhases[6];
         targetAnimal.selectable = true;
         targetSlot[0].SlotPle = false;
         targetSlot[1].SlotPle = true;
@@ -109,6 +116,7 @@ public class TutorialManager : LevelManager
         StopCursorAnimation();
 
         // Fase 7
+        Mask.sprite = maskPhases[7];
         targetSlot[1].SlotPle = false;
         currentPhase = TutorialPhase.DragAnimalRight;
         tutorialText.text = "Ups! Ara no esta content. Provem a posar-lo a un lloc que si que vulgui estar!";
@@ -117,11 +125,14 @@ public class TutorialManager : LevelManager
         StopCursorAnimation();
 
         // Fase 8
+        Mask.sprite = maskPhases[8];
+        fakeCursor.color = new Color(0, 0, 0, 0);
         currentPhase = TutorialPhase.ShowTimer;
         tutorialText.text = "Perfecte!\n Ara has de intentar aconseguir que tots els animals estiguin contents en el menor temps possible!";
         yield return new WaitForSeconds(10f);
 
         // Fase 9
+        Mask.sprite = maskPhases[0];
         currentPhase = TutorialPhase.ShowStartCanvas;
         tutorialText.text = "Ja podem començar!";
         startCanvas.SetActive(true);
