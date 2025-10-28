@@ -24,10 +24,16 @@ public class CursorManager : MonoBehaviour
     
     void Start()
     {
-        cursorHotspot = new Vector2(DefaultCursorTexture.width / 2, DefaultCursorTexture.height / 2);
+        cursorHotspot = new Vector2(16f, 16f);
         Cursor.SetCursor(DefaultCursorTexture, cursorHotspot, CursorMode.Auto);
     }
-
+    private void LateUpdate()
+    {
+        if (Input.GetKey(KeyCode.Mouse0) || Input.GetKey(KeyCode.Mouse1))
+            SetToMode(ModeOfCursor.Interact);
+        else
+            SetToMode(ModeOfCursor.Default);
+    }
     public void SetToMode (ModeOfCursor mode)
     {
         switch(mode)
