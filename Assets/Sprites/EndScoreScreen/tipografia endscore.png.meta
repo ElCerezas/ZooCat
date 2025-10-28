@@ -1,0 +1,1690 @@
+fileFormatVersion: 2
+guid: 239f8e668e3528a4aa2a222bf74e0eca
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2994988712417062674
+    second: tipografia endscore_0
+  - first:
+      213: 650574323468607386
+    second: tipografia endscore_1
+  - first:
+      213: -8784466569807939942
+    second: tipografia endscore_2
+  - first:
+      213: -4370600178806555794
+    second: tipografia endscore_3
+  - first:
+      213: 4474855791540370935
+    second: tipografia endscore_4
+  - first:
+      213: -659878004985281645
+    second: tipografia endscore_5
+  - first:
+      213: 5029901451089085406
+    second: tipografia endscore_6
+  - first:
+      213: -2148300096706730341
+    second: tipografia endscore_7
+  - first:
+      213: 5791711152509792963
+    second: tipografia endscore_8
+  - first:
+      213: 1725710667730467787
+    second: tipografia endscore_9
+  - first:
+      213: -1610480749008188317
+    second: tipografia endscore_10
+  - first:
+      213: -6551673556352104122
+    second: tipografia endscore_11
+  - first:
+      213: -7622934407165824069
+    second: tipografia endscore_12
+  - first:
+      213: 4384155693005624506
+    second: tipografia endscore_13
+  - first:
+      213: -7860308736554933788
+    second: tipografia endscore_14
+  - first:
+      213: 8515825307828069783
+    second: tipografia endscore_15
+  - first:
+      213: -6630314789693576083
+    second: tipografia endscore_16
+  - first:
+      213: 564156321365604588
+    second: tipografia endscore_17
+  - first:
+      213: 5758345576537315316
+    second: tipografia endscore_18
+  - first:
+      213: -3224005237045025658
+    second: tipografia endscore_19
+  - first:
+      213: -702404932639644236
+    second: tipografia endscore_20
+  - first:
+      213: -5846809427023475843
+    second: tipografia endscore_21
+  - first:
+      213: -7721746203304922855
+    second: tipografia endscore_22
+  - first:
+      213: -6161492353730339221
+    second: tipografia endscore_23
+  - first:
+      213: 5160881845710318974
+    second: tipografia endscore_24
+  - first:
+      213: 752909613763422258
+    second: tipografia endscore_25
+  - first:
+      213: -8485989865726982969
+    second: tipografia endscore_26
+  - first:
+      213: -5985278027991589474
+    second: tipografia endscore_27
+  - first:
+      213: -6118557427147073671
+    second: tipografia endscore_28
+  - first:
+      213: -1292901780153505757
+    second: tipografia endscore_29
+  - first:
+      213: -2358067475839985663
+    second: tipografia endscore_30
+  - first:
+      213: 7065879574216802373
+    second: tipografia endscore_31
+  - first:
+      213: 6195000679598061921
+    second: tipografia endscore_32
+  - first:
+      213: -8518909732395805859
+    second: tipografia endscore_33
+  - first:
+      213: -8737905635883420628
+    second: tipografia endscore_34
+  - first:
+      213: -837496931973852973
+    second: tipografia endscore_35
+  - first:
+      213: -1636792273601266557
+    second: tipografia endscore_36
+  - first:
+      213: -8885619856298704279
+    second: tipografia endscore_37
+  - first:
+      213: 1664807312269189970
+    second: tipografia endscore_38
+  - first:
+      213: 1526278807340849876
+    second: tipografia endscore_39
+  - first:
+      213: -9098460079843627319
+    second: tipografia endscore_40
+  - first:
+      213: -5929133657816772165
+    second: tipografia endscore_41
+  - first:
+      213: -4650294915454837057
+    second: tipografia endscore_42
+  - first:
+      213: 5849021198935395870
+    second: tipografia endscore_43
+  - first:
+      213: -4585265763207478382
+    second: tipografia endscore_44
+  - first:
+      213: -4385937077094604022
+    second: tipografia endscore_45
+  - first:
+      213: -7203853854766506665
+    second: tipografia endscore_46
+  - first:
+      213: -5027340240306506417
+    second: tipografia endscore_47
+  - first:
+      213: 2888273917659510877
+    second: tipografia endscore_48
+  - first:
+      213: -7516920545113957013
+    second: tipografia endscore_49
+  - first:
+      213: 7221003977168469560
+    second: tipografia endscore_50
+  - first:
+      213: 4104171035125467042
+    second: tipografia endscore_51
+  - first:
+      213: 3444713143102724439
+    second: tipografia endscore_52
+  - first:
+      213: -62468142085278105
+    second: tipografia endscore_53
+  - first:
+      213: -4338476051056248934
+    second: tipografia endscore_54
+  - first:
+      213: -7131053764820382050
+    second: tipografia endscore_55
+  - first:
+      213: -5372062019050122961
+    second: tipografia endscore_56
+  - first:
+      213: -6917083786279930868
+    second: tipografia endscore_57
+  - first:
+      213: -5137569075620913927
+    second: tipografia endscore_58
+  - first:
+      213: -5278768340817907642
+    second: tipografia endscore_59
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tipografia endscore_0
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 1671
+        width: 202
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee0931a52a9af66d0800000000000000
+      internalID: -2994988712417062674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_1
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1632
+        width: 147
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9f165a76ed470900800000000000000
+      internalID: 650574323468607386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_2
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 1610
+        width: 93
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a96bd45623e471680800000000000000
+      internalID: -8784466569807939942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_3
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 1762
+        width: 55
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6bf9f63b428853c0800000000000000
+      internalID: -4370600178806555794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_4
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 1752
+        width: 55
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fdfcd332a1e91e30800000000000000
+      internalID: 4474855791540370935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_5
+      rect:
+        serializedVersion: 2
+        x: 1949
+        y: 1593
+        width: 128
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39342cd5374a7d6f0800000000000000
+      internalID: -659878004985281645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_6
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 1603
+        width: 168
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed3036f58bccdc540800000000000000
+      internalID: 5029901451089085406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_7
+      rect:
+        serializedVersion: 2
+        x: 2242
+        y: 1630
+        width: 141
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b96abd8b174bf22e0800000000000000
+      internalID: -2148300096706730341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_8
+      rect:
+        serializedVersion: 2
+        x: 2385
+        y: 1654
+        width: 130
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c2b30f7b9a406050800000000000000
+      internalID: 5791711152509792963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_9
+      rect:
+        serializedVersion: 2
+        x: 2488
+        y: 1750
+        width: 63
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcb3d2785b4f2f710800000000000000
+      internalID: 1725710667730467787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_10
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 1600
+        width: 90
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36c03cd9a4c66a9e0800000000000000
+      internalID: -1610480749008188317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_11
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 1591
+        width: 133
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 649005ddc97c315a0800000000000000
+      internalID: -6551673556352104122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_12
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 1593
+        width: 90
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb337c27b85e53690800000000000000
+      internalID: -7622934407165824069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_13
+      rect:
+        serializedVersion: 2
+        x: 2530
+        y: 1683
+        width: 57
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab45b91ef56a7dc30800000000000000
+      internalID: 4384155693005624506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_14
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 1220
+        width: 92
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e16ebc89d29ae290800000000000000
+      internalID: -7860308736554933788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_15
+      rect:
+        serializedVersion: 2
+        x: 1665
+        y: 1220
+        width: 37
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 795af5aaff94e2670800000000000000
+      internalID: 8515825307828069783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_16
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 1218
+        width: 50
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6cab43e3d36cf3a0800000000000000
+      internalID: -6630314789693576083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_17
+      rect:
+        serializedVersion: 2
+        x: 1883
+        y: 1218
+        width: 50
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce8b9cc6f2944d700800000000000000
+      internalID: 564156321365604588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_18
+      rect:
+        serializedVersion: 2
+        x: 2025
+        y: 1220
+        width: 37
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f7d277fac0c9ef40800000000000000
+      internalID: 5758345576537315316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_19
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 1288
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 684aee381580243d0800000000000000
+      internalID: -3224005237045025658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_20
+      rect:
+        serializedVersion: 2
+        x: 2336
+        y: 1220
+        width: 36
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b5288d6f6e8046f0800000000000000
+      internalID: -702404932639644236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_21
+      rect:
+        serializedVersion: 2
+        x: 2374
+        y: 1220
+        width: 37
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7b4cd8cdc5fbdea0800000000000000
+      internalID: -5846809427023475843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_22
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 1218
+        width: 64
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 911f94a5db8d6d490800000000000000
+      internalID: -7721746203304922855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_23
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 1218
+        width: 48
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6e1e99695bfd7aa0800000000000000
+      internalID: -6161492353730339221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_24
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 1218
+        width: 53
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d6355f1b22f9740800000000000000
+      internalID: 5160881845710318974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_25
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 1218
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 238685cfd4fd27a00800000000000000
+      internalID: 752909613763422258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_26
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 1220
+        width: 113
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c447c58d25bb3a80800000000000000
+      internalID: -8485989865726982969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_27
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 1193
+        width: 71
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9d5c9b485500fca0800000000000000
+      internalID: -5985278027991589474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_28
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 1218
+        width: 58
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97712110074861ba0800000000000000
+      internalID: -6118557427147073671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_29
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 1218
+        width: 65
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 328ea785ea0be0ee0800000000000000
+      internalID: -1292901780153505757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_30
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 1218
+        width: 58
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 108d722df16764fd0800000000000000
+      internalID: -2358067475839985663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_31
+      rect:
+        serializedVersion: 2
+        x: 2091
+        y: 1220
+        width: 76
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54081ee390c0f0260800000000000000
+      internalID: 7065879574216802373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_32
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 1220
+        width: 36
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169febaab4019f550800000000000000
+      internalID: 6195000679598061921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_33
+      rect:
+        serializedVersion: 2
+        x: 2207
+        y: 1217
+        width: 69
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d531ee6cbb0c6c980800000000000000
+      internalID: -8518909732395805859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_34
+      rect:
+        serializedVersion: 2
+        x: 2275
+        y: 1218
+        width: 57
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c24f84c9e19bcb680800000000000000
+      internalID: -8737905635883420628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_35
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 1218
+        width: 58
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d018354afc9064f0800000000000000
+      internalID: -837496931973852973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_36
+      rect:
+        serializedVersion: 2
+        x: 2501
+        y: 1220
+        width: 77
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38c74e86912f849e0800000000000000
+      internalID: -1636792273601266557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_37
+      rect:
+        serializedVersion: 2
+        x: 2577
+        y: 1216
+        width: 47
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 962882891dfefa480800000000000000
+      internalID: -8885619856298704279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_38
+      rect:
+        serializedVersion: 2
+        x: 2623
+        y: 1216
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25327431e659a1710800000000000000
+      internalID: 1664807312269189970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_39
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 550
+        width: 38
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4da12cb1d7e6e2510800000000000000
+      internalID: 1526278807340849876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_40
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 548
+        width: 71
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ce29d953c6cbb180800000000000000
+      internalID: -9098460079843627319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_41
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 548
+        width: 51
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb1d4042a5c77bda0800000000000000
+      internalID: -5929133657816772165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_42
+      rect:
+        serializedVersion: 2
+        x: 2252
+        y: 618
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbe5287a965d67fb0800000000000000
+      internalID: -4650294915454837057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_43
+      rect:
+        serializedVersion: 2
+        x: 2311
+        y: 619
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1e064e7ac5eb2150800000000000000
+      internalID: 5849021198935395870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_44
+      rect:
+        serializedVersion: 2
+        x: 2383
+        y: 548
+        width: 71
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2930247051ddd50c0800000000000000
+      internalID: -4585265763207478382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_45
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 548
+        width: 64
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a03af8057750223c0800000000000000
+      internalID: -4385937077094604022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_46
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 550
+        width: 113
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75d50d43615c60c90800000000000000
+      internalID: -7203853854766506665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_47
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 548
+        width: 74
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f45f08bffac4b3ab0800000000000000
+      internalID: -5027340240306506417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_48
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 550
+        width: 76
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d58fe1c43d5351820800000000000000
+      internalID: 2888273917659510877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_49
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 548
+        width: 64
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6d95af27988ea790800000000000000
+      internalID: -7516920545113957013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_50
+      rect:
+        serializedVersion: 2
+        x: 1766
+        y: 523
+        width: 71
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83e3fc4dbd8263460800000000000000
+      internalID: 7221003977168469560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_51
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 548
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a7c916cfc1f4f830800000000000000
+      internalID: 4104171035125467042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_52
+      rect:
+        serializedVersion: 2
+        x: 1915
+        y: 550
+        width: 77
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 759d1cf4a541ecf20800000000000000
+      internalID: 3444713143102724439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_53
+      rect:
+        serializedVersion: 2
+        x: 2044
+        y: 548
+        width: 74
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7667a354e81122ff0800000000000000
+      internalID: -62468142085278105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_54
+      rect:
+        serializedVersion: 2
+        x: 2121
+        y: 548
+        width: 64
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a97b04e8403aac3c0800000000000000
+      internalID: -4338476051056248934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_55
+      rect:
+        serializedVersion: 2
+        x: 2188
+        y: 548
+        width: 54
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9e4ba10268690d90800000000000000
+      internalID: -7131053764820382050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_56
+      rect:
+        serializedVersion: 2
+        x: 2246
+        y: 550
+        width: 37
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f21562b5e0a9275b0800000000000000
+      internalID: -5372062019050122961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_57
+      rect:
+        serializedVersion: 2
+        x: 2286
+        y: 548
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c04bb25d1f49100a0800000000000000
+      internalID: -6917083786279930868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_58
+      rect:
+        serializedVersion: 2
+        x: 2457
+        y: 548
+        width: 57
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fc559e4520b3b8b0800000000000000
+      internalID: -5137569075620913927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tipografia endscore_59
+      rect:
+        serializedVersion: 2
+        x: 2516
+        y: 546
+        width: 69
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64078f1892c0eb6b0800000000000000
+      internalID: -5278768340817907642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      tipografia endscore_0: -2994988712417062674
+      tipografia endscore_1: 650574323468607386
+      tipografia endscore_10: -1610480749008188317
+      tipografia endscore_11: -6551673556352104122
+      tipografia endscore_12: -7622934407165824069
+      tipografia endscore_13: 4384155693005624506
+      tipografia endscore_14: -7860308736554933788
+      tipografia endscore_15: 8515825307828069783
+      tipografia endscore_16: -6630314789693576083
+      tipografia endscore_17: 564156321365604588
+      tipografia endscore_18: 5758345576537315316
+      tipografia endscore_19: -3224005237045025658
+      tipografia endscore_2: -8784466569807939942
+      tipografia endscore_20: -702404932639644236
+      tipografia endscore_21: -5846809427023475843
+      tipografia endscore_22: -7721746203304922855
+      tipografia endscore_23: -6161492353730339221
+      tipografia endscore_24: 5160881845710318974
+      tipografia endscore_25: 752909613763422258
+      tipografia endscore_26: -8485989865726982969
+      tipografia endscore_27: -5985278027991589474
+      tipografia endscore_28: -6118557427147073671
+      tipografia endscore_29: -1292901780153505757
+      tipografia endscore_3: -4370600178806555794
+      tipografia endscore_30: -2358067475839985663
+      tipografia endscore_31: 7065879574216802373
+      tipografia endscore_32: 6195000679598061921
+      tipografia endscore_33: -8518909732395805859
+      tipografia endscore_34: -8737905635883420628
+      tipografia endscore_35: -837496931973852973
+      tipografia endscore_36: -1636792273601266557
+      tipografia endscore_37: -8885619856298704279
+      tipografia endscore_38: 1664807312269189970
+      tipografia endscore_39: 1526278807340849876
+      tipografia endscore_4: 4474855791540370935
+      tipografia endscore_40: -9098460079843627319
+      tipografia endscore_41: -5929133657816772165
+      tipografia endscore_42: -4650294915454837057
+      tipografia endscore_43: 5849021198935395870
+      tipografia endscore_44: -4585265763207478382
+      tipografia endscore_45: -4385937077094604022
+      tipografia endscore_46: -7203853854766506665
+      tipografia endscore_47: -5027340240306506417
+      tipografia endscore_48: 2888273917659510877
+      tipografia endscore_49: -7516920545113957013
+      tipografia endscore_5: -659878004985281645
+      tipografia endscore_50: 7221003977168469560
+      tipografia endscore_51: 4104171035125467042
+      tipografia endscore_52: 3444713143102724439
+      tipografia endscore_53: -62468142085278105
+      tipografia endscore_54: -4338476051056248934
+      tipografia endscore_55: -7131053764820382050
+      tipografia endscore_56: -5372062019050122961
+      tipografia endscore_57: -6917083786279930868
+      tipografia endscore_58: -5137569075620913927
+      tipografia endscore_59: -5278768340817907642
+      tipografia endscore_6: 5029901451089085406
+      tipografia endscore_7: -2148300096706730341
+      tipografia endscore_8: 5791711152509792963
+      tipografia endscore_9: 1725710667730467787
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
