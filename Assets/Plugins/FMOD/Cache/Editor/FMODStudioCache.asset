@@ -197,7 +197,7 @@ MonoBehaviour:
   Path: Assets/FMOD_ZooCat/Build/Desktop/AMBIENT.bank
   Name: AMBIENT
   StudioPath: bank:/AMBIENT
-  lastModified: 638973351274472849
+  lastModified: 638973358308393039
   FileSizes:
   - Name: Desktop
     Value: 1166112
@@ -221,7 +221,6 @@ MonoBehaviour:
     Data3: -1170081356
     Data4: 610853088
   Banks:
-  - {fileID: -1624711420487651644}
   - {fileID: 5587671011163673271}
   IsStream: 1
   Is3D: 0
@@ -284,26 +283,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &-1624711420487651644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: "bank:/M\xDASICA.bank"
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
-  Path: "Assets/FMOD_ZooCat/Build/Desktop/M\xDASICA.bank"
-  Name: MuSICA
-  StudioPath: bank:/MuSICA
-  lastModified: 638973266251865320
-  FileSizes:
-  - Name: Desktop
-    Value: 5429888
-  Exists: 1
 --- !u!114 &-1199994571214612284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -402,7 +381,6 @@ MonoBehaviour:
   - {fileID: -3407878115118907541}
   - {fileID: 3642173932355874811}
   - {fileID: 5911172482394290584}
-  - {fileID: -1624711420487651644}
   - {fileID: 5587671011163673271}
   EditorEvents:
   - {fileID: 6778173861688198276}
@@ -430,7 +408,7 @@ MonoBehaviour:
   - {fileID: 5911172482394290584}
   StringsBanks:
   - {fileID: 6344337719205130584}
-  cacheTime: 638973351276187844
+  cacheTime: 638973358309579032
   cacheVersion: 131632
 --- !u!114 &292850489387397313
 MonoBehaviour:
@@ -532,7 +510,6 @@ MonoBehaviour:
     Data3: 52982671
     Data4: -1337176675
   Banks:
-  - {fileID: -1624711420487651644}
   - {fileID: 5587671011163673271}
   IsStream: 1
   Is3D: 0
@@ -664,7 +641,7 @@ MonoBehaviour:
   Path: Assets/FMOD_ZooCat/Build/Desktop/FXS.bank
   Name: FXS
   StudioPath: bank:/FXS
-  lastModified: 638973351274910161
+  lastModified: 638973358308572411
   FileSizes:
   - Name: Desktop
     Value: 876480
@@ -792,7 +769,7 @@ MonoBehaviour:
   Path: Assets/FMOD_ZooCat/Build/Desktop/MUSICA.bank
   Name: MUSICA
   StudioPath: bank:/MUSICA
-  lastModified: 638973351275840734
+  lastModified: 638973358309549130
   FileSizes:
   - Name: Desktop
     Value: 6218208
@@ -812,7 +789,7 @@ MonoBehaviour:
   Path: Assets/FMOD_ZooCat/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638973351275987385
+  lastModified: 638973358309569067
   FileSizes:
   - Name: Desktop
     Value: 1552
@@ -859,7 +836,7 @@ MonoBehaviour:
   Path: Assets/FMOD_ZooCat/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638973351276187844
+  lastModified: 638973358309579032
   FileSizes:
   - Name: Desktop
     Value: 1960
@@ -883,7 +860,6 @@ MonoBehaviour:
     Data3: 1956985233
     Data4: 531468224
   Banks:
-  - {fileID: -1624711420487651644}
   - {fileID: 5587671011163673271}
   IsStream: 1
   Is3D: 0
