@@ -45,7 +45,7 @@ public class EndScreenManager : MonoBehaviour
             StartEndScreenShow(testTime);
         }
     }
-    public void StartEndScreenShow(float time, float minTime = 1f * 60f, float maxTime = 5f * 60f)
+    public void StartEndScreenShow(float time, float minTime = 0.5f * 60f, float maxTime = 5f * 60f)
     {
         StopAllCoroutines();
         musica.SetActive(false);

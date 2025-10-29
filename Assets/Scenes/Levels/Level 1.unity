@@ -1635,7 +1635,7 @@ MonoBehaviour:
   - {fileID: 2494470913086122668, guid: 96bb8b992f14b9a449a1bce3a4a133a7, type: 3}
   - {fileID: 6682101970336579068, guid: 4e03dbff9e6dc26438402d52fe6e5c7f, type: 3}
   - {fileID: 8792680983267763686, guid: 20afac77c09fbdb41b047248306efca5, type: 3}
-  debugTest: 1
+  debugTest: 0
   testTime: 135.7
   testScore: 8742
   audioFinal:
