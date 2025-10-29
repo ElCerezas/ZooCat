@@ -93,7 +93,11 @@ public class SimpleTooltip : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     {
         showing = true;
         cursorInside = true;
-
+        float yOffset = 0f;
+        if (GameManager.IsPreferredDesktopPlatform())
+        {
+            yOffset = 3f;
+        }
         // Update the text for both layers
         tooltipController.SetCustomStyledText(infoLeft, simpleTooltipStyle, STController.TextAlign.Left);
         tooltipController.SetCustomStyledText(infoRight, simpleTooltipStyle, STController.TextAlign.Right);

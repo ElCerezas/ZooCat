@@ -68,7 +68,12 @@ public class STController : MonoBehaviour
 
         if (showNow)
         {
-            rect.anchoredPosition = Input.mousePosition;
+            float yOffset = 0f;
+            if (GameManager.IsPreferredDesktopPlatform())
+            {
+                yOffset = 3f;
+            }
+            rect.anchoredPosition = Input.mousePosition + Vector3.up* yOffset;
         }
 
         showInFrames -= 1;
