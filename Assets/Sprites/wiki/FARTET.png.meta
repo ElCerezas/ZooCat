@@ -3,8 +3,8 @@ guid: d2825c4067736ee47a121d4c892089de
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1836388252441799060
-    second: FARTET_0
+      213: -1261975427033930856
+    second: fartet_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FARTET_0
+      name: fartet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4996e70d2692c7910800000000000000
-      internalID: 1836388252441799060
+      spriteID: 893ee5c09009c7ee0800000000000000
+      internalID: -1261975427033930856
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      FARTET_0: 1836388252441799060
+      fartet_0: -1261975427033930856
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

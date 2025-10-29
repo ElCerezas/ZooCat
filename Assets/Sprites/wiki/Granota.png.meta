@@ -3,8 +3,8 @@ guid: 79155d5ea62d96c469f32563696c81db
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7380411890009421688
-    second: GRANOTA_0
+      213: -5186101292857765983
+    second: granota_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GRANOTA_0
+      name: granota_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8884be73d72839990800000000000000
-      internalID: -7380411890009421688
+      spriteID: 1afc40ee9544708b0800000000000000
+      internalID: -5186101292857765983
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      GRANOTA_0: -7380411890009421688
+      granota_0: -5186101292857765983
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
