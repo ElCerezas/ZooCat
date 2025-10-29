@@ -1,5 +1,106 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8686872536251513196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FINAL/Redoble-i-matasuegras
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/FINAL/Redoble-i-matasuegras
+  Guid:
+    Data1: 107735794
+    Data2: 1312024812
+    Data3: 142539661
+    Data4: 1184439032
+  Banks:
+  - {fileID: 3642173932355874811}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 14578
+--- !u!114 &-8026888274698164611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NIVELL2/Aplaudiments2
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/NIVELL2/Aplaudiments2
+  Guid:
+    Data1: -956488901
+    Data2: 1180264613
+    Data3: 1282640537
+    Data4: -1210570109
+  Banks:
+  - {fileID: 3642173932355874811}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-7735991717518963183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/MUSICA.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: Assets/FMOD_ZooCat/Build/Desktop/MUSICA.bank
+  Name: MUSICA
+  StudioPath: bank:/MUSICA
+  lastModified: 638972084091326433
+  FileSizes:
+  - Name: Desktop
+    Value: 6218208
+  Exists: 1
+--- !u!114 &-6775523681781776934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ANIMALS/Geneta
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/ANIMALS/Geneta
+  Guid:
+    Data1: 909506072
+    Data2: 1309831659
+    Data3: 1543055275
+    Data4: -1216449802
+  Banks:
+  - {fileID: 3642173932355874811}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-4328358469095174081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19,7 +120,7 @@ MonoBehaviour:
     Data3: -981877335
     Data4: 1482670214
   Banks:
-  - {fileID: -1624711420487651644}
+  - {fileID: -7735991717518963183}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -42,10 +143,10 @@ MonoBehaviour:
   Path: Assets/FMOD_ZooCat/Build/Desktop/AMBIENT.bank
   Name: AMBIENT
   StudioPath: bank:/AMBIENT
-  lastModified: 638973249632303845
+  lastModified: 638972018863725056
   FileSizes:
   - Name: Desktop
-    Value: 482
+    Value: 1166112
   Exists: 1
 --- !u!114 &-2832096237188243600
 MonoBehaviour:
@@ -66,6 +167,7 @@ MonoBehaviour:
     Data3: -1170081356
     Data4: 610853088
   Banks:
+  - {fileID: -7735991717518963183}
   - {fileID: -1624711420487651644}
   IsStream: 1
   Is3D: 0
@@ -74,6 +176,33 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 58536
+--- !u!114 &-2468743844407284507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ANIMALS/Lludriga
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/ANIMALS/Lludriga
+  Guid:
+    Data1: -89864702
+    Data2: 1157632318
+    Data3: -831091026
+    Data4: 213517386
+  Banks:
+  - {fileID: 3642173932355874811}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-1624711420487651644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,11 +218,38 @@ MonoBehaviour:
   Path: "Assets/FMOD_ZooCat/Build/Desktop/M\xDASICA.bank"
   Name: "M\xDASICA"
   StudioPath: "bank:/M\xDASICA"
-  lastModified: 638973249633874658
+  lastModified: 638971837925838189
   FileSizes:
   - Name: Desktop
-    Value: 6218208
+    Value: 5429888
   Exists: 1
+--- !u!114 &-1157922743360079235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ANIMALS/Sargantana
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/ANIMALS/Sargantana
+  Guid:
+    Data1: -1814344637
+    Data2: 1193867795
+    Data3: 963788200
+    Data4: 126626749
+  Banks:
+  - {fileID: 3642173932355874811}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,7 +268,22 @@ MonoBehaviour:
   - {fileID: 3642173932355874811}
   - {fileID: 5911172482394290584}
   - {fileID: -1624711420487651644}
+  - {fileID: -7735991717518963183}
   EditorEvents:
+  - {fileID: 1651695160390315026}
+  - {fileID: 3388504187798458717}
+  - {fileID: -2468743844407284507}
+  - {fileID: -6775523681781776934}
+  - {fileID: 4956112438674576635}
+  - {fileID: 8093352457948921469}
+  - {fileID: -8026888274698164611}
+  - {fileID: -1157922743360079235}
+  - {fileID: 9047673510582726801}
+  - {fileID: 5513509273620026064}
+  - {fileID: 292850489387397313}
+  - {fileID: 3105108724822057600}
+  - {fileID: 9121173334118018119}
+  - {fileID: -8686872536251513196}
   - {fileID: 6778173861688198276}
   - {fileID: -2832096237188243600}
   - {fileID: 2823444803018687006}
@@ -124,8 +295,62 @@ MonoBehaviour:
   - {fileID: 5911172482394290584}
   StringsBanks:
   - {fileID: 6344337719205130584}
-  cacheTime: 638973249633874658
+  cacheTime: 638972084091475073
   cacheVersion: 131632
+--- !u!114 &292850489387397313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ANIMALS/Senglar
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/ANIMALS/Senglar
+  Guid:
+    Data1: -2069689443
+    Data2: 1203002949
+    Data3: 2128947586
+    Data4: 773863919
+  Banks:
+  - {fileID: 3642173932355874811}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &1651695160390315026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NIVELL2/Ambient2
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/NIVELL2/Ambient2
+  Guid:
+    Data1: 1407154444
+    Data2: 1250063897
+    Data3: -1041950276
+    Data4: -1279173670
+  Banks:
+  - {fileID: -3407878115118907541}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 41000
 --- !u!114 &2823444803018687006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,6 +370,7 @@ MonoBehaviour:
     Data3: 52982671
     Data4: -1337176675
   Banks:
+  - {fileID: -7735991717518963183}
   - {fileID: -1624711420487651644}
   IsStream: 1
   Is3D: 0
@@ -180,6 +406,60 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &3105108724822057600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ANIMALS/Serp
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/ANIMALS/Serp
+  Guid:
+    Data1: -239161117
+    Data2: 1271835507
+    Data3: 1162391966
+    Data4: -227578446
+  Banks:
+  - {fileID: 3642173932355874811}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &3388504187798458717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NIVELL1/Ambient1
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/NIVELL1/Ambient1
+  Guid:
+    Data1: 2121857871
+    Data2: 1295022054
+    Data3: 1993461917
+    Data4: 1599557263
+  Banks:
+  - {fileID: -3407878115118907541}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 41000
 --- !u!114 &3642173932355874811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,11 +475,65 @@ MonoBehaviour:
   Path: Assets/FMOD_ZooCat/Build/Desktop/FXS.bank
   Name: FXS
   StudioPath: bank:/FXS
-  lastModified: 638973249633024606
+  lastModified: 638972084090711481
   FileSizes:
   - Name: Desktop
-    Value: 52800
+    Value: 877728
   Exists: 1
+--- !u!114 &4956112438674576635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Apladuments
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Apladuments
+  Guid:
+    Data1: -799501529
+    Data2: 1334574480
+    Data3: 1024406693
+    Data4: 134913524
+  Banks:
+  - {fileID: 3642173932355874811}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &5513509273620026064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ANIMALS/Garsa
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/ANIMALS/Garsa
+  Guid:
+    Data1: -1700782478
+    Data2: 1228597307
+    Data3: 15422911
+    Data4: 1543021576
+  Banks:
+  - {fileID: 3642173932355874811}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &5911172482394290584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,10 +549,10 @@ MonoBehaviour:
   Path: Assets/FMOD_ZooCat/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638973249633039048
+  lastModified: 638971987175412980
   FileSizes:
   - Name: Desktop
-    Value: 1164
+    Value: 1552
   Exists: 1
 --- !u!114 &6344337719205130584
 MonoBehaviour:
@@ -235,10 +569,10 @@ MonoBehaviour:
   Path: Assets/FMOD_ZooCat/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638973249633043223
+  lastModified: 638972084091475073
   FileSizes:
   - Name: Desktop
-    Value: 1842
+    Value: 1966
   Exists: 1
 --- !u!114 &6778173861688198276
 MonoBehaviour:
@@ -259,6 +593,7 @@ MonoBehaviour:
     Data3: 1956985233
     Data4: 531468224
   Banks:
+  - {fileID: -7735991717518963183}
   - {fileID: -1624711420487651644}
   IsStream: 1
   Is3D: 0
@@ -285,6 +620,87 @@ MonoBehaviour:
     Data2: 1233376765
     Data3: 823327935
     Data4: -1548801890
+  Banks:
+  - {fileID: 3642173932355874811}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &8093352457948921469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PANTALLA-INICI/Click
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/PANTALLA-INICI/Click
+  Guid:
+    Data1: 1190318390
+    Data2: 1334191585
+    Data3: -280267849
+    Data4: 82963331
+  Banks:
+  - {fileID: 3642173932355874811}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &9047673510582726801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Error
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Error
+  Guid:
+    Data1: 1834331491
+    Data2: 1207386207
+    Data3: -938393717
+    Data4: 806920459
+  Banks:
+  - {fileID: 3642173932355874811}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &9121173334118018119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ANIMALS/Peix
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/ANIMALS/Peix
+  Guid:
+    Data1: 787850570
+    Data2: 1155522692
+    Data3: 1725494922
+    Data4: 2044316521
   Banks:
   - {fileID: 3642173932355874811}
   IsStream: 0
