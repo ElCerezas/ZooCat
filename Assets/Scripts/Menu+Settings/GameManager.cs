@@ -1,3 +1,4 @@
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -5,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    bool StartMusicFor1stTime = false;
     private void Awake()
     {
         if (instance == null)
@@ -22,6 +24,16 @@ public class GameManager : MonoBehaviour
         if(Input.GetKey(KeyCode.P)&& Input.GetKey(KeyCode.U)&&Input.GetKey(KeyCode.T)&& Input.GetKey(KeyCode.A))
         {
             PlayerPrefs.DeleteAll();
+        }
+
+        if (!StartMusicFor1stTime)
+        {
+            StudioEventEmitter p = GameObject.FindGameObjectWithTag("startMusic").GetComponent<StudioEventEmitter>();
+            if(!p.IsPlaying())
+                p.Play();
+            else
+                StartMusicFor1stTime=true; 
+
         }
     }
     public void GoToScene(string sceneName)

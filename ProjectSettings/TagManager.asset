@@ -8,6 +8,7 @@ TagManager:
   - Slot
   - Manager
   - toggle
+  - startMusic
   layers:
   - Default
   - TransparentFX

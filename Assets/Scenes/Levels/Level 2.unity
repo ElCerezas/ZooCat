@@ -1263,7 +1263,7 @@ MonoBehaviour:
   pausedTime: 0
   timerCanvas: {fileID: 1869371614}
   pauseUI:
-  - {fileID: 0}
+  - {fileID: 569637718}
   - {fileID: 936327026}
   showTime: 1
   curve:
@@ -2114,6 +2114,11 @@ PrefabInstance:
 --- !u!224 &569637717 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2808330210806072377, guid: 71f5725b19293ff499df083c3fcdfdc3, type: 3}
+  m_PrefabInstance: {fileID: 569637716}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &569637718 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2900296527621765656, guid: 71f5725b19293ff499df083c3fcdfdc3, type: 3}
   m_PrefabInstance: {fileID: 569637716}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &571070806
