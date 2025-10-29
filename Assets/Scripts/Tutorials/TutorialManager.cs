@@ -83,7 +83,7 @@ public class TutorialManager : LevelManager
         // Fase 3
         Mask.sprite = maskPhases[3];
         currentPhase = TutorialPhase.ClickAnimal;
-        tutorialText.text = "Fes clic sobre l'animal per veure informaci� de l'animal";
+        tutorialText.text = "Fes clic sobre l'animal per veure informació de l'animal";
         StartCursorAnimation(targetAnimal.transform.position + Vector3.up * yOffset);
         yield return new WaitUntil(() => clickedAnimal);
         StopCursorAnimation();
@@ -134,7 +134,7 @@ public class TutorialManager : LevelManager
         // Fase 9
         Mask.sprite = maskPhases[0];
         currentPhase = TutorialPhase.ShowStartCanvas;
-        tutorialText.text = "Ja podem comen�ar!";
+        tutorialText.text = "Ja podem començar!";
         PlayerPrefs.SetInt("TutoComplete", 1);
         startCanvas.SetActive(true);
         yield return null;
