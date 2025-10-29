@@ -6,6 +6,7 @@
 		</property>
 		<relationship name="masters">
 			<destination>{cbbdc9da-ca2e-44a0-ae02-c74ca6398a0a}</destination>
+			<destination>{6e16e35f-d649-44e2-8a5c-884538d48c44}</destination>
 		</relationship>
 		<relationship name="effectChain">
 			<destination>{a580cb96-e8e7-4a2e-85a4-5f735c8b3265}</destination>
