@@ -5428,11 +5428,11 @@ PrefabInstance:
     - target: {fileID: 6748406296317132295, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: body
       value: 
-      objectReference: {fileID: 3941158872075563112, guid: ab4e73b54530a234382de98ec3fb12be, type: 3}
+      objectReference: {fileID: -6426802675687142787, guid: dc54e7b49922d23489db00a12aa9bc4c, type: 3}
     - target: {fileID: 6748406296317132295, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
       propertyPath: head
       value: 
-      objectReference: {fileID: 4350056355299269986, guid: 1a37da6d2951cc542a9d8b805269424c, type: 3}
+      objectReference: {fileID: 4079685207859695988, guid: 74a7b99096a2b944680d9c7d69cf7322, type: 3}
     m_RemovedComponents:
     - {fileID: 2458982954031711815, guid: eb32bda684bf50843831cd89ee02e23d, type: 3}
     m_RemovedGameObjects: []
@@ -6687,8 +6687,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278782990
-  m_fontColor: {r: 0.05490196, g: 0.047058824, b: 0.03529412, a: 1}
+    rgba: 4284211199
+  m_fontColor: {r: 1, g: 0.8745098, b: 0.35686275, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
