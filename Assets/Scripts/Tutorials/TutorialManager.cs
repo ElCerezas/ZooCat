@@ -57,10 +57,12 @@ public class TutorialManager : LevelManager
 
         baseCursorColor = fakeCursor.color;
         fakeCursor.transform.localScale = Vector3.one;
-
-        StartCoroutine(RunTutorial());
+        if(GameManager.IsPreferredDesktopPlatform())
+            StartCoroutine(RunTutorialPC());
+        else
+            StartCoroutine(RunTutorialMobile());
     }
-    IEnumerator RunTutorial()
+    IEnumerator RunTutorialPC()
     {
         // Fase 1
         Mask.sprite = maskPhases[1];
@@ -102,6 +104,85 @@ public class TutorialManager : LevelManager
         tutorialText.text = "Observa les preferències de l'animal";
         StartCursorAnimation(ConditionUI);
         yield return new WaitUntil(() => hoveredConditionsUI);
+        StopCursorAnimation();
+
+        // Fase 6   
+        Mask.sprite = maskPhases[6];
+        targetAnimal.selectable = true;
+        targetSlot[0].SlotPle = false;
+        targetSlot[1].SlotPle = true;
+        currentPhase = TutorialPhase.DragAnimalWrong;
+        tutorialText.text = "Arrossega l'animal a l'espai per col·locar-lo";
+        StartCursorAnimation(SlotPathAnimation(false));
+        yield return new WaitUntil(() => dragToWrongSlot);
+        StopCursorAnimation();
+
+        // Fase 7
+        Mask.sprite = maskPhases[7];
+        targetSlot[1].SlotPle = false;
+        currentPhase = TutorialPhase.DragAnimalRight;
+        tutorialText.text = "Vaja! Ara no està content. Provem de posar-lo a un lloc que sí que vulgui estar!";
+        StartCursorAnimation(SlotPathAnimation(true));
+        yield return new WaitUntil(() => dragToRightSlot);
+        StopCursorAnimation();
+
+        // Fase 8
+        Mask.sprite = maskPhases[8];
+        fakeCursor.color = new Color(0, 0, 0, 0);
+        currentPhase = TutorialPhase.ShowTimer;
+        tutorialText.text = "Perfecte!\n Ara has d'intentar aconseguir que tots els animals estiguin contents en el menor temps possible!";
+        yield return new WaitForSeconds(10f);
+
+        // Fase 9
+        Mask.sprite = maskPhases[0];
+        currentPhase = TutorialPhase.ShowStartCanvas;
+        tutorialText.text = "Ja podem començar!";
+        PlayerPrefs.SetInt("TutoComplete", 1);
+        startCanvas.SetActive(true);
+        yield return null;
+    }
+    IEnumerator RunTutorialMobile()
+    {
+        // Fase 1
+        Mask.sprite = maskPhases[1];
+        targetAnimal.selectable = false;
+        targetSlot[0].OnHighLight(true);
+        currentPhase = TutorialPhase.ClickSlot;
+        tutorialText.text = "Fes clic sobre l'espai per veure la seva informació";
+        StartCursorAnimation(targetSlot[0].transform.position + Vector3.up * yOffset);
+        yield return new WaitUntil(() => clickedSlot);
+        StopCursorAnimation();
+
+        // Fase 2
+        Mask.sprite = maskPhases[2];
+        currentPhase = TutorialPhase.ShowSlotUI;
+        tutorialText.text = "Investiga quines propietats té l'espai";
+        StartCursorAnimation(SlotUI);
+        yield return new WaitForSeconds(3f);
+        StopCursorAnimation();
+
+        // Fase 3
+        Mask.sprite = maskPhases[3];
+        currentPhase = TutorialPhase.ClickAnimal;
+        tutorialText.text = "Fes clic sobre l'animal per veure informació de l'animal";
+        StartCursorAnimation(targetAnimal.transform.position + Vector3.up * yOffset);
+        yield return new WaitUntil(() => clickedAnimal);
+        StopCursorAnimation();
+
+        // Fase 4
+        Mask.sprite = maskPhases[4];
+        currentPhase = TutorialPhase.ShowAnimalUI;
+        tutorialText.text = "Investiga quines propietats té l'animal";
+        StartCursorAnimation(AnimalUI);
+        yield return new WaitForSeconds(3f);
+        StopCursorAnimation();
+
+        // Fase 5
+        Mask.sprite = maskPhases[5];
+        currentPhase = TutorialPhase.ShowConditionsUI;
+        tutorialText.text = "Observa les preferències de l'animal";
+        StartCursorAnimation(ConditionUI);
+        yield return new WaitForSeconds(3f);
         StopCursorAnimation();
 
         // Fase 6   

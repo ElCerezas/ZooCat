@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
@@ -27,4 +28,16 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
+
+#if !UNITY_EDITOR && UNITY_WEBGL
+
+        [System.Runtime.InteropServices.DllImport("__Internal")]
+        public static extern bool IsMobileBrowser();
+      
+        [System.Runtime.InteropServices.DllImport("__Internal")]
+        public static extern bool IsPreferredDesktopPlatform();
+#else
+    public static bool IsMobileBrowser() => false;
+    public static bool IsPreferredDesktopPlatform() => true;
+#endif
 }
