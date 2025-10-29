@@ -961,11 +961,19 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6259322541168325880, guid: a205af8e4f57f204cbaa55163390036a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1364924776}
   m_SourcePrefab: {fileID: 100100000, guid: a205af8e4f57f204cbaa55163390036a, type: 3}
 --- !u!224 &1014953655 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6359273143199296549, guid: a205af8e4f57f204cbaa55163390036a, type: 3}
+  m_PrefabInstance: {fileID: 1014953654}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1014953656 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6259322541168325880, guid: a205af8e4f57f204cbaa55163390036a, type: 3}
   m_PrefabInstance: {fileID: 1014953654}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1034194486
@@ -1369,12 +1377,27 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5373428049788577047, guid: a205af8e4f57f204cbaa55163390036a, type: 3}
   m_PrefabInstance: {fileID: 1014953654}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1014953656}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78a8f3aec8821044bb0626230104aa6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelButton
+--- !u!114 &1364924776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014953656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99634edca86565b4a96a0b7b261787f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SimpleTooltip
+  simpleTooltipStyle: {fileID: 11400000, guid: 1a3c7aae23de44343bfa24ea27ff9548, type: 2}
+  infoLeft: Properament
+  infoRight: 
 --- !u!1 &1372439984
 GameObject:
   m_ObjectHideFlags: 0

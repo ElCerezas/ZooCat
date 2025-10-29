@@ -38,6 +38,12 @@ public class UIIconShow : MonoBehaviour
     Animal sAnimal = null;
     BiomeSlot sBiome = null;
 
+    [Header("Backgrounds")]
+    [SerializeField] Color baseColor;
+    [SerializeField] Color goodColor = new Color(0.415f, 0.635f, 0.4f);
+    [SerializeField] Color badColor = new Color(0.63f, 0.24f, 0.24f);
+
+
     bool sNegative1 = false;
     TypeOfConditions sCondition1 = TypeOfConditions.Null;
     int sIndexSprite1 = 0;
@@ -144,7 +150,7 @@ public class UIIconShow : MonoBehaviour
                 conditionSlot1.gameObject.SetActive(true);
                 conditionIcon1.sprite = GetSpriteForCondition(sCondition1, sIndexSprite1);
                 conditionIcon1.gameObject.GetComponent<SimpleTooltip>().SetTooltipLeftText($"{(sNegative1 ? "NO vull " : "Vull")} {conditionIcon1.sprite.name}");
-                conditionBG1.color = sNegative1 ? new Color(0.63f,0.24f,0.24f) : new Color(0.415f,0.635f,0.4f);
+                conditionBG1.color = sNegative1 ? badColor : goodColor;
             }
             else conditionSlot1.gameObject.SetActive(false);
 
@@ -154,7 +160,7 @@ public class UIIconShow : MonoBehaviour
                 conditionSlot2.gameObject.SetActive(true);
                 conditionIcon2.sprite = GetSpriteForCondition(sCondition2, sIndexSprite2);
                 conditionIcon2.gameObject.GetComponent<SimpleTooltip>().SetTooltipLeftText($"{(sNegative2 ? "NO vull " : "Vull")} {conditionIcon2.sprite.name}");
-                conditionBG2.color = sNegative2 ? new Color(0.63f,0.24f,0.24f) : new Color(0.415f,0.635f,0.4f);
+                conditionBG2.color = sNegative2 ? badColor: goodColor;
             }
             else conditionSlot2.gameObject.SetActive(false);
         }
