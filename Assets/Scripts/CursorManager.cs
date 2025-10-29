@@ -24,7 +24,7 @@ public class CursorManager : MonoBehaviour
     
     void Start()
     {
-        cursorHotspot = new Vector2(16f, 16f);
+        cursorHotspot = new Vector2(4f, 4f);
         Cursor.SetCursor(DefaultCursorTexture, cursorHotspot, CursorMode.Auto);
     }
     private void LateUpdate()
