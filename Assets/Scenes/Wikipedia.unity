@@ -709,7 +709,7 @@ PrefabInstance:
       objectReference: {fileID: 1399757051}
     - target: {fileID: 11415212, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 3}
       propertyPath: bookPages.Array.size
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 11415212, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 3}
       propertyPath: 'bookPages.Array.data[1]'
@@ -743,6 +743,10 @@ PrefabInstance:
       propertyPath: 'bookPages.Array.data[8]'
       value: 
       objectReference: {fileID: 1836388252441799060, guid: d2825c4067736ee47a121d4c892089de, type: 3}
+    - target: {fileID: 11415212, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 3}
+      propertyPath: 'bookPages.Array.data[9]'
+      value: 
+      objectReference: {fileID: -2720922381176439266, guid: a98c76d1d27fbaf418880f81cfe90f68, type: 3}
     - target: {fileID: 11415212, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 3}
       propertyPath: OnFlip.m_PersistentCalls.m_Calls.Array.size
       value: 1
