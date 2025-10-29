@@ -612,8 +612,8 @@ MonoBehaviour:
   sourceProjectPath: Assets/FMOD_ZooCat/FMOD_ZooCat.fspro
   sourceBankPath: Assets/FMOD_ZooCat/Build
   sourceBankPathUnformatted: 
-  BankRefreshCooldown: 5
-  ShowBankRefreshWindow: 1
+  BankRefreshCooldown: 1
+  ShowBankRefreshWindow: 0
   AutomaticEventLoading: 1
   BankLoadType: 0
   AutomaticSampleLoading: 0
