@@ -297,8 +297,8 @@ MonoBehaviour:
   m_Name: "bank:/M\xDASICA.bank"
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
   Path: "Assets/FMOD_ZooCat/Build/Desktop/M\xDASICA.bank"
-  Name: "M\xDASICA"
-  StudioPath: "bank:/M\xDASICA"
+  Name: MuSICA
+  StudioPath: bank:/MuSICA
   lastModified: 638973266251865320
   FileSizes:
   - Name: Desktop
