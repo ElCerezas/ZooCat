@@ -1,7 +1,6 @@
 using NaughtyAttributes;
 using System;
 using TMPro;
-using UISwitcher;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -14,18 +13,6 @@ public class UIComponents : MonoBehaviour
     [ShowIf("IsSlider")][SerializeField] TextMeshProUGUI percentage;
     private void Start()
     {
-        if (HasToggleTag)
-        {
-            if (gameObject.name == "MusicToggle") 
-            { 
-                gameObject.GetComponent<UISwitcher.UISwitcher>().isOn = (PlayerPrefs.GetInt("musicToggle", 1) == 1);
-            }
-            if (gameObject.name == "SoundToggle") 
-            { 
-                gameObject.GetComponent<UISwitcher.UISwitcher>().isOn = (PlayerPrefs.GetInt("soundToggle", 1) == 1);
-            }
-            ToggleSlider();
-        }
         if (gameObject.name == "MusicSlider") 
         { 
             gameObject.GetComponent<Slider>().value = SettingsManager.instance.GetMusicVolume() * 100;
@@ -61,12 +48,5 @@ public class UIComponents : MonoBehaviour
         float m = gameObject.GetComponent<Slider>().value / 100;
         percentage.text = $"{(m * 100).ToString("00")}%";
         SettingsManager.instance.SetVolumes(MusicVolume:m);
-    }
-    public void ToggleSlider()
-    {
-        bool t = gameObject.GetComponent<UISwitcher.UISwitcher>().isOn;
-        slider.interactable = t;
-        if (gameObject.name == "MusicToggle") { PlayerPrefs.SetInt("musicToggle", t ? 1 : 0); }
-        if (gameObject.name == "SoundToggle") { PlayerPrefs.SetInt("soundToggle", t ? 1 : 0); }
     }
 }
