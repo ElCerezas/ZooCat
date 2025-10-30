@@ -131,14 +131,8 @@ public class TutorialManager : LevelManager
         fakeCursor.color = new Color(0, 0, 0, 0);
         currentPhase = TutorialPhase.ShowTimer;
         tutorialText.text = "Perfecte!\n Ara has d'intentar aconseguir que tots els animals estiguin contents en el menor temps possible!";
-        yield return new WaitForSeconds(10f);
-
-        // Fase 9
-        Mask.sprite = maskPhases[0];
-        currentPhase = TutorialPhase.ShowStartCanvas;
-        tutorialText.text = "Ja podem començar!";
-        PlayerPrefs.SetInt("TutoComplete", 1);
         startCanvas.SetActive(true);
+        PlayerPrefs.SetInt("TutoComplete", 1);
         yield return null;
     }
     IEnumerator RunTutorialMobile()
@@ -152,6 +146,11 @@ public class TutorialManager : LevelManager
         StartCursorAnimation(targetSlot[0].transform.position + Vector3.up * yOffset);
         yield return new WaitUntil(() => clickedSlot);
         StopCursorAnimation();
+
+        for (int i = 0; i < targetSlot.Length; i++)
+        {
+            targetSlot[i].enabled = false;
+        }
 
         // Fase 2
         Mask.sprite = maskPhases[2];
@@ -185,6 +184,11 @@ public class TutorialManager : LevelManager
         yield return new WaitForSeconds(3f);
         StopCursorAnimation();
 
+        for (int i = 0; i < targetSlot.Length; i++)
+        {
+            targetSlot[i].enabled = true;
+        }
+
         // Fase 6   
         Mask.sprite = maskPhases[6];
         targetAnimal.selectable = true;
@@ -210,15 +214,10 @@ public class TutorialManager : LevelManager
         fakeCursor.color = new Color(0, 0, 0, 0);
         currentPhase = TutorialPhase.ShowTimer;
         tutorialText.text = "Perfecte!\n Ara has d'intentar aconseguir que tots els animals estiguin contents en el menor temps possible!";
-        yield return new WaitForSeconds(10f);
-
-        // Fase 9
-        Mask.sprite = maskPhases[0];
-        currentPhase = TutorialPhase.ShowStartCanvas;
-        tutorialText.text = "Ja podem començar!";
-        PlayerPrefs.SetInt("TutoComplete", 1);
         startCanvas.SetActive(true);
+        PlayerPrefs.SetInt("TutoComplete", 1);
         yield return null;
+
     }
     void StartCursorAnimation(Vector3 target)
     {

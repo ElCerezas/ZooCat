@@ -69,9 +69,9 @@ public class STController : MonoBehaviour
         if (showNow)
         {
             float yOffset = 0f;
-            if (GameManager.IsPreferredDesktopPlatform())
+            if (GameManager.IsMobileBrowser())
             {
-                yOffset = 3f;
+                yOffset = 100f;
             }
             rect.anchoredPosition = Input.mousePosition + Vector3.up* yOffset;
         }

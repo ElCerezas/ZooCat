@@ -1628,7 +1628,7 @@ MonoBehaviour:
   currentPhase: 0
   fakeCursor: {fileID: 415316009}
   tutorialText: {fileID: 233435144}
-  startCanvas: {fileID: 1095933724}
+  startCanvas: {fileID: 1244575930}
   cursorTransparencyDistance: 3
   cursorMinAlpha: 0.3
   Mask: {fileID: 1760037567}
@@ -4232,7 +4232,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1486237304}
-  - {fileID: 1244575931}
   - {fileID: 54034137}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4778,17 +4777,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1244575930}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 1095933728}
+  m_Father: {fileID: 1518830926}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -117.20933}
-  m_SizeDelta: {x: -1400, y: -600}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -378.03967}
+  m_SizeDelta: {x: 369, y: 286.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1244575932
 MonoBehaviour:
@@ -4882,7 +4881,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: -2285931691943361986, guid: c7f605c80a9456d4eaaf682aea8c7943, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -6015,6 +6014,7 @@ RectTransform:
   m_Children:
   - {fileID: 1760037566}
   - {fileID: 233435143}
+  - {fileID: 1244575931}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
